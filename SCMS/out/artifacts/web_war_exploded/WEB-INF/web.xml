@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd"
+           version="2.5">
+
+    <servlet>
+        <servlet-name>adminLogin</servlet-name>
+        <servlet-class>webLayer.adminLogin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>addStudent</servlet-name>
+        <servlet-class>webLayer.addStudent</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>userLogin</servlet-name>
+        <servlet-class>webLayer.userLogin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>generateToken</servlet-name>
+        <servlet-class>webLayer.generateToken</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>deleteStudent</servlet-name>
+        <servlet-class>webLayer.deleteStudent</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>invLogin</servlet-name>
+        <servlet-class>webLayer.invLogin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>vendorLogin</servlet-name>
+        <servlet-class>webLayer.vendorLogin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>addFood</servlet-name>
+        <servlet-class>webLayer.addFood</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>order</servlet-name>
+        <servlet-class>webLayer.order</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>addVendor</servlet-name>
+        <servlet-class>webLayer.addVendor</servlet-class>
+    </servlet>
+
+
+
+    <servlet-mapping>
+        <servlet-name>adminLogin</servlet-name>
+        <url-pattern>/adminLogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>addStudent</servlet-name>
+        <url-pattern>/addStudent</url-pattern>
+
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>userLogin</servlet-name>
+        <url-pattern>/userLogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>generateToken</servlet-name>
+        <url-pattern>/generateToken</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>deleteStudent</servlet-name>
+        <url-pattern>/deleteStudent</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>invLogin</servlet-name>
+        <url-pattern>/invLogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>vendorLogin</servlet-name>
+        <url-pattern>/vendorLogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>addFood</servlet-name>
+        <url-pattern>/addFood</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>order</servlet-name>
+        <url-pattern>/order</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>addVendor</servlet-name>
+        <url-pattern>/addVendor</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
