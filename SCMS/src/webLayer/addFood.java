@@ -1,5 +1,7 @@
 package webLayer;
 
+import DataLayer.accountDetails;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -13,12 +15,18 @@ public class addFood extends HttpServlet {
     public String Q;
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        DataLayer.accountDetails a6 = new DataLayer.accountDetails();
+        accountDetails a6 = new accountDetails();
         FI = request.getParameter("foodid");
         Q = request.getParameter("quantity");
         a6.updQuantity(FI, Q);
-        request.setAttribute("message","Successfully updated");
+        if(a6.ac==1) {
+            request.setAttribute("message", "Successfully updated");
+        }
+        else{
+            request.setAttribute("message", "Invalid foodID");
+        }
         request.getRequestDispatcher("/addFood.jsp").forward(request, response);
+
 
     }
 

@@ -9,10 +9,15 @@ public class accountDetails {
     //  Database credentials
     static final String USER = "root";
     static final String PASS = "";
+
+
+
+    public   int ac=0;
     public  void updQuantity(String foodID,String Quantity ){
         Connection conn = null;
         Statement stmt = null;
         int  flag = 1;
+
         try {
             //STEP 2: Register JDBC driver
             Class.forName("com.mysql.jdbc.Driver");
@@ -21,8 +26,19 @@ public class accountDetails {
             System.out.println("Connecting to database...");
             conn = DriverManager.getConnection(DB_URL, USER, PASS);
             stmt = conn.createStatement();
+
             //STEP 4: Execute a query
-            String sql = "UPDATE  food SET quantity =quantity+"+Quantity+" WHERE FoodID = \"" +
+            String sql = "SELECT * FROM food WHERE foodid = \"" +
+                    foodID + "\"";
+
+            ResultSet rs = stmt.executeQuery(sql);
+            System.out.println("after rs");
+            while (rs.next()) {
+                System.out.println("inside while");
+                flag = rs.getInt("quantity")-Integer.parseInt(Quantity);
+                ac=1;
+            }
+            sql = "UPDATE  food SET quantity =quantity+"+Quantity+" WHERE FoodID = \"" +
                     foodID + "\"";
 
             stmt.executeUpdate(sql);
@@ -49,11 +65,13 @@ public class accountDetails {
 
         }
     }
-
+    public int dc;
     public  int decQuantity(String foodID,String Quantity ) {
         Connection conn = null;
         Statement stmt = null;
         int flag = 1;
+
+        dc = 0;
         try {
             //STEP 2: Register JDBC driver
             Class.forName("com.mysql.jdbc.Driver");
@@ -71,6 +89,7 @@ public class accountDetails {
             while (rs.next()) {
                 System.out.println("inside while");
                 flag = rs.getInt("quantity")-Integer.parseInt(Quantity);
+                dc=1;
             }
             if(flag>=0) {
                 sql = "UPDATE  food SET quantity =quantity-" + Quantity + " WHERE FoodID = \"" +

@@ -17,7 +17,12 @@ public class order extends HttpServlet { public String FI;
         Q = request.getParameter("quantity");
         int f=a7.decQuantity(FI, Q);
         if(f>0) {
-            request.setAttribute("message", "Enjoy your Food");
+            if (a7.dc == 1) {
+                request.setAttribute("message", "Enjoy your Food");
+            }
+            else{
+                request.setAttribute("message", "Enter valid food id");
+            }
         }
         else{
             request.setAttribute("message", "Sorry ! Out of stock");
