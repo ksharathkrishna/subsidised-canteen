@@ -16,15 +16,15 @@ public class addStudent extends HttpServlet {
 
         accountDetails a2 = new accountDetails();
         System.out.println("inside add student");
-        String name = request.getParameter("name");
+        //String name = request.getParameter("name");
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         String cardno = request.getParameter("cardno");
-        String age = request.getParameter("age");
+        //String age = request.getParameter("age");
 
     System.out.println("addStudent username"+username);
     System.out.println("addStudent pwd"+password);
-    if(a2.addUser(name,username,password,cardno,age)){
+    if(a2.addUser(username,password,cardno)){
             request.getRequestDispatcher("/admin.jsp").forward(request, response);
         }
         else {

@@ -141,6 +141,77 @@ public class workerDetails {
         }
     }
 
+    public boolean addWorker(String name, String wid, String salary, String age, String phone) {
+        Connection conn = null;
+        Statement stmt = null;
+        boolean flag = true;
+
+        try {
+            //STEP 2: Register JDBC driver
+            Class.forName("com.mysql.jdbc.Driver");
+
+            //STEP 3: Open a connection
+            System.out.println("Connecting to database...");
+            conn = DriverManager.getConnection(DB_URL, USER, PASS);
+            stmt = conn.createStatement();
+            //STEP 4: Execute a query
+            String sql = "SELECT * FROM worker WHERE workerid = \"" +
+                    wid+ "\"";
+
+            ResultSet rs = stmt.executeQuery(sql);
+            System.out.println("after rs1");
+            while (rs.next()){
+                System.out.println("inside while");
+                flag = false;
+
+            }
+//            sql="SELECT * FROM inventory WHERE username = \"" +
+//                    username+ "\"";
+//            rs = stmt.executeQuery(sql);
+//            System.out.println("after rs2");
+//            while (rs.next()){
+//                System.out.println("inside while2");
+//                flag = true;
+//
+
+
+            if(flag) {
+                System.out.println("Creating statement...");
+                System.out.println("username"+wid);
+                sql = "insert into worker (name,workerid,salary,phone,age)  values (?,?,?,?,?)";
+                PreparedStatement ps = conn.prepareStatement(sql);
+                ps.setString(1, name);
+                ps.setString(2, wid);
+                ps.setString(3, salary);
+                ps.setString(4, age);
+                ps.setString(5, phone);
+                System.out.println("username"+wid);
+                System.out.println("pwd"+name);
+                ps.executeUpdate();
+            }
+
+        } catch (SQLException se) {
+            //Handle errors for JDBC
+            se.printStackTrace();
+        } catch (Exception e) {
+            //Handle errors for Class.forName
+            e.printStackTrace();
+        } finally {
+            //finally block used to close resources
+
+            try {
+                if (conn != null)
+                    conn.close();
+            } catch (SQLException se) {
+                se.printStackTrace();
+
+            }//end finally try
+
+            System.out.println("Closing DB Connection - Goodbye!");
+            return flag;
+        }
+    }
+
     public  void updQuantity(String username,String Quantity ){
         Connection conn = null;
         Statement stmt = null;
@@ -458,7 +529,7 @@ public class workerDetails {
                 conn = DriverManager.getConnection(DB_URL, USER, PASS);
                 stmt = conn.createStatement();
                 //STEP 4: Execute a query
-                String sql = "SELECT * FROM customer WHERE username = \"" +
+                String sql = "SELECT * FROM vendor WHERE username = \"" +
                         username + "\"";
 
                 ResultSet rs = stmt.executeQuery(sql);
@@ -466,7 +537,7 @@ public class workerDetails {
                 while (rs.next()) {
                     System.out.println("inside while");
                     flag = true;
-                    sql = "DELETE  FROM customer WHERE username = \""  +
+                    sql = "DELETE  FROM vendor WHERE username = \""  +
                             username + "\"";
                     stmt.executeUpdate(sql);
 
@@ -494,6 +565,57 @@ public class workerDetails {
                 return flag;
             }
         }
+    public  boolean delete1(String username){
+        Connection conn = null;
+        Statement stmt = null;
+        boolean flag = false;
+        try {
+            //STEP 2: Register JDBC driver
+            Class.forName("com.mysql.jdbc.Driver");
+
+            //STEP 3: Open a connection
+            System.out.println("Connecting to database...");
+            conn = DriverManager.getConnection(DB_URL, USER, PASS);
+            stmt = conn.createStatement();
+            //STEP 4: Execute a query
+            String sql = "SELECT * FROM worker WHERE workerid = \"" +
+                    username + "\"";
+
+            ResultSet rs = stmt.executeQuery(sql);
+            System.out.println("after rs");
+            while (rs.next()) {
+                System.out.println("inside while");
+                flag = true;
+                sql = "DELETE  FROM worker WHERE workerid = \""  +
+                        username + "\"";
+                stmt.executeUpdate(sql);
+
+            }
+        }
+
+        catch (SQLException se) {
+            //Handle errors for JDBC
+            se.printStackTrace();
+        } catch (Exception e) {
+            //Handle errors for Class.forName
+            e.printStackTrace();
+        } finally {
+            //finally block used to close resources
+
+            try {
+                if (conn != null)
+                    conn.close();
+            } catch (SQLException se) {
+                se.printStackTrace();
+
+            }//end finally try
+
+            System.out.println("Closing DB Connection - Goodbye!");
+            return flag;
+        }
     }
+}
+
+
 
 

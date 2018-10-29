@@ -31,7 +31,7 @@
                 </div></a>
         </div>
         <div class="card col-sm-3" >
-            <a href="deleteCustomer.jsp" class="btn btn-danger" >
+            <a href="deleteVendor.jsp" class="btn btn-danger" >
                 <div class="card-body">
 
                     <img src="https://image.flaticon.com/icons/svg/121/121694.svg" class="card-img-top">

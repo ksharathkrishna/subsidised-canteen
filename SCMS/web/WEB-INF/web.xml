@@ -46,6 +46,21 @@
         <servlet-name>addVendor</servlet-name>
         <servlet-class>webLayer.addVendor</servlet-class>
     </servlet>
+    <servlet>
+
+        <servlet-name>addWorker</servlet-name>
+    <servlet-class>webLayer.addWorker</servlet-class>
+    </servlet>
+    <servlet>
+
+        <servlet-name>deleteVendor</servlet-name>
+        <servlet-class>webLayer.deleteVendor</servlet-class>
+    </servlet>
+    <servlet>
+
+        <servlet-name>deleteWorker</servlet-name>
+        <servlet-class>webLayer.deleteWorker</servlet-class>
+    </servlet>
 
 
 
@@ -90,6 +105,23 @@
         <servlet-name>addVendor</servlet-name>
         <url-pattern>/addVendor</url-pattern>
     </servlet-mapping>
+<servlet-mapping>
+
+<servlet-name>addWorker</servlet-name>
+<url-pattern>/addWorker</url-pattern>
+        </servlet-mapping>
+    <servlet-mapping>
+
+        <servlet-name>deleteVendor</servlet-name>
+        <url-pattern>/deleteVendor</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+
+        <servlet-name>deleteWorker</servlet-name>
+        <url-pattern>/deleteWorker</url-pattern>
+    </servlet-mapping>
+
+
 
 
 </web-app>

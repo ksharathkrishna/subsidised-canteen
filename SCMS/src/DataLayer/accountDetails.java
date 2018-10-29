@@ -183,7 +183,7 @@ public class accountDetails {
     }
 
     public int f=0;
-    public boolean addUser(String name, String username, String password, String cardno, String age) {
+    public boolean addUser( String username, String password, String cardno) {
         Connection conn = null;
         Statement stmt = null;
         boolean flag = false;
@@ -216,7 +216,9 @@ public class accountDetails {
                 flag = false;
                 f=1;
             }
-            sql="SELECT * FROM validation WHERE cardno = \"" +
+
+            if(f==0){
+                sql="SELECT * FROM validation WHERE cardno = \"" +
                     cardno + "\"";
             rs = stmt.executeQuery(sql);
             System.out.println("after rs");
@@ -228,17 +230,17 @@ public class accountDetails {
             if(flag) {
                 System.out.println("Creating statement...");
                 System.out.println("username"+username);
-                sql = "insert into customer (name,username,password,cardno,age)  values (?,?,?,?,?)";
+                sql = "insert into customer (username,password,cardno)  values (?,?,?)";
                 PreparedStatement ps = conn.prepareStatement(sql);
-                ps.setString(1, name);
-                ps.setString(2, username);
-                ps.setString(3, password);
-                ps.setString(4, cardno);
-                ps.setString(5, age);
+              //  ps.setString(1, name);
+                ps.setString(1, username);
+                ps.setString(2, password);
+                ps.setString(3, cardno);
+                //ps.setString(5, age);
                 System.out.println("username"+username);
                 System.out.println("pwd"+password);
                 ps.executeUpdate();
-            }
+            }}
 
         } catch (SQLException se) {
             //Handle errors for JDBC

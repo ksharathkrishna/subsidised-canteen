@@ -23,7 +23,7 @@
 <body><div class="container">
     <div class="row">
         <div class="card col-sm-4" >
-            <a href="addCustomer.jsp" class="btn btn-success" >
+            <a href="addWorker.jsp" class="btn btn-success" >
 
                 <div class="card-body">
                     <img src="https://image.flaticon.com/icons/svg/60/60807.svg" class="card-img-top">
@@ -31,14 +31,14 @@
                 </div></a>
         </div>
         <div class="card col-sm-4" >
-            <a href="deleteCustomer.jsp" class="btn btn-danger" >
+            <a href="deleteWorker.jsp" class="btn btn-danger" >
                 <div class="card-body">
 
                     <img src="https://image.flaticon.com/icons/svg/121/121694.svg" class="card-img-top">
                     <p class="card-text">Delete Worker </p>
 
                 </div></a>
-        </div><div class="card col-sm-4" ><a href="viewCustomer.jsp" class="btn btn-warning" >
+        </div><div class="card col-sm-4" ><a href="vWorker.jsp" class="btn btn-warning" >
         <div class="card-body">
             <img src="https://image.flaticon.com/icons/svg/33/33308.svg" class="card-img-top">
             <p class="card-text">Worker Details </p>
@@ -49,7 +49,7 @@
         <div class="container" style="width: 40%">
             <br/><br/><br/>
             <p align="center">
-                <a href="adminLogin.jsp"><input type="submit" class="btn btn-dark" value="Back"></a>
+                <a href="invSection.jsp"><input type="submit" class="btn btn-dark" value="Back"></a>
             </p>
         </div>
     </div></div>

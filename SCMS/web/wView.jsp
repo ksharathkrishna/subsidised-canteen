@@ -37,22 +37,22 @@
     <br/>
     <hr>
 </div>
-<table align="center" cellpadding="20" cellspacing="10" border="1" width="40%">
+<table align="center" cellpadding="20" cellspacing="10" border="1" width="70%">
     <tr>
 
     </tr>
     <tr bgcolor="yellow">
-        <td width="30%"><b>Item no     </b></td>
-        <td width="30%"><b>Item Name  </b></td>
-        <!--<td><b>Password</b></td>-->
-        <td width="30%"><b> Quantity (in KG)     </b></td>
-        <%--<td width="10%"><b> Age</b></td>--%>
+        <td width="30%"><b>Worker ID     </b></td>
+        <td width="30%"><b>Name  </b></td>
+        <td width="30%"> <b>Phone</b></td>
+        <td width="30%"><b> Salary   </b></td>
+        <td width="10%"><b> Age</b></td>
     </tr>
     <%
         try{
             connection = DriverManager.getConnection(connectionUrl+dbName, userId, password);
             statement=connection.createStatement();
-            String sql ="SELECT * FROM inventory ";
+            String sql ="SELECT * FROM worker ";
             System.out.println("sql"+sql);
 
             resultSet = statement.executeQuery(sql);
@@ -60,11 +60,11 @@
     %>
     <tr bgcolor="white">
 
-        <td><%=resultSet.getString("ItemID") %></td>
-        <td><%=resultSet.getString("ItemName") %></td>
-        <%--<!--<td><%=resultSet.getString("password") %></td>-->--%>
-        <td><%=resultSet.getString("quantity") %></td>
-        <%--<td><%=resultSet.getString("age") %></td>--%>
+        <td><%=resultSet.getString("workerID") %></td>
+        <td><%=resultSet.getString("Name") %></td>
+        <td><%=resultSet.getString("phone") %></td>
+        <td><%=resultSet.getString("salary") %></td>
+        <td><%=resultSet.getString("age") %></td>
 
     </tr>
 

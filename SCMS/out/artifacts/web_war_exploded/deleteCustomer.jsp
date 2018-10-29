@@ -28,14 +28,14 @@
 <body >
 <div class="container" style="width: 40%">
     <br/><br/>
-<h2 class="heading"> Enter Username of account to be deleted</h2> <br><br><br>
+<h2 class="heading"> Enter Username of account to be removed</h2> <br><br><br>
 <form align ="center" action="/deleteStudent" method="post">
     <%--Username: <input type="text" name="username" width="30"><br><br><br><br>--%>
     <%--<input type="submit" value="delete"><br><br><br><br>--%>
     <label for="username">Email</label>
     <input type="email" class="form-control" name="username" id="username" placeholder="Email">
         <br/><br/>
-        <button type="submit" value="Delete" class="btn btn-Danger">Delete</button>
+        <button type="submit" value="Delete" class="btn btn-Danger">Remove</button>
         <a href="admin.jsp" class="btn btn-outline-dark" >Back</a>
 
 

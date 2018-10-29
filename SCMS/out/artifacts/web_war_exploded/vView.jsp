@@ -42,17 +42,17 @@
 
     </tr>
     <tr bgcolor="yellow">
-        <td width="30%"><b>Item no     </b></td>
-        <td width="30%"><b>Item Name  </b></td>
-        <!--<td><b>Password</b></td>-->
-        <td width="30%"><b> Quantity (in KG)     </b></td>
+        <td width="20%"><b>Item no     </b></td>
+        <td width="30%"><b> Name  </b></td>
+        <td width="30%" d><b>Username</b></tdwid>
+        <td width="30%"><b> Phone Number     </b></td>
         <%--<td width="10%"><b> Age</b></td>--%>
     </tr>
     <%
         try{
             connection = DriverManager.getConnection(connectionUrl+dbName, userId, password);
             statement=connection.createStatement();
-            String sql ="SELECT * FROM inventory ";
+            String sql ="SELECT * FROM vendor WHERE itemid!=23 ";
             System.out.println("sql"+sql);
 
             resultSet = statement.executeQuery(sql);
@@ -61,9 +61,9 @@
     <tr bgcolor="white">
 
         <td><%=resultSet.getString("ItemID") %></td>
-        <td><%=resultSet.getString("ItemName") %></td>
-        <%--<!--<td><%=resultSet.getString("password") %></td>-->--%>
-        <td><%=resultSet.getString("quantity") %></td>
+        <td><%=resultSet.getString("name") %></td>
+        <td><%=resultSet.getString("username") %></td>
+        <td><%=resultSet.getString("phoneno") %></td>
         <%--<td><%=resultSet.getString("age") %></td>--%>
 
     </tr>

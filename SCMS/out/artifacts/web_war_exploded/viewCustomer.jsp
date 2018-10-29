@@ -52,7 +52,7 @@
         try{
             connection = DriverManager.getConnection(connectionUrl+dbName, userId, password);
             statement=connection.createStatement();
-            String sql ="SELECT CARDNO,USERNAME,NAME,AGE FROM customer WHERE username!='xyz@abc'";
+            String sql ="SELECT PHONENO,USERNAME,NAME,AGE FROM customer,validation WHERE customer.cardno=validation.cardno";
             System.out.println("sql"+sql);
 
             resultSet = statement.executeQuery(sql);
@@ -60,7 +60,7 @@
     %>
     <tr bgcolor="white">
 
-        <td><%=resultSet.getString("cardno") %></td>
+        <td><%=resultSet.getString("phoneno") %></td>
         <td><%=resultSet.getString("username") %></td>
         <%--<!--<td><%=resultSet.getString("password") %></td>-->--%>
         <td><%=resultSet.getString("name") %></td>
