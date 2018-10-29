@@ -28,11 +28,11 @@
     body {background-image:url("im.jpg");}
 
 </style>
-<h2 align="center"><font><strong>South Indian</strong></font></h2>
+<h2 align="center"><font><strong>North Indian</strong></font></h2>
 <div class="container" align="centre" style="width: 20%">
     <br/>
-    <a href="orderFood.jsp"  align="centre" class="btn btn-success" >Return to Menu</a>
-    <a href="buy.jsp"  align="centre" class="btn btn-warning" >Order</a>
+    <a href="orderFood.jsp"  align="centre" class="btn btn-success" >Return to Food Menu</a>
+    <a href="buy.jsp"  align="centre" class="btn btn-warning" >Order Food</a>
     <br/>
     <br/>
     <hr>

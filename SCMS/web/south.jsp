@@ -31,7 +31,7 @@
 <h2 align="center"><font><strong>South Indian</strong></font></h2>
 <div class="container" align="centre" style="width: 20%">
     <br/>
-    <a href="orderFood.jsp"  align="centre" class="btn btn-success" >Return to Menu</a>
+    <a href="orderFood.jsp"  align="centre" class="btn btn-success" >Return to Food Menu</a>
     <a href="buy.jsp"  align="centre" class="btn btn-warning" >Order</a>
     <br/>
     <br/>
