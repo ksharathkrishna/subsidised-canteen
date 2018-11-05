@@ -8,7 +8,7 @@
 
 </head>
 <%--<h2 class="heading" style="color: black" style="background: #009900">WELCOME ADMIN</h2>--%>
-<header style="background: lightgray">
+<header style="background: darkorange">
     <br/>
     <br>
     <br>
@@ -22,7 +22,7 @@
 
 <body><div class="container">
     <div class="row">
-        <div class="card col-sm-4" >
+        <div class="card col-sm-3" >
             <a href="south.jsp" class="btn btn-danger" >
 
                 <div class="card-body">
@@ -30,7 +30,7 @@
                     <p class="card-text">South Indian </p>
                 </div></a>
         </div>
-        <div class="card col-sm-4" >
+        <div class="card col-sm-3" >
             <a href="north.jsp" class="btn btn-info" >
                 <div class="card-body">
 
@@ -38,18 +38,25 @@
                     <p class="card-text">North Indian </p>
 
                 </div></a>
-        </div><div class="card col-sm-4" ><a href="chinese.jsp" class="btn btn-warning" >
+        </div><div class="card col-sm-3" ><a href="chinese.jsp" class="btn btn-warning" >
         <div class="card-body">
             <img src="https://image.flaticon.com/icons/svg/135/135427.svg" class="card-img-top">
             <p class="card-text">Chinese </p>
 
         </div></a>
     </div>
+        <div class="card col-sm-3" ><a href="feedBack.jsp" class="btn btn-primary" >
+            <div class="card-body">
+                <img src="https://image.flaticon.com/icons/svg/1027/1027692.svg" class="card-img-top">
+                <p class="card-text">Feedback </p>
+
+            </div></a>
+        </div>
 
         <div class="container" style="width: 40%">
             <br/><br/><br/>
             <p align="center">
-                <a href="index.jsp"><input type="submit" class="btn btn-dark" value="Back"></a>
+                <a href="index.jsp"><input type="submit" class="btn btn-dark btn-lg" value="Back"></a>
             </p>
         </div>
     </div></div>

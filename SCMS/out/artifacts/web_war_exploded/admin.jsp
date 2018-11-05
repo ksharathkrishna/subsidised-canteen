@@ -58,7 +58,7 @@
         <div class="container" style="width: 40%">
         <br/><br/><br/>
         <p align="center">
-        <a href="adminLogin.jsp"><input type="submit" class="btn btn-dark" value="Back"></a>
+        <a href="adminLogin.jsp"><input type="submit" class="btn btn-dark btn-lg" value="Back"></a>
         </p>
         </div>
     </div></div>

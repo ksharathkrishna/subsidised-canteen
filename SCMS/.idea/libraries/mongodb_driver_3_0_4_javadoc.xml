@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="mongodb-driver-3.0.4-javadoc">
+    <CLASSES />
+    <JAVADOC />
+    <NATIVE>
+      <root url="jar://$PROJECT_DIR$/mongodb-driver-3.0.4-javadoc.jar!/" />
+    </NATIVE>
+    <SOURCES />
+  </library>
+</component>

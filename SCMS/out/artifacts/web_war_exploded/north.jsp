@@ -31,8 +31,8 @@
 <h2 align="center"><font><strong>North Indian</strong></font></h2>
 <div class="container" align="centre" style="width: 20%">
     <br/>
-    <a href="orderFood.jsp"  align="centre" class="btn btn-success" >Return to Food Menu</a>
-    <a href="buy.jsp"  align="centre" class="btn btn-warning" >Order Food</a>
+    <a href="orderFood.jsp"  align="centre" class="btn btn-success btn-lg" >Return to Food Menu</a>
+    <a href="buy.jsp"  align="centre" class="btn btn-warning btn-lg" >Order Food</a>
     <br/>
     <br/>
     <hr>

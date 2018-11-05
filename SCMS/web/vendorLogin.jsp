@@ -32,9 +32,9 @@
             <input type="number" name="quantity" class="form-control" id="quan" placeholder="Enter Quantity in kg">
         </div>
         <br>
-        <button type="submit" value="Login" class="btn btn-warning">Submit</button>
+        <button type="submit" value="Login" class="btn btn-warning btn-lg">Submit</button>
 
-        <a href="vendor.jsp" class="btn btn-outline-dark" >Back</a>
+        <a href="vendor.jsp" class="btn btn-outline-dark btn-lg" >Back</a>
     </form>
 </div>
 

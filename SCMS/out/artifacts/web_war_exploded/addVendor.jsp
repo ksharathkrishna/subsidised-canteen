@@ -19,13 +19,13 @@
 
 <div class="container" style="width: 40%">
     <br/><br/>
-    <h2 class="heading" >Customer Registration</h2>
+    <h2 class="heading" >Vendor Registration</h2>
     <hr>
     <form align = "center" action="${pageContext.request.contextPath}/addVendor" method="post">
         <div class="form-row">
             <div class="form-group col-md-6">
-                <label for="username">Email</label>
-                <input type="email" pattern="[a-z0-9._%+-]+@inv" class="form-control" name="username" id="username" placeholder="Email">
+                <label for="username">username</label>
+                <input type="email" pattern="[a-z0-9._%+-]+@inv" class="form-control" name="username" id="username" placeholder="username">
             </div>
             <div class="form-group col-md-6">
                 <label for="password">Password</label>
@@ -38,19 +38,19 @@
         </div>
         <div class="form-group">
             <label for="cardno">phone</label>
-            <input type="text" pattern =\d* maxlength="10" minlength="10" class="form-control" name="phone" id="cardno" placeholder="Enter phone numbe">
+            <input type="text" pattern =\d* maxlength="10" minlength="10" class="form-control" name="phone" id="cardno" placeholder="Enter phone number">
         </div>
         <div class="container" style="width:40%">
             <div class="form-group ">
                 <label for="age">itemid</label>
-                <input type="text" class="form-control" name="itemid" id="age" placeholder="Enter Age">
+                <input type="text" class="form-control" name="itemid" id="age" placeholder="Enter ID">
             </div>
         </div>
 
 
 
-        <button type="submit" value="Add" class="btn btn-warning">Register</button>
-        <a href="vendor.jsp" class="btn btn-outline-dark" >Back</a>
+        <button type="submit" value="Add" class="btn btn-warning btn-lg">Register</button>
+        <a href="vendor.jsp" class="btn btn-outline-dark btn-lg" >Back</a>
     </form>
 
 

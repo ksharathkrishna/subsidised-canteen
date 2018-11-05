@@ -28,9 +28,9 @@
             <input type="number" name="quantity" class="form-control" id="exampleInputPassword1" placeholder="0">
         </div>
         <br>
-        <button type="submit" value="Login" class="btn btn-warning">Update</button>
+        <button type="submit" value="Login" class="btn btn-warning btn-lg">Update</button>
 
-        <a href="admin.jsp" class="btn btn-outline-dark" >Back</a>
+        <a href="admin.jsp" class="btn btn-outline-dark btn-lg" >Back</a>
     </form>
 </div>
 

@@ -49,8 +49,8 @@
 
 
 
-        <button type="submit" value="Add" class="btn btn-warning">Register</button>
-        <a href="vendor.jsp" class="btn btn-outline-dark" >Back</a>
+        <button type="submit" value="Add" class="btn btn-warning btn-lg">Register</button>
+        <a href="worker.jsp" class="btn btn-outline-dark btn-lg" >Back</a>
     </form>
 
 

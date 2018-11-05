@@ -28,9 +28,9 @@
             <input type="number" min="1" name="quantity" class="form-control" id="exampleInputPassword1" placeholder="1">
         </div>
         <br>
-        <button type="submit" value="Login" class="btn btn-warning">Confirm</button>
+        <button type="submit" value="Login" class="btn btn-warning btn-lg">Confirm</button>
 
-        <a href="orderFood.jsp" class="btn btn-outline-dark" >Cancel</a>
+        <a href="orderFood.jsp" class="btn btn-outline-dark btn-lg" >Cancel</a>
     </form>
 </div>
 

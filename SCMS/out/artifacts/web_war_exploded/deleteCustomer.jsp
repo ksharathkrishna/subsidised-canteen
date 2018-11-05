@@ -35,8 +35,8 @@
     <label for="username">Email</label>
     <input type="email" class="form-control" name="username" id="username" placeholder="Email">
         <br/><br/>
-        <button type="submit" value="Delete" class="btn btn-Danger">Remove</button>
-        <a href="admin.jsp" class="btn btn-outline-dark" >Back</a>
+        <button type="submit" value="Delete" class="btn btn-Danger btn-lg">Remove</button>
+        <a href="admin.jsp" class="btn btn-outline-dark btn-lg" >Back</a>
 
 
 </form>
