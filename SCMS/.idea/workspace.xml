@@ -44,11 +44,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addWorker.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="addWorker.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/addWorker.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="4">
               <caret line="31" column="148" selection-start-line="31" selection-start-column="148" selection-end-line="31" selection-end-column="148" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="orderFood.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/orderFood.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="41">
+              <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+              <folding>
+                <element signature="n#style#0;n#h2#0;n#header#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -76,15 +88,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="112">
               <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addFood.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/addFood.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -159,7 +162,6 @@
         <option value="$PROJECT_DIR$/web/buy.jsp" />
         <option value="$PROJECT_DIR$/web/chinese.jsp" />
         <option value="$PROJECT_DIR$/web/north.jsp" />
-        <option value="$PROJECT_DIR$/web/orderFood.jsp" />
         <option value="$PROJECT_DIR$/web/south.jsp" />
         <option value="$PROJECT_DIR$/web/vendor.jsp" />
         <option value="$PROJECT_DIR$/web/worker.jsp" />
@@ -195,6 +197,7 @@
         <option value="$PROJECT_DIR$/web/wView.jsp" />
         <option value="$PROJECT_DIR$/web/addCustomer.jsp" />
         <option value="$PROJECT_DIR$/web/addWorker.jsp" />
+        <option value="$PROJECT_DIR$/web/orderFood.jsp" />
       </list>
     </option>
   </component>
@@ -214,7 +217,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="160" />
     <option name="y" value="20" />
     <option name="width" value="803" />
@@ -790,12 +793,12 @@
       <workItem from="1541171807965" duration="36000" />
       <workItem from="1541263525598" duration="11085000" />
       <workItem from="1541743529134" duration="685000" />
-      <workItem from="1541867331106" duration="37426000" />
+      <workItem from="1541867331106" duration="38654000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="195450000" />
+    <option name="totallyTimeSpent" value="196678000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="752" extended-state="6" />
@@ -912,13 +915,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
           <caret line="59" column="86" selection-start-line="59" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/orderFood.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="58" column="83" selection-start-line="58" selection-start-column="83" selection-end-line="58" selection-end-column="83" />
         </state>
       </provider>
     </entry>
@@ -1270,6 +1266,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4">
           <caret line="31" column="148" selection-start-line="31" selection-start-column="148" selection-end-line="31" selection-end-column="148" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/orderFood.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding>
+            <element signature="n#style#0;n#h2#0;n#header#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

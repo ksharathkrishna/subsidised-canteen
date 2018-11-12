@@ -15,7 +15,7 @@
     <div class="container" style="width: 40%">
         <%--<h1 class="heading" ><input type="image" style="width: 30%" src="https://image.flaticon.com/sprites/new_packs/133293-restaurant-icons.png" alt=""></h1>--%>
     </div>
-    <h2 class="heading"  style="color:black" >Menu</h2>
+    <h2 class="heading"  style="color:white" >MENU</h2>
     <br>
 </header>
 <br><br>
