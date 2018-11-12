@@ -21,15 +21,15 @@
         <div class="form-group">
             <label for="exampleInputEmail1">Username</label>
             <input type="email" name="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter username">
-            <large id="emailHelp" class="form-text text-muted">Username Should be of the form @scms</large>
+            <large id="emailHelp" class="form-text text-muted">Username Should be of the form @inv</large>
         </div>
         <div class="form-group">
             <label for="exampleInputPassword1">Password</label>
             <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
         </div>
         <div class="form-group">
-            <label for="quan">Username</label>
-            <input type="number" name="quantity" class="form-control" id="quan" placeholder="Enter Quantity in kg">
+            <label for="quan">Quantity</label>
+            <input type="number" min="1" name="quantity" class="form-control" id="quan" placeholder="Enter Quantity in kg">
         </div>
         <br>
         <button type="submit" value="Login" class="btn btn-warning btn-lg">Submit</button>

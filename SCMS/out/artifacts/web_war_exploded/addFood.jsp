@@ -25,7 +25,7 @@
         </div>
         <div class="form-group">
             <label for="exampleInputPassword1">Quantity</label>
-            <input type="number" name="quantity" class="form-control" id="exampleInputPassword1" placeholder="0">
+            <input type="number" min="1" name="quantity" class="form-control" id="exampleInputPassword1" placeholder="0">
         </div>
         <br>
         <button type="submit" value="Login" class="btn btn-warning btn-lg">Update</button>

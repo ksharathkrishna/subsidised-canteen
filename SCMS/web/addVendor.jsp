@@ -42,8 +42,8 @@
         </div>
         <div class="container" style="width:40%">
             <div class="form-group ">
-                <label for="age">itemid</label>
-                <input type="text" class="form-control" name="itemid" id="age" placeholder="Enter ID">
+                <label for="age">Age</label>
+                <input type="number" min="18" class="form-control" name="itemid" id="age" placeholder="Enter ID">
             </div>
         </div>
 

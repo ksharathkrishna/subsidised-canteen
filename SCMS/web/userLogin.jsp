@@ -17,6 +17,9 @@
     <br><br>
     <h2 class="heading" >Customer Login</h2>
     <hr>
+    <br>
+    <br>
+    <br>
     <form align="center" action="/userLogin" method="post">
         <div class="form-group">
             <label for="exampleInputEmail1">Username</label>

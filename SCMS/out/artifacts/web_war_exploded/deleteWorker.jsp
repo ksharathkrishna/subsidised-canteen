@@ -29,6 +29,7 @@
 <div class="container" style="width: 40%">
     <br/><br/>
     <h2 class="heading"> Enter worker ID of worker to be removed</h2> <br><br><br>
+    <hr>
     <form align ="center" action="/deleteWorker" method="post">
         <%--Username: <input type="text" name="username" width="30"><br><br><br><br>--%>
         <%--<input type="submit" value="delete"><br><br><br><br>--%>

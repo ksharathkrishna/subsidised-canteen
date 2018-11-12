@@ -107,7 +107,7 @@ public class workerDetails {
             if(flag) {
                 System.out.println("Creating statement...");
                 System.out.println("username"+username);
-                sql = "insert into vendor (name,username,password,itemid,phoneno)  values (?,?,?,?,?)";
+                sql = "insert into vendor (name,username,password,Age,phoneno)  values (?,?,?,?,?)";
                 PreparedStatement ps = conn.prepareStatement(sql);
                 ps.setString(1, name);
                 ps.setString(2, username);

@@ -28,10 +28,10 @@
    // DBCursor cursor = collection.find();
 
     // while(cursor.hasNext()) {
-    BasicDBObject query = new BasicDBObject();
-    BasicDBObject field = new BasicDBObject();
-    field.put("_id", 0);
-    DBCursor cursor = collection.find(query,field);
+//    BasicDBObject query = new BasicDBObject();
+//    BasicDBObject field = new BasicDBObject();
+//    field.put("_id", 0);
+    DBCursor cursor = collection.find();
      //   DBObject o = cursor.next();
 
        // String label = (String) o.get("url");
@@ -62,24 +62,24 @@
 
     </tr>
     <tr bgcolor="yellow">
-        <td width="100%"><b>Reviews     </b></td>
-        <%--<td width="30%"><b> Name  </b></td>--%>
-        <%--<td width="30%" d><b>Username</b></td>--%>
+        <td width="10%"><b>Ratings</b></td>
+        <td width="45%"><b>Quality of Food   </b></td>
+        <td width="45%" ><b>Services</b></td>
         <%--<td width="30%"><b> Phone Number     </b></td>--%>
         <%--&lt;%&ndash;<td width="10%"><b> Age</b></td>&ndash;%&gt;--%>
     </tr>
     <%
         try{    while(cursor.hasNext()) {
 
-            //DBObject o = cursor.next();
+            DBObject o = cursor.next();
            // System.out.println(cursor.next());
 
     %>
     <tr bgcolor="white">
 
-        <td><%= cursor.next()%></td>
-        <%--<td><%=resultSet.getString("name") %></td>--%>
-        <%--<td><%=resultSet.getString("username") %></td>--%>
+        <td><%= o.get("Rating")%></td>
+        <td><%= o.get("Food Feedback") %></td>
+        <td><%= o.get("Service Feedback") %></td>
         <%--<td><%=resultSet.getString("phoneno") %></td>--%>
         <%--&lt;%&ndash;<td><%=resultSet.getString("age") %></td>&ndash;%&gt;--%>
 

@@ -25,11 +25,11 @@
             <label for="exampleInputEmail1">Rate your Experience</label>
             <select name="name" class="form-control" id="exampleInputEmail1" >
             <%--<large id="emailHelp" class="form-text text-muted">enter # between 1 to 5</large>--%>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
             <option>5</option>
+            <option>4</option>
+            <option>3</option>
+            <option>2</option>
+            <option>1</option>
             </select>
                 <%--<input id="input-1" name="input-1" class="rating rating-loading" data-min="0" data-max="5" data-step="0.1" value="2">--%>
 
@@ -37,12 +37,12 @@
         </div>
         <div class="form-group" style="width: content-box "  >
             <label for="exampleFormControlTextarea3"> Food experience</label>
-            <textarea type="text" minlength="3" name="country" class="form-control" id="exampleFormControlTextarea3" rows="3" placeholder="What do think about of quality of food">
-            </textarea> </div>
+            <input type="text" minlength="3" name="country" class="form-control" id="exampleFormControlTextarea3" rows="3" placeholder="What do think about of quality of food">
+            </input> </div>
         <div class="form-group" style="width: content-box "  >
             <label for="exampleFormControlTextarea1">Service experience</label>
-            <textarea type="text" minlength="30" name="service" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="How was the experience">
-            </textarea>
+            <input type="text" minlength="3" name="service" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="How was the experience">
+            </input>
         </div>
         <br>
         <button type="submit" value="Login" class="btn btn-warning btn-lg">Submit</button>

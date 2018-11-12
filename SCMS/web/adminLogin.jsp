@@ -13,6 +13,7 @@
 <body>
 <br><br><br><br>
 <h4 align="center" >ENTER PASSWORD</h4>
+<hr>
 <br><br><br><br>
 <form align="center" action="/adminLogin" method="post">
     <div class="container" style="width:40%;">

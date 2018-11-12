@@ -31,7 +31,7 @@
 <h2 align="center"><font><strong>Customer Details</strong></font></h2>
 <div class="container" align="centre" style="width: 20%">
     <br/>
-    <a href="invSection.jsp"  align="centre" class="btn btn-success btn-lg" >Return to Admin Page</a>
+    <a href="invSection.jsp"  align="centre" class="btn btn-success btn-lg" >Admin Page</a>
     <a href="index.jsp"  align="centre" class="btn btn-warning btn-lg" >Return Home</a>
     <br/>
     <br/>
