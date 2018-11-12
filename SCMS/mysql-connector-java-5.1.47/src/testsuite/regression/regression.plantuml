@@ -1,0 +1,1704 @@
+@startuml
+
+title __REGRESSION's Class Diagram__\n
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class BlobRegressionTest {
+            + BlobRegressionTest()
+            {static} + main()
+            + testBug2670()
+            + testUpdateLongBlobGT16M()
+            + testUpdatableBlobsWithCharsets()
+            + testBug5490()
+            + testBug8096()
+            + testBug9040()
+            + testBug10850()
+            + testBug34677()
+            + testBug20453671()
+            + testBug20453712()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class CachedRowsetTest {
+            + CachedRowsetTest()
+            {static} + main()
+            + testBug5188()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class CallableStatementRegressionTest {
+            + CallableStatementRegressionTest()
+            {static} + main()
+            + testBug3539()
+            + testBug3540()
+            + testBug7026()
+            + testBug9319()
+            + testBug9682()
+            + testBug10310()
+            + testBug12417()
+            + testBug15121()
+            + testBug15464()
+            + testBug17898()
+            + testBug21462()
+            + testBug22024()
+            + testBug22297()
+            + testHugeNumberOfParameters()
+            + testPrepareOfMultiRs()
+            + testBug25379()
+            + testBug25715()
+            # serverSupportsStoredProcedures()
+            + testBug26143()
+            + testBug26959()
+            + testBug27400()
+            + testBug28689()
+            + testBug31823()
+            + testBug32246()
+            - doBug32246()
+            + testBitSp()
+            + testNotReallyCallableStatement()
+            + testBug35199()
+            + testBug49831()
+            - execProcBug49831()
+            + testBug43576()
+            + testBug57022()
+            + testBug60816()
+            + testBug79561()
+            + testBug84324()
+            + testBug87704()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class CharsetRegressionTest {
+            + CharsetRegressionTest()
+            + testBug73663()
+            + testBug72630()
+            + testBug25504578()
+            + testBug81196()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class Bug73663StatementInterceptor {
+            + preProcess()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class ConnectionRegressionTest {
+            # testServerPrepStmtDeadlockCounter : int
+            + ConnectionRegressionTest()
+            {static} + main()
+            + testBug1914()
+            + testBug3554()
+            + testBug3790()
+            + testCollation41()
+            + testSetReadOnly()
+            - getCharacterSetsAndCollations()
+            + testBug4334()
+            {static} - killConnection()
+            + testBug6966()
+            + testBug7952()
+            + testBug7607()
+            + testBug9206()
+            + testNewCharsetsConfiguration()
+            + testBug10144()
+            + testBug10496()
+            + testBug11259()
+            + testBug11879()
+            + testBug11976()
+            + testBug12218()
+            + testBug12229()
+            + testBug12752()
+            + testBug12753()
+            + testBug13048()
+            + testBug13453()
+            + testBug15065()
+            + testBug15544()
+            + testCSC5765()
+            + testBug15570()
+            + testBug23281()
+            + testBug24706()
+            + testBug25514()
+            - findNamedThreadCount()
+            + testBug23626()
+            + testBug25545()
+            + testBug36948()
+            + testBug27655()
+            + testFailoverReadOnly()
+            + testPropertiesDescriptionsKeys()
+            + testBug29106()
+            + testBug29852()
+            + testBug22643()
+            - checkPingQuery()
+            + testBug31053()
+            + testBug32877()
+            + testBug33734()
+            + testBug34703()
+            + testBug34937()
+            + testBug35660()
+            + testBug37570()
+            + testUnreliableSocketFactory()
+            + testReplicationConnectionGroupHostManagement()
+            + testReplicationConnectionHostManagement()
+            + testReplicationConnectWithNoMaster()
+            + testReplicationConnectWithMultipleMasters()
+            + testReplicationConnectionMemory()
+            + testReplicationJMXInterfaces()
+            - getReplicationMBean()
+            + testBug43421()
+            + testBug48442()
+            + testBug45171()
+            + testBug44587()
+            + testBug45419()
+            {static} + containsMessage()
+            + testBug46637()
+            + testBug32216()
+            - checkBug32216()
+            + testBug44324()
+            + testBug46925()
+            + testBug47494()
+            + testBug48486()
+            + testBug48605()
+            + testBug49700()
+            + testBug51266()
+            + testBug51643()
+            + testBug51783()
+            + testAutoCommitLB()
+            + testBug56429()
+            + testBug56955()
+            + testBug57262()
+            + testBug58706()
+            + testStatementComment()
+            + testReconnectWithCachedConfig()
+            + testBug61201()
+            + testChangeUser()
+            + testChangeUserNoDb()
+            + testChangeUserClosedConn()
+            + testBug63284()
+            + testDefaultPlugin()
+            + testDisabledPlugins()
+            + testAuthTestPlugin()
+            + testTwoQuestionsPlugin()
+            + testThreeAttemptsPlugin()
+            + testOldPasswordPlugin()
+            + testAuthCleartextPlugin()
+            + testSha256PasswordPlugin()
+            - assertCurrentUser()
+            - pluginIsActive()
+            - allowsRsa()
+            + testBug36662()
+            + testBug37931()
+            + testBug64205()
+            + testIsLocal()
+            + testBug57662()
+            + testBug14563127()
+            + testBug11237()
+            + testStackOverflowOnMissingInterceptor()
+            + testExpiredPassword()
+            + testBug68011()
+            + testConnectionAttributes()
+            - testConnectionAttributes()
+            + testBug16224249()
+            + testBug68763()
+            + testBug68733()
+            + testBug68400()
+            - testMemLeakBatch()
+            - countTestConnections()
+            + testBug17251955()
+            + testBug69506()
+            + testBug69746()
+            - isStatementClosedForTestBug69746()
+            - isResultSetClosedForTestBug69746()
+            + testLongAuthResponsePayload()
+            + testBug69452()
+            + testBug69777()
+            + testBug69579()
+            + testBug71038()
+            - getTestReplicationConnectionNoSlaves()
+            + testReplicationConnectionNoSlavesRemainOnMaster()
+            + testReplicationConnectionNoSlavesBasics()
+            + testBug71850()
+            + testBug67803()
+            + testBug72712()
+            + testBug62577()
+            - testBug62577TestUrl()
+            + testBug18869381()
+            - testBug18869381WithProperties()
+            + testBug73053()
+            + testBug19354014()
+            + testBug75168()
+            + testBug71084()
+            - testBug71084AssertCase()
+            + testBug20685022()
+            + testBug75592()
+            + testBug20825727()
+            - testBug20825727CreateUser()
+            - testBug20825727ChangePassword()
+            - testBug20825727TestLogin()
+            + testBug75670()
+            + testBug16634180()
+            + testBug21934573()
+            + testBug21947042()
+            + testBug56100()
+            - testBug56100AssertHost()
+            + testTLSVersion()
+            + testEnableTLSVersion()
+            + testBug21286268()
+            - testBug21286268AssertConnectedToAndReadOnly()
+            + testBug77171()
+            + testBug22730682()
+            + testBug22848249()
+            - subTestBug22848249A()
+            - subTestBug22848249B()
+            - subTestBug22848249C()
+            - subTestBug22848249D()
+            + testBug22678872()
+            - testBug22678872CheckConnectionsHistory()
+            + testBug77649()
+            + testBug74711()
+            + testBug75209()
+            + testBug70785()
+            + testBug88242()
+            + testBug88232()
+            + testBug27131768()
+            + testBug79612()
+            + testCachingSha2PasswordPlugin()
+            + testBug88227()
+            + testBug26819691()
+            + testBug86741()
+            + testBug89948()
+            - testBug89948Check()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class PortNumberSocketFactory {
+            + PortNumberSocketFactory()
+            + connect()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class ForcedLoadBalanceStrategy {
+            {static} - forcedFutureServer : String
+            {static} - forceFutureServerTimes : int
+            {static} + forceFutureServer()
+            {static} + dontForceFutureServer()
+            + pickConnection()
+            + destroy()
+            + init()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class CountingReBalanceStrategy {
+            {static} - rebalancedTimes : int
+            {static} + getTimesRebalanced()
+            {static} + resetTimesRebalanced()
+            + pickConnection()
+            + destroy()
+            + init()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class AuthTestPlugin {
+            - password : String
+            + init()
+            + destroy()
+            + getProtocolPluginName()
+            + requiresConfidentiality()
+            + isReusable()
+            + setAuthenticationParameters()
+            + nextAuthenticationStep()
+            + reset()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class TwoQuestionsPlugin {
+            - password : String
+            + init()
+            + destroy()
+            + getProtocolPluginName()
+            + requiresConfidentiality()
+            + isReusable()
+            + setAuthenticationParameters()
+            + nextAuthenticationStep()
+            + reset()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class ThreeAttemptsPlugin {
+            - password : String
+            - counter : int
+            + init()
+            + destroy()
+            + getProtocolPluginName()
+            + requiresConfidentiality()
+            + isReusable()
+            + setAuthenticationParameters()
+            + nextAuthenticationStep()
+            + reset()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class TestBug64205StatementInterceptor {
+            + postProcess()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class PollTask {
+            - c : Connection
+            - num : int
+            - st1 : Statement
+            - pst1 : PreparedStatement
+            ~ PollTask()
+            + run()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class CancelTask {
+            - c : Connection
+            - num : int
+            ~ CancelTask()
+            + run()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class ThreadPerTaskExecutor {
+            + execute()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class Bug71038StatementInterceptor {
+            ~ cnt : int
+            + preProcess()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class TestBug71850ExceptionInterceptor {
+            - counter : int
+            + init()
+            + destroy()
+            + interceptException()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class TestBug67803ExceptionInterceptor {
+            + init()
+            + destroy()
+            + interceptException()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class Bug72712StatementInterceptor {
+            + preProcess()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class TestBug73053SocketFactory {
+            ~ underlyingSocket : Socket
+            + connect()
+            + beforeHandshake()
+            + afterHandshake()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class TestBug73053SocketWrapper {
+            ~ underlyingSocket : Socket
+            + TestBug73053SocketWrapper()
+            + connect()
+            + connect()
+            + bind()
+            + getInetAddress()
+            + getLocalAddress()
+            + getPort()
+            + getLocalPort()
+            + getRemoteSocketAddress()
+            + getLocalSocketAddress()
+            + getChannel()
+            + getInputStream()
+            + getOutputStream()
+            + setTcpNoDelay()
+            + getTcpNoDelay()
+            + setSoLinger()
+            + getSoLinger()
+            + sendUrgentData()
+            + setOOBInline()
+            + getOOBInline()
+            + setSoTimeout()
+            + getSoTimeout()
+            + setSendBufferSize()
+            + getSendBufferSize()
+            + setReceiveBufferSize()
+            + getReceiveBufferSize()
+            + setKeepAlive()
+            + getKeepAlive()
+            + setTrafficClass()
+            + getTrafficClass()
+            + setReuseAddress()
+            + getReuseAddress()
+            + close()
+            + shutdownInput()
+            + shutdownOutput()
+            + toString()
+            + isConnected()
+            + isBound()
+            + isClosed()
+            + isInputShutdown()
+            + isOutputShutdown()
+            + setPerformancePreferences()
+            + hashCode()
+            + equals()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class TestBug73053InputStreamWrapper {
+            ~ underlyingInputStream : InputStream
+            ~ loopCount : int
+            + TestBug73053InputStreamWrapper()
+            + read()
+            + read()
+            + read()
+            + skip()
+            + available()
+            + close()
+            + mark()
+            + reset()
+            + markSupported()
+            + hashCode()
+            + equals()
+            + toString()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class Bug75168LoadBalanceExceptionChecker {
+            + init()
+            + destroy()
+            + shouldExceptionTriggerFailover()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class Bug75168StatementInterceptor {
+            {static} ~ previousConnection : Connection
+            + destroy()
+            + preProcess()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class Bug75592StatementInterceptor {
+            + preProcess()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class TestBug21934573ExceptionInterceptor {
+            {static} ~ mainThreadLock : Object
+            {static} - threadIsWaiting : boolean
+            {static} - replConnGroupLocks : Set<String>
+            - useSyncGroupServersLock : boolean
+            + init()
+            + destroy()
+            + interceptException()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class Bug56100StatementInterceptor {
+            + preProcess()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class Bug88227StatementInterceptor {
+            {static} + mayHaveWarnings : boolean
+            + init()
+            + executeTopLevelOnly()
+            + preProcess()
+            + postProcess()
+            + destroy()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class DataSourceRegressionTest {
+            {static} + DS_DATABASE_PROP_NAME : String
+            {static} + DS_HOST_PROP_NAME : String
+            {static} + DS_PASSWORD_PROP_NAME : String
+            {static} + DS_PORT_PROP_NAME : String
+            {static} + DS_USER_PROP_NAME : String
+            - ctx : Context
+            - tempDir : File
+            + DataSourceRegressionTest()
+            {static} + main()
+            + setUp()
+            + tearDown()
+            + testBug4808()
+            + testBug3848()
+            + testBug3920()
+            + testBug19169()
+            + testBug20242()
+            - bindDataSource()
+            - createJNDIContext()
+            - lookupDatasourceInJNDI()
+            + testCSC4616()
+            + testBug16791()
+            - removeFromRef()
+            + testBug32101()
+            + testBug35810()
+            + testBug42267()
+            + testBug72890()
+            + testBug72632()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class EscapeProcessorRegressionTest {
+            + EscapeProcessorRegressionTest()
+            + testBug11797()
+            + testBug11498()
+            + testBug14909()
+            + testBug25399()
+            + testBug63526()
+            + testBug60598()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class MetaDataRegressionTest {
+            {static} - TYPES_MAP : Map<Integer, String>
+            + MetaDataRegressionTest()
+            {static} + main()
+            + testBug2607()
+            + testBug2852()
+            + testBug2855()
+            + testBug3570()
+            + testCharVarchar()
+            + testFixForBug1673()
+            + testGetColumns()
+            + testGetColumnsBug1099()
+            + testGetColumnsUnsigned()
+            + testGetPropertyInfo()
+            + testIsCaseSensitive()
+            + testLongText()
+            + testTypes()
+            + testBug4742()
+            + testBug4138()
+            + testBug4860()
+            + testBug4880()
+            + testBug6399()
+            + testBug7081()
+            + testBug7033()
+            + testBug8812()
+            + testBug8800()
+            + testBug8792()
+            + testBug8803()
+            + testBug9320()
+            + testBug9778()
+            + testBug9769()
+            + testBug9917()
+            + testBug11575()
+            + testBug11781()
+            + testBug12970()
+            + testBug12975()
+            + testBug13277()
+            + testBug13601()
+            + testBug14815()
+            + testBug15854()
+            + testBug16277()
+            + testBug18554()
+            - testBug18554()
+            - checkRsmdForBug13277()
+            + testSupportsCorrelatedSubqueries()
+            + testSupportesGroupByUnrelated()
+            + testBug21267()
+            + testBug21544()
+            + testBug22613()
+            - checkMetadataForBug22613()
+            + testBug22628()
+            - testAbsenceOfMetadataForQuery()
+            + testRSMDToStringFromDBMD()
+            + testCharacterSetForDBMD()
+            + testBug18258()
+            + testBug23303()
+            + testBug23304()
+            - compareResultSets()
+            + testBug25624()
+            + testBug27867()
+            + testBug27915()
+            - checkBug27915()
+            + testBug27916()
+            + testBug20491()
+            + testBug33594()
+            + testBug34194()
+            + testNoSystemTablesReturned()
+            + testABunchOfReturnTypes()
+            - checkABunchOfReturnTypesForConnection()
+            - checkTypes()
+            + testBug43714()
+            + testBug41269()
+            + testBug31187()
+            + testBug44508()
+            + testBug52167()
+            + testBug51912()
+            + testBug38367()
+            + testBug57808()
+            + testBug61150()
+            + testBug61332()
+            + testQuotedGunk()
+            + testBug61203()
+            - testBug61203checks()
+            - callFunction()
+            - callProcedure()
+            + testBug63456()
+            + testBug63800()
+            - testTimestamp()
+            - testDatetime()
+            + testBug16436511()
+            + testBug68098()
+            + testBug68307()
+            + testBug44451()
+            - checkReturnedColumnsForBug44451()
+            + testBug65871()
+            - testBug65871_testCatalogs()
+            - testBug65871_testCatalog()
+            - testBug65871_testTable()
+            + testBug69298()
+            - checkGetProceduresForBug69298()
+            - checkGetProcedureColumnsForBug69298()
+            + testBug17248345()
+            - checkMetaDataInfoForBug17248345()
+            + testBug69290()
+            + testBug35115()
+            + testReservedWords()
+            + testBug20504139()
+            + testBug21215151()
+            + testBug19803348()
+            + testBug20727196()
+            + testBug76187()
+            + testBug21978216()
+            + testBug23212347()
+            + testBug73775()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class StatementInterceptorBug61332 {
+            + preProcess()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class MicroPerformanceRegressionTest {
+            {static} - scaleFactorSamples : double[]
+            {static} - scaleFactor : double
+            {static} - ORIGINAL_LOOP_TIME_MS : double
+            {static} - LEEWAY : double
+            {static} - BASELINE_TIMES : Map<String, Double>
+            + MicroPerformanceRegressionTest()
+            {static} + main()
+            + testResultSetAccessors()
+            + testPreparedStatementTimes()
+            + setUp()
+            {static} - adjustScaleFactor()
+            {static} - calculateScaleFactor()
+            - checkTime()
+            + testBug6359()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class NumbersRegressionTest {
+            + NumbersRegressionTest()
+            {static} + main()
+            + testBigInt()
+            + testFloatsAndReals()
+            + testPrecisionAndScale()
+            - testPrecisionForType()
+            + testIntShouldReturnLong()
+            + testBug5729()
+            + testBug8484()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class PooledConnectionRegressionTest {
+            - cpds : ConnectionPoolDataSource
+            # closeEventCount : int
+            # connectionErrorEventCount : int
+            + PooledConnectionRegressionTest()
+            + setUp()
+            {static} + main()
+            {static} + suite()
+            + tearDown()
+            + testBug7136()
+            + testConnectionReclaim()
+            + testPacketTooLargeException()
+            + testCloseEvent()
+            + testBug35489()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class ConnectionListener {
+            + connectionClosed()
+            + connectionErrorOccurred()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class ResultSetRegressionTest {
+            + ResultSetRegressionTest()
+            {static} + main()
+            + testBug2359()
+            + testBug2623()
+            + testBug2654()
+            + testClobTruncate()
+            + testClobberStreamingRS()
+            + testEmptyResultSetGet()
+            + testFixForBug1592()
+            + testFixForBug2006()
+            + testGetLongBug()
+            + testGetTimestampWithDate()
+            + testIsBeforeFirstOnEmpty()
+            + testMetaDataIsWritable()
+            + testNextAndPrevious()
+            + testNotUpdatable()
+            + testStreamingRegBug()
+            + testUpdatability()
+            + testUpdatabilityAndEscaping()
+            + testUpdatabilityWithQuotes()
+            + testUpdateClob()
+            + testBug4482()
+            + testBug4689()
+            + testBug5032()
+            + testBug5069()
+            + testBug5136()
+            + testBug5664()
+            + testBogusTimestampAsString()
+            + testBug5717()
+            + testBug6537()
+            + testBug6231()
+            + testBug6619()
+            + testBug6743()
+            + testBug6561()
+            + testBug7686()
+            + testBug7715()
+            + testBug8428()
+            + testBug8868()
+            + testBug9098()
+            + testBug9236()
+            + testBug9437()
+            + testBug9684()
+            + testBug10156()
+            + testBug10212()
+            + testBug11190()
+            + testBug12104()
+            + testBug13043()
+            + testBug13374()
+            + testBug14562()
+            + testBug15604()
+            + testBug14897()
+            + testBug14609()
+            + testBug16169()
+            + testBug16841()
+            + testBug17450()
+            + testBug19282()
+            - checkResult17450()
+            + testBug19568()
+            - checkResultsBug19568()
+            + testBug19724()
+            - traverseResultSetBug14562()
+            + testNPEWithUsageAdvisor()
+            + testAllTypesForNull()
+            - testAllFieldsForNull()
+            - testAllFieldsForNotNull()
+            + testNPEWithStatementsAndTime()
+            + testEmptyStringsWithNumericGetters()
+            + testNegativeOneIsTrue()
+            - checkEmptyConvertToZero()
+            - checkEmptyConvertToZeroException()
+            + testBug10485()
+            + testBug11552()
+            + testTruncationOfNonSigDigits()
+            + testBug20479()
+            + testBug20485()
+            + testBug20306()
+            - checkBug20306()
+            + testBug21062()
+            + testBug18880()
+            + testBug15677()
+            + testBooleans()
+            + testBug21379()
+            + testBug21814()
+            + testBug24710()
+            + testbug25328()
+            + testBug25517()
+            + testBug25787()
+            + testTruncationDisable()
+            + testUsageAdvisorOnZeroRowResultSet()
+            + testBug25894()
+            + testBug26173()
+            + testBug26789()
+            + testBug27317()
+            + testBug28085()
+            - exerciseUpdatableResultSet()
+            - checkUpdatabilityMessage()
+            + testBug24886()
+            + testBug30664()
+            + testbug30851()
+            + testBug33678()
+            + testBug33162()
+            + testBug34762()
+            + testBug34913()
+            + testBug36051()
+            + testBug35610()
+            - exercise35610()
+            + testBug39911()
+            - checkTimestampNanos()
+            + testBug38387()
+            + testRanges()
+            - checkRangeMatrix()
+            - checkRanges()
+            + testBug41484()
+            + testBug41484_2()
+            + testBug27431()
+            + testBug43759()
+            + testBug32525()
+            + testBug49797()
+            + testBug49516()
+            + testBug48820()
+            + testBug60313()
+            + testBug65503()
+            + testBug64204()
+            + testBug45757()
+            + testBug38252()
+            + testBug67318()
+            + testBug72000()
+            + testBug72023()
+            + testBug75309()
+            + testBug19536760()
+            - testBug19536760CheckStates()
+            + testBug20804635()
+            + testBug80522()
+            + testBug56479()
+            + testBug78685()
+            - testBug78685CheckData()
+            + testBug80631()
+            + testBug23197238()
+            - testBug23197238Assert()
+            + testBug83368()
+            + testBug83662()
+            + testBug70704()
+            + testBug25650305()
+            + testBug22305979()
+            + testBug80532()
+            + testBug72609()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class TestBug67318ExceptionInterceptor {
+            + alreadyClosedCounter : int
+            + init()
+            + destroy()
+            + interceptException()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class StatementRegressionTest {
+            {static} ~ count : int
+            {static} ~ nextID : int
+            {static} ~ tests : int[][]
+            # testServerPrepStmtDeadlockCounter : int
+            {static} + main()
+            + StatementRegressionTest()
+            - addBatchItems()
+            - createGGKTables()
+            - doGGKTestPreparedStatement()
+            - doGGKTestStatement()
+            - dropGGKTables()
+            - execQueryBug5191()
+            - getByteArrayString()
+            - innerBug6823()
+            + testBug10155()
+            + testBug10630()
+            + testBug11115()
+            + testBug11540()
+            + testBug11663()
+            + testBug11798()
+            + testBug13255()
+            + testBug15024()
+            + testBug15141()
+            + testBug18041()
+            - testStreamsForBug15024()
+            + testBug1774()
+            + testBug1901()
+            + testBug1933()
+            + testBug1934()
+            + testBug1958()
+            + testBug2606()
+            + testBug2671()
+            + testBug3103()
+            + testBug3520()
+            + testBug3557()
+            + testBug3620()
+            + testBug3697()
+            + testBug3804()
+            + testBug3873()
+            + testBug4119()
+            + testBug4311()
+            + testBug4510()
+            + testBug4718()
+            + testBug5012()
+            + testBug5133()
+            + testBug5191()
+            + testBug5235()
+            + testBug5450()
+            + testBug5510()
+            + testBug5874()
+            + testBug6823()
+            + testBug7461()
+            + testBug8181()
+            + testBug8487()
+            + testBug9704()
+            + testCloseTwice()
+            + testCsc4194()
+            - testCsc4194InsertCheckBlob()
+            - testCsc4194InsertCheckText()
+            + testGetGeneratedKeysAllCases()
+            + testLimitAndMaxRows()
+            + testLoadData()
+            + testNullClob()
+            + testParameterBoundsCheck()
+            + testPStmtTypesBug()
+            + testQuotedIdRecognition()
+            + testServerPrepStmtAndDate()
+            + testServerPrepStmtDeadlock()
+            + testSetCharacterStream()
+            + testSetFetchSize()
+            + testSetMaxRows()
+            + testTimestampNPE()
+            + testTruncationWithChar()
+            + testUpdatableStream()
+            + testBug15383()
+            + testBug17099()
+            + testBug17587()
+            + testBug18740()
+            # isJdbc4()
+            + testBug19615()
+            + testBug20029()
+            + testBug20687()
+            + testLikeWithBackslashes()
+            + testBug20650()
+            + testBug20888()
+            + testBug21207()
+            + testBug21438()
+            + testBug22359()
+            + testBug22290()
+            + testClientPreparedSetBoolean()
+            + testBug24360()
+            + testBug24344()
+            + testBug25073()
+            + testBug25009()
+            + testBug25025()
+            + testBustedGGKWithPSExecute()
+            + testBug28256()
+            + testBug28469()
+            + testCommentParsing()
+            + testBug28851()
+            + testBug28596()
+            + testBug30550()
+            + testBug27412()
+            + testBustedGGKColumnNames()
+            + testLancesBitMappingBug()
+            + testBug32577()
+            + testBug30508()
+            + testMoreLanceBugs()
+            + testBug33823()
+            + testBug34093()
+            - checkBug34093()
+            + testBug34093_nonbatch()
+            + testBug34518()
+            + testBug35170()
+            + testBug35666()
+            + testDeadlockBatchBehavior()
+            + testBug39352()
+            + testBug38747()
+            + testBug39956()
+            + testBug34185()
+            + testBug41161()
+            + testBug41448()
+            + testBug48172()
+            + testBug41532()
+            - timeBatch()
+            + testBug44056()
+            - checkOpenResultsFor44056()
+            + testBug41730()
+            + testBug43196()
+            + testBug42253()
+            + testBug41566()
+            + testBug40439()
+            + testBug39426()
+            + testBugDupeKeySingle()
+            + testBug37458()
+            + testBug34555()
+            + testBug46788()
+            + testBug31193()
+            + testBug51776()
+            + testBug51666()
+            + testReversalOfScanFlags()
+            + testBug51704()
+            + testBug54175()
+            + testBug58728()
+            + testBug61501()
+            + testbug61866()
+            + testbug12565726()
+            + testBug36478()
+            + testBug40279()
+            + testBug35653()
+            + testBug64805()
+            + testExecutionPlanForSlowQueries()
+            + testBug68562()
+            - testBug68562BatchWithSize()
+            - testBug68562ExecuteBatch()
+            + testBug55340()
+            + testBug71396()
+            - testBug71396StatementInit()
+            - testBug71396StatementMultiCheck()
+            - testBug71396StatementMultiCheck()
+            - testBug71396StatementCheck()
+            - testBug71396PrepStatementInit()
+            - testBug71396PrepStatementClose()
+            - testBug71396PrepStatementMultiCheck()
+            - testBug71396PrepStatementMultiCheck()
+            - testBug71396PrepStatementCheck()
+            - testBug71396PrepStatementCheck()
+            - testBug71396MultiSettingsCheck()
+            + testBug18091639()
+            + testBug66947()
+            + testBug71672()
+            + testBug71672Statement()
+            + testBug71672PreparedStatement()
+            + testBug71923()
+            + testBug73163()
+            + testBug74998()
+            + testBug54095()
+            + testBug50348()
+            - checkResultSetForTestBug50348()
+            - checkPreparedStatementForTestBug50348()
+            + testBug77449()
+            + testBug77681()
+            + testBug21876798()
+            + testBug78961()
+            + testBug75956()
+            + testBug71131()
+            + testBug23188498()
+            + testBug23201930()
+            + testBug80615()
+            - testBug80615CheckComStmtStatus()
+            + testBug81706()
+            + testBug66430()
+            + testBug84783()
+            + testBug74932()
+            - testBug74932ExecuteStmts()
+            + testBug78313()
+            + testBug87429()
+            + testBug87534()
+            + testBug84813()
+            - testBug84813CheckAndReset()
+            + testBug81063()
+            - testBug81063CheckAndReset()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class PrepareThread {
+            ~ c : Connection
+            ~ PrepareThread()
+            + run()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class IsClosedReader {
+            ~ isClosed : boolean
+            + IsClosedReader()
+            + close()
+            + isClosed()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class IsClosedInputStream {
+            ~ isClosed : boolean
+            + IsClosedInputStream()
+            + IsClosedInputStream()
+            + close()
+            + isClosed()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class Bug39426Interceptor {
+            {static} + vals : List<Integer>
+            ~ prevSql : String
+            + preProcess()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class TestBug51666StatementInterceptor {
+            + preProcess()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class ScanDetectingInterceptor {
+            {static} ~ hasSeenScan : boolean
+            {static} ~ hasSeenBadIndex : boolean
+            + postProcess()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class TestBug77449StatementInterceptor {
+            - sendFracSecs : boolean
+            + init()
+            + preProcess()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class TestBug77681StatementInterceptor {
+            {static} - expectedNonRWBS : char[]
+            {static} - expectedRWBS : char[]
+            - expected : char[]
+            - execCounter : int
+            + init()
+            + preProcess()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class TestBug81706StatementInterceptor {
+            {static} + isActive : boolean
+            {static} + testCase : String
+            + preProcess()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class StressRegressionTest {
+            - numThreadsStarted : int
+            + StressRegressionTest()
+            {static} + main()
+            + testContention()
+            + testCreateConnections()
+            + testCreateConnectionsUnderLoad()
+            ~ contentiousWork()
+            ~ reportDone()
+            + testBug67760()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class BusyThread {
+            ~ stop : boolean
+            + run()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class ContentionThread {
+            ~ threadConn : Connection
+            ~ threadStmt : Statement
+            ~ threadNumber : int
+            ~ elapsedTimeMillis : long
+            + ContentionThread()
+            + run()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class CreateThread {
+            ~ numConnections : int
+            + CreateThread()
+            + CreateThread()
+            + CreateThread()
+            + run()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class SharedInfoForTestBug67760 {
+            {static} ~ running : boolean
+            {static} ~ job1Iterations : int
+            {static} ~ job2Iterations : int
+            {static} ~ prevJob1Iterations : int
+            {static} ~ prevJob2Iterations : int
+            {static} ~ iterationsChanged()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class StringRegressionTest {
+            + StringRegressionTest()
+            {static} + main()
+            + testAsciiCharConversion()
+            + testBug4010()
+            + testEncodingRegression()
+            + testEscapeSJISDoubleEscapeBug()
+            + testGreekUtf8411()
+            + testLatin1Encoding()
+            + testNewlines()
+            + testSjis5c()
+            + testUtf8Encoding()
+            + testUtf8Encoding2()
+            - bytesAreSame()
+            - testConversionForString()
+            + testBug7601()
+            + testBug11629()
+            + testBug11614()
+            + testCodePage1252()
+            + testBug23645()
+            + testBug24840()
+            + testBug25047()
+            + testBug64731()
+            + testBase64Decoder()
+            - testBase64DecoderItem()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class SubqueriesRegressionTest {
+            {static} - REPETITIONS : int
+            + SubqueriesRegressionTest()
+            + setUp()
+            + tearDown()
+            {static} + main()
+            + testSubQuery1()
+            + testSubQuery2()
+            + testSubQuery3()
+            + testSubQuery4()
+            + testSubQuery5()
+            - createTables()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class SyntaxRegressionTest {
+            + SyntaxRegressionTest()
+            + testAlterTableAlgorithmLock()
+            + testCreateTableDataDirectory()
+            + testTransportableTablespaces()
+            - copyFile()
+            + testExchangePartition()
+            + testExplicitPartitions()
+            + testIPv6Functions()
+            + testFULLTEXTSearchInnoDB()
+            + testRenameIndex()
+            + testGetStackedDiagnostics()
+            + testDiscardImportPartitions()
+            + testJsonType()
+            - testJsonTypeCheckFunction()
+            + testHints()
+            - testHintsSyntax()
+            + testCreateTablespace()
+            - testCreateTablespaceCheckTablespaces()
+            - testCreateTablespaceCheckTables()
+            + testSetMergeThreshold()
+            - testSetMergeThresholdIndices()
+            + testTableCompression()
+            + testGisFunctions()
+            + testGcsReplicationCmds()
+            + testUserAccountLocking()
+            + testUserAccountPwdExpiration()
+            + testInnodbTablespaceEncryption()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.regression {
+        class UtilsRegressionTest {
+            + UtilsRegressionTest()
+            {static} + main()
+            + testTimeZones()
+            + testBug70436()
+            + testBug82115()
+        }
+      }
+    }
+  }
+  
+
+  CharsetRegressionTest +-down- Bug73663StatementInterceptor
+  ConnectionRegressionTest +-down- PortNumberSocketFactory
+  ConnectionRegressionTest +-down- ForcedLoadBalanceStrategy
+  ConnectionRegressionTest +-down- CountingReBalanceStrategy
+  ConnectionRegressionTest +-down- AuthTestPlugin
+  ConnectionRegressionTest +-down- TwoQuestionsPlugin
+  ConnectionRegressionTest +-down- ThreeAttemptsPlugin
+  ConnectionRegressionTest +-down- TestBug64205StatementInterceptor
+  ConnectionRegressionTest +-down- PollTask
+  ConnectionRegressionTest +-down- CancelTask
+  ConnectionRegressionTest +-down- ThreadPerTaskExecutor
+  ConnectionRegressionTest +-down- Bug71038StatementInterceptor
+  ConnectionRegressionTest +-down- TestBug71850ExceptionInterceptor
+  ConnectionRegressionTest +-down- TestBug67803ExceptionInterceptor
+  ConnectionRegressionTest +-down- Bug72712StatementInterceptor
+  ConnectionRegressionTest +-down- TestBug73053SocketFactory
+  ConnectionRegressionTest +-down- TestBug73053SocketWrapper
+  ConnectionRegressionTest +-down- TestBug73053InputStreamWrapper
+  ConnectionRegressionTest +-down- Bug75168LoadBalanceExceptionChecker
+  ConnectionRegressionTest +-down- Bug75168StatementInterceptor
+  ConnectionRegressionTest +-down- Bug75592StatementInterceptor
+  ConnectionRegressionTest +-down- TestBug21934573ExceptionInterceptor
+  ConnectionRegressionTest +-down- Bug56100StatementInterceptor
+  ConnectionRegressionTest +-down- Bug88227StatementInterceptor
+  AuthTestPlugin -up-|> AuthenticationPlugin
+  TwoQuestionsPlugin -up-|> AuthenticationPlugin
+  ThreeAttemptsPlugin -up-|> AuthenticationPlugin
+  PollTask -up-|> Runnable
+  CancelTask -up-|> Runnable
+  ThreadPerTaskExecutor -up-|> Executor
+  TestBug71850ExceptionInterceptor -up-|> ExceptionInterceptor
+  TestBug67803ExceptionInterceptor -up-|> ExceptionInterceptor
+  Bug75168LoadBalanceExceptionChecker -up-|> LoadBalanceExceptionChecker
+  TestBug21934573ExceptionInterceptor -up-|> ExceptionInterceptor
+  Bug88227StatementInterceptor -up-|> StatementInterceptorV2
+  MetaDataRegressionTest +-down- StatementInterceptorBug61332
+  PooledConnectionRegressionTest +-down- ConnectionListener
+  ConnectionListener -up-|> ConnectionEventListener
+  ResultSetRegressionTest +-down- TestBug67318ExceptionInterceptor
+  TestBug67318ExceptionInterceptor -up-|> ExceptionInterceptor
+  StatementRegressionTest +-down- PrepareThread
+  StatementRegressionTest +-down- IsClosedReader
+  StatementRegressionTest +-down- IsClosedInputStream
+  StatementRegressionTest +-down- Bug39426Interceptor
+  StatementRegressionTest +-down- TestBug51666StatementInterceptor
+  StatementRegressionTest +-down- ScanDetectingInterceptor
+  StatementRegressionTest +-down- TestBug77449StatementInterceptor
+  StatementRegressionTest +-down- TestBug77681StatementInterceptor
+  StatementRegressionTest +-down- TestBug81706StatementInterceptor
+  StressRegressionTest +-down- BusyThread
+  StressRegressionTest +-down- ContentionThread
+  StressRegressionTest +-down- CreateThread
+  StressRegressionTest +-down- SharedInfoForTestBug67760
+  CreateThread o-- BusyThread : busyThread
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

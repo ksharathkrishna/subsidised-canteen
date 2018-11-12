@@ -1,0 +1,301 @@
+@startuml
+
+title __ASYNC's Class Diagram__\n
+
+  package  {
+    package async {
+      class Async0 {
+          {static} - serialVersionUID : long
+          {static} - log : Log
+          # service()
+      }
+    }
+  }
+  
+
+  package  {
+    package async {
+      class Async0 {
+          {static} - serialVersionUID : long
+          {static} - log : Log
+          + Async0()
+          # service()
+      }
+    }
+  }
+  
+
+  package  {
+    package async {
+      class Async1 {
+          {static} - serialVersionUID : long
+          {static} - log : Log
+          # service()
+      }
+    }
+  }
+  
+
+  package  {
+    package async {
+      class Async1 {
+          {static} - serialVersionUID : long
+          {static} - log : Log
+          + Async1()
+          # service()
+      }
+    }
+  }
+  
+
+  package  {
+    package async {
+      class Async2 {
+          {static} - serialVersionUID : long
+          {static} - log : Log
+          + Async2()
+          # service()
+      }
+    }
+  }
+  
+
+  package  {
+    package async {
+      class Async2 {
+          {static} - serialVersionUID : long
+          {static} - log : Log
+          # service()
+      }
+    }
+  }
+  
+
+  package  {
+    package async {
+      class Async3 {
+          {static} - serialVersionUID : long
+          + Async3()
+          # service()
+      }
+    }
+  }
+  
+
+  package  {
+    package async {
+      class Async3 {
+          {static} - serialVersionUID : long
+          # service()
+      }
+    }
+  }
+  
+
+  package  {
+    package async {
+      class AsyncStockContextListener {
+          {static} + STOCK_TICKER_KEY : String
+          + AsyncStockContextListener()
+          + contextInitialized()
+          + contextDestroyed()
+      }
+    }
+  }
+  
+
+  package  {
+    package async {
+      class AsyncStockContextListener {
+          {static} + STOCK_TICKER_KEY : String
+          + contextInitialized()
+          + contextDestroyed()
+      }
+    }
+  }
+  
+
+  package  {
+    package async {
+      class AsyncStockServlet {
+          {static} - serialVersionUID : long
+          {static} - log : Log
+          {static} - clients : ConcurrentLinkedQueue<AsyncContext>
+          {static} - clientcount : AtomicInteger
+          + AsyncStockServlet()
+          # service()
+          + tick()
+          + writeStock()
+          + shutdown()
+          + onComplete()
+          + onError()
+          + onTimeout()
+          + onStartAsync()
+      }
+    }
+  }
+  
+
+  package  {
+    package async {
+      class AsyncStockServlet {
+          {static} - serialVersionUID : long
+          {static} - log : Log
+          {static} - clients : ConcurrentLinkedQueue<AsyncContext>
+          {static} - clientcount : AtomicInteger
+          + AsyncStockServlet()
+          # service()
+          + tick()
+          + writeStock()
+          + shutdown()
+          + onComplete()
+          + onError()
+          + onTimeout()
+          + onStartAsync()
+      }
+    }
+  }
+  
+
+  package  {
+    package async {
+      class Stockticker {
+          + run : boolean
+          # counter : AtomicInteger
+          ~ listeners : List<TickListener>
+          # ticker : Thread
+          # ticknr : int
+          + Stockticker()
+          + start()
+          + stop()
+          + shutdown()
+          + addTickListener()
+          + removeTickListener()
+          + run()
+      }
+    }
+  }
+  
+
+  package  {
+    package async {
+      class Stock {
+          {static} # df : DecimalFormat
+          # symbol : String
+          # value : double
+          # lastchange : double
+          # cnt : int
+          + Stock()
+          + setCnt()
+          + getCnt()
+          + getSymbol()
+          + getValue()
+          + setValue()
+          + getValueAsString()
+          + getLastChange()
+          + setLastChange()
+          + getLastChangeAsString()
+          + hashCode()
+          + equals()
+          + toString()
+          + clone()
+      }
+    }
+  }
+  
+
+  package  {
+    package async {
+      interface TickListener {
+          {abstract} + tick()
+          {abstract} + shutdown()
+      }
+    }
+  }
+  
+
+  package  {
+    package async {
+      class Stockticker {
+          + run : boolean
+          # counter : AtomicInteger
+          ~ listeners : List<TickListener>
+          # ticker : Thread
+          # ticknr : int
+          + start()
+          + stop()
+          + shutdown()
+          + addTickListener()
+          + removeTickListener()
+          + run()
+      }
+    }
+  }
+  
+
+  package  {
+    package async {
+      interface TickListener {
+          {abstract} + tick()
+          {abstract} + shutdown()
+      }
+    }
+  }
+  
+
+  package  {
+    package async {
+      class Stock {
+          {static} # df : DecimalFormat
+          # symbol : String
+          # value : double
+          # lastchange : double
+          # cnt : int
+          + Stock()
+          + setCnt()
+          + getCnt()
+          + getSymbol()
+          + getValue()
+          + setValue()
+          + getValueAsString()
+          + getLastChange()
+          + setLastChange()
+          + getLastChangeAsString()
+          + hashCode()
+          + equals()
+          + toString()
+          + clone()
+      }
+    }
+  }
+  
+
+  Async0 -up-|> HttpServlet
+  Async1 -up-|> HttpServlet
+  Async2 -up-|> HttpServlet
+  Async3 -up-|> HttpServlet
+  AsyncStockContextListener -up-|> ServletContextListener
+  AsyncStockContextListener -up-|> ServletContextListener
+  AsyncStockServlet -up-|> TickListener
+  AsyncStockServlet -up-|> AsyncListener
+  AsyncStockServlet -up-|> TickListener
+  AsyncStockServlet -up-|> AsyncListener
+  AsyncStockServlet -up-|> HttpServlet
+  Stockticker -up-|> Runnable
+  Stockticker +-down- Stock
+  Stockticker +-down- TickListener
+  Stock -up-|> Cloneable
+  Stockticker -up-|> Runnable
+  Stockticker +-down- TickListener
+  Stockticker +-down- Stock
+  Stock -up-|> Cloneable
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

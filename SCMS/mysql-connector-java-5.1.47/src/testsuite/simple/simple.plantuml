@@ -1,0 +1,604 @@
+@startuml
+
+title __SIMPLE's Class Diagram__\n
+
+  package  {
+    package testsuite {
+      package testsuite.simple {
+        class BlobTest {
+            {static} # testBlobFile : File
+            {static} - TEST_BLOB_FILE_PREFIX : String
+            + BlobTest()
+            {static} + main()
+            + setUp()
+            + testByteStreamInsert()
+            - testByteStreamInsert()
+            - checkBlob()
+            - createTestTable()
+            - doRetrieval()
+            - createBlobFile()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.simple {
+        class CallableStatementTest {
+            + CallableStatementTest()
+            + testInOutParams()
+            + testBatch()
+            - executeBatchedStoredProc()
+            + testOutParams()
+            + testResultSet()
+            + testSPParse()
+            + testSPNoParams()
+            + testSPCache()
+            + testOutParamsNoBodies()
+            {static} + main()
+            + testParameterParser()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.simple {
+        class CharsetTest {
+            {static} + SJIS_CHARS : char[]
+            {static} - CP932_CHARS : char[]
+            {static} + UJIS_CHARS : char[]
+            {static} + EUCJPMS_CHARS : char[]
+            + CharsetTest()
+            {static} + main()
+            + testCP932Backport()
+            + testNECExtendedCharsByEUCJPSolaris()
+            + testInsertCharStatement()
+            + testUtf8OutsideBMPInBlob()
+            - bytesAreSame()
+            + testStaticCharsetMappingConsistency()
+            + testCharsetMapping()
+            + testGB18030()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.simple {
+        class ConnectionTest {
+            + ConnectionTest()
+            {static} + main()
+            + testCatalog()
+            + testClusterConnection()
+            + testDeadlockDetection()
+            + testCharsets()
+            + testIsolationLevel()
+            + testSavepoint()
+            + testNonStandardConnectionCollation()
+            + testDumpQueriesOnException()
+            + testConnectionPropertiesTransform()
+            + testLocalInfileWithUrl()
+            + testLocalInfileDisabled()
+            + testServerConfigurationCache()
+            + testUseLocalSessionState()
+            + testFailoverConnection()
+            + testCannedConfigs()
+            + testUseOldUTF8Behavior()
+            + testDontTrackOpenResources()
+            + testPing()
+            + testSessionVariables()
+            + testSetProfileSql()
+            + testCreateDatabaseIfNotExist()
+            + testGatherPerfMetrics()
+            + testUseCompress()
+            - testCompressionWith()
+            + testLocalSocketAddress()
+            + testUsageAdvisorTooLargeResultSet()
+            + testUseLocalSessionStateRollback()
+            + testCouplingOfCursorFetch()
+            + testInterfaceImplementation()
+            - testInterfaceImplementation()
+            - checkInterfaceImplemented()
+            + testNonVerifyServerCert()
+            + testSelfDestruct()
+            + testLifecyleInterceptor()
+            + testNewHostParsing()
+            + testCompression()
+            + testIsLocal()
+            + testReadOnly56()
+            + testIPv6()
+            + testCacheDefaultTimezone()
+            + testEnableEscapeProcessing()
+            + testUserRequireSSL()
+            + testUserRequireX509()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.simple {
+        class SpawnedWorkerCounter {
+            # workerCount : int
+            ~ setWorkerCount()
+            ~ decrementWorkerCount()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.simple {
+        class LocalSocketAddressCheckThread {
+            ~ atLeastOneWorked : boolean
+            ~ allAddresses : Enumeration<InetAddress>
+            ~ LocalSocketAddressCheckThread()
+            + run()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.simple {
+        class TestEnableEscapeProcessingStatementInterceptor {
+            + preProcess()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.simple {
+        class DataSourceTest {
+            - ctx : Context
+            - tempDir : File
+            + DataSourceTest()
+            {static} + main()
+            + setUp()
+            + tearDown()
+            + testDataSource()
+            + testChangeUserAndCharsets()
+            + testXADataSource()
+            - registerDataSource()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.simple {
+        class DateTest {
+            + DateTest()
+            {static} + main()
+            + setUp()
+            + testTimestamp()
+            + testNanosParsing()
+            + testZeroDateBehavior()
+            + testReggieBug()
+            + testNativeConversions()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.simple {
+        class EscapeProcessingTest {
+            + EscapeProcessingTest()
+            + testEscapeProcessing()
+            {static} + main()
+            + testConvertEscape()
+            + testTimestampConversion()
+            + testBug51313()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.simple {
+        class MetadataTest {
+            + MetadataTest()
+            {static} + main()
+            + setUp()
+            + testForeignKeys()
+            + testGetPrimaryKeys()
+            {static} - cascadeOptionToString()
+            - createTestTable()
+            + testViewMetaData()
+            + testRSMDIsReadOnly()
+            + testBitType()
+            + testSupportsSelectForUpdate()
+            + testTinyint1IsBit()
+            - checkBitOrBooleanType()
+            + testGetPrimaryKeysUsingInfoShcema()
+            + testGetIndexInfoUsingInfoSchema()
+            + testGetColumnsUsingInfoSchema()
+            + testGetTablesUsingInfoSchema()
+            + testGetColumnPrivilegesUsingInfoSchema()
+            + testGetProceduresUsingInfoSchema()
+            + testGetCrossReferenceUsingInfoSchema()
+            + testGetExportedKeysUsingInfoSchema()
+            + testGetImportedKeysUsingInfoSchema()
+            + testGeneratedColumns()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.simple {
+        class MiniAdminTest {
+            {static} - SHUTDOWN_PROP : String
+            + MiniAdminTest()
+            {static} + main()
+            + testShutdown()
+            + testUrlConstructor()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.simple {
+        class MultiHostConnectionTest {
+            {static} - HOST_1 : String
+            {static} - HOST_2 : String
+            {static} - HOST_3 : String
+            {static} - HOST_4 : String
+            {static} - HOST_5 : String
+            {static} - HOST_1_OK : String
+            {static} - HOST_1_FAIL : String
+            {static} - HOST_2_OK : String
+            {static} - HOST_2_FAIL : String
+            {static} - HOST_3_OK : String
+            {static} - HOST_3_FAIL : String
+            {static} - HOST_4_OK : String
+            {static} - HOST_4_FAIL : String
+            {static} - HOST_5_OK : String
+            {static} - STMT_CLOSED_ERR_PATTERN : String
+            {static} - COMM_LINK_ERR_PATTERN : String
+            + MultiHostConnectionTest()
+            {static} + main()
+            {static} - assertSingleValueQuery()
+            {static} - assertSQLException()
+            {static} - assertSQLException()
+            + testFailoverConnection()
+            + testFailoverTransitions()
+            - testFailoverTransition()
+            + testFailoverDefaultSettings()
+            + testFailoverCombinations()
+            + testFailoverReadOnly()
+            + testFailoverQueriesBeforeRetryMaster()
+            + testFailoverSecondsBeforeRetryMaster()
+            + testFailoverAutoFallBack()
+            + testFailoverAutoReconnect()
+            + testFailoverConnectionSynchronization()
+            + testLoadBalanceServerAffinityStrategy()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.simple {
+        class NumbersTest {
+            {static} - TEST_BIGINT_VALUE : long
+            + NumbersTest()
+            {static} + main()
+            + setUp()
+            + testNumbers()
+            - createTestTable()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.simple {
+        class ReadOnlyCallableStatementTest {
+            + ReadOnlyCallableStatementTest()
+            + testReadOnlyWithProcBodyAccess()
+            + testNotReadOnlyWithProcBodyAccess()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.simple {
+        class ResultSetTest {
+            + ResultSetTest()
+            {static} + main()
+            + testPadding()
+            - testPaddingForConnection()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.simple {
+        class SSLTest {
+            + SSLTest()
+            {static} + main()
+            + testConnect()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.simple {
+        class ServerControllerTest {
+            - baseDir : String
+            + ServerControllerTest()
+            {static} + main()
+            + testServerController()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.simple {
+        class SimpleTransformer {
+            + transformProperties()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.simple {
+        class SplitDBdotNameTest {
+            + SplitDBdotNameTest()
+            {static} + main()
+            + testSplit()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.simple {
+        class StatementsTest {
+            {static} - MAX_COLUMN_LENGTH : int
+            {static} - MAX_COLUMNS_TO_TEST : int
+            {static} - STEP : int
+            {static} + main()
+            + StatementsTest()
+            + setUp()
+            + tearDown()
+            + testAccessorsAndMutators()
+            + testAutoIncrement()
+            + testBinaryResultSetNumericTypes()
+            + testCallableStatement()
+            + testCancelStatement()
+            + testClose()
+            + testEnableStreamingResults()
+            + testHoldingResultSetsOverClose()
+            + testInsert()
+            + testMultiStatements()
+            + testNulls()
+            + testParsedConversionWarning()
+            + testPreparedStatement()
+            + testPreparedStatementBatch()
+            + testRowFetch()
+            + testSelectColumns()
+            + testSetObject()
+            + testStatementRewriteBatch()
+            + testBatchRewriteErrors()
+            + testStreamChange()
+            + testStubbed()
+            + testTruncationOnRead()
+            + testStatementInterceptors()
+            + testParameterBindings()
+            + testLocalInfileHooked()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.simple {
+        class StringUtilsTest {
+            + StringUtilsTest()
+            {static} + main()
+            + testIndexOfIgnoreCase()
+            - testIndexOfIgnoreCaseMySQLIndexMarker()
+            {static} - printRuler()
+            + testIndexOfQuoteDoubleAware()
+            + testAppendAsHex()
+            + testGetBytes()
+            + testQuoteUnQuoteIdentifierWithBackQuote()
+            + testQuoteUnQuoteIdentifierWithDoubleQuote()
+            + testWildCompare()
+            + testSplit()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.simple {
+        class TestBug57662Logger {
+            + hasNegativeDurations : boolean
+            + TestBug57662Logger()
+            # logInternal()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.simple {
+        class TestLifecycleInterceptor {
+            {static} ~ transactionsBegun : int
+            {static} ~ transactionsCompleted : int
+            + close()
+            + commit()
+            + rollback()
+            + rollback()
+            + setAutoCommit()
+            + setCatalog()
+            + transactionBegun()
+            + transactionCompleted()
+            + destroy()
+            + init()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.simple {
+        class TransactionTest {
+            {static} - DOUBLE_CONST : double
+            {static} - EPSILON : double
+            + TransactionTest()
+            {static} + main()
+            + setUp()
+            + testTransaction()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.simple {
+        class TraversalTest {
+            + TraversalTest()
+            {static} + main()
+            + setUp()
+            + tearDown()
+            + testTraversal()
+            - createTestTable()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.simple {
+        class UpdatabilityTest {
+            + UpdatabilityTest()
+            {static} + main()
+            + setUp()
+            + tearDown()
+            + testAliasedTables()
+            + testBogusTable()
+            + testMultiKeyTable()
+            + testUpdatability()
+            - createTestTable()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.simple {
+        class UtilsTest {
+            + UtilsTest()
+            {static} + main()
+            + testIsJdbcInterface()
+            + testIsJdbcPackage()
+            + testGetImplementedInterfaces()
+            + testGetPackageName()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package testsuite {
+      package testsuite.simple {
+        class XATest {
+            ~ xaDs : MysqlXADataSource
+            + XATest()
+            + testCoordination()
+            # getXAConnection()
+            + testRecover()
+            + testLocalTransaction()
+            + testSuspendableTx()
+            - createXid()
+            - createXid()
+        }
+      }
+    }
+  }
+  
+
+  ConnectionTest +-down- SpawnedWorkerCounter
+  ConnectionTest +-down- LocalSocketAddressCheckThread
+  ConnectionTest +-down- TestEnableEscapeProcessingStatementInterceptor
+  LocalSocketAddressCheckThread o-- SpawnedWorkerCounter : counter
+  SimpleTransformer -up-|> ConnectionPropertiesTransform
+  TestLifecycleInterceptor -up-|> ConnectionLifecycleInterceptor
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

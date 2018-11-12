@@ -1,0 +1,211 @@
+@startuml
+
+title __LOG's Class Diagram__\n
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.log {
+        class Jdk14Logger {
+            {static} - DEBUG : Level
+            {static} - ERROR : Level
+            {static} - FATAL : Level
+            {static} - INFO : Level
+            {static} - TRACE : Level
+            {static} - WARN : Level
+            # jdkLogger : Logger
+            + Jdk14Logger()
+            + isDebugEnabled()
+            + isErrorEnabled()
+            + isFatalEnabled()
+            + isInfoEnabled()
+            + isTraceEnabled()
+            + isWarnEnabled()
+            + logDebug()
+            + logDebug()
+            + logError()
+            + logError()
+            + logFatal()
+            + logFatal()
+            + logInfo()
+            + logInfo()
+            + logTrace()
+            + logTrace()
+            + logWarn()
+            + logWarn()
+            {static} - findCallerStackDepth()
+            - logInternal()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.log {
+        interface Log {
+            {abstract} + isDebugEnabled()
+            {abstract} + isErrorEnabled()
+            {abstract} + isFatalEnabled()
+            {abstract} + isInfoEnabled()
+            {abstract} + isTraceEnabled()
+            {abstract} + isWarnEnabled()
+            {abstract} + logDebug()
+            {abstract} + logDebug()
+            {abstract} + logError()
+            {abstract} + logError()
+            {abstract} + logFatal()
+            {abstract} + logFatal()
+            {abstract} + logInfo()
+            {abstract} + logInfo()
+            {abstract} + logTrace()
+            {abstract} + logTrace()
+            {abstract} + logWarn()
+            {abstract} + logWarn()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.log {
+        class LogFactory {
+            {static} + getLogger()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.log {
+        class LogUtils {
+            {static} + CALLER_INFORMATION_NOT_AVAILABLE : String
+            {static} - LINE_SEPARATOR : String
+            {static} - LINE_SEPARATOR_LENGTH : int
+            {static} + expandProfilerEventIfNecessary()
+            {static} + findCallingClassAndMethod()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.log {
+        class NullLogger {
+            + NullLogger()
+            + isDebugEnabled()
+            + isErrorEnabled()
+            + isFatalEnabled()
+            + isInfoEnabled()
+            + isTraceEnabled()
+            + isWarnEnabled()
+            + logDebug()
+            + logDebug()
+            + logError()
+            + logError()
+            + logFatal()
+            + logFatal()
+            + logInfo()
+            + logInfo()
+            + logTrace()
+            + logTrace()
+            + logWarn()
+            + logWarn()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.log {
+        class Slf4JLogger {
+            - log : Logger
+            + Slf4JLogger()
+            + isDebugEnabled()
+            + isErrorEnabled()
+            + isFatalEnabled()
+            + isInfoEnabled()
+            + isTraceEnabled()
+            + isWarnEnabled()
+            + logDebug()
+            + logDebug()
+            + logError()
+            + logError()
+            + logFatal()
+            + logFatal()
+            + logInfo()
+            + logInfo()
+            + logTrace()
+            + logTrace()
+            + logWarn()
+            + logWarn()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.log {
+        class StandardLogger {
+            {static} - FATAL : int
+            {static} - ERROR : int
+            {static} - WARN : int
+            {static} - INFO : int
+            {static} - DEBUG : int
+            {static} - TRACE : int
+            {static} - bufferedLog : StringBuffer
+            - logLocationInfo : boolean
+            + StandardLogger()
+            + StandardLogger()
+            {static} + startLoggingToBuffer()
+            {static} + dropBuffer()
+            {static} + getBuffer()
+            + isDebugEnabled()
+            + isErrorEnabled()
+            + isFatalEnabled()
+            + isInfoEnabled()
+            + isTraceEnabled()
+            + isWarnEnabled()
+            + logDebug()
+            + logDebug()
+            + logError()
+            + logError()
+            + logFatal()
+            + logFatal()
+            + logInfo()
+            + logInfo()
+            + logTrace()
+            + logTrace()
+            + logWarn()
+            + logWarn()
+            # logInternal()
+        }
+      }
+    }
+  }
+  
+
+  Jdk14Logger -up-|> Log
+  NullLogger -up-|> Log
+  Slf4JLogger -up-|> Log
+  StandardLogger -up-|> Log
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

@@ -1,0 +1,231 @@
+@startuml
+
+title __SNAKE's Class Diagram__\n
+
+  package  {
+    package websocket {
+      package websocket.snake {
+        enum Direction {
+          NONE
+          NORTH
+          SOUTH
+          EAST
+          WEST
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.snake {
+        enum Direction {
+          NONE
+          NORTH
+          SOUTH
+          EAST
+          WEST
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.snake {
+        class Location {
+            + x : int
+            + y : int
+            + Location()
+            + getAdjacentLocation()
+            + equals()
+            + hashCode()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.snake {
+        class Location {
+            + x : int
+            + y : int
+            + Location()
+            + getAdjacentLocation()
+            + equals()
+            + hashCode()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.snake {
+        class Snake {
+            {static} - DEFAULT_LENGTH : int
+            - id : int
+            - session : Session
+            - direction : Direction
+            - length : int
+            - head : Location
+            - tail : Deque<Location>
+            - hexColor : String
+            + Snake()
+            - resetState()
+            - kill()
+            - reward()
+            # sendMessage()
+            + update()
+            - handleCollisions()
+            + getHead()
+            + getTail()
+            + setDirection()
+            + getLocationsJson()
+            + getId()
+            + getHexColor()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.snake {
+        class Snake {
+            {static} - DEFAULT_LENGTH : int
+            - id : int
+            - session : Session
+            - direction : Direction
+            - length : int
+            - head : Location
+            - tail : Deque<Location>
+            - hexColor : String
+            + Snake()
+            - resetState()
+            - kill()
+            - reward()
+            # sendMessage()
+            + update()
+            - handleCollisions()
+            + getHead()
+            + getTail()
+            + setDirection()
+            + getLocationsJson()
+            + getId()
+            + getHexColor()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.snake {
+        class SnakeAnnotation {
+            {static} + PLAYFIELD_WIDTH : int
+            {static} + PLAYFIELD_HEIGHT : int
+            {static} + GRID_SIZE : int
+            {static} - snakeIds : AtomicInteger
+            {static} - random : Random
+            - id : int
+            - snake : Snake
+            {static} + getRandomHexColor()
+            {static} + getRandomLocation()
+            {static} - roundByGridSize()
+            + SnakeAnnotation()
+            + onOpen()
+            + onTextMessage()
+            + onClose()
+            + onError()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.snake {
+        class SnakeAnnotation {
+            {static} + PLAYFIELD_WIDTH : int
+            {static} + PLAYFIELD_HEIGHT : int
+            {static} + GRID_SIZE : int
+            {static} - snakeIds : AtomicInteger
+            {static} - random : Random
+            - id : int
+            - snake : Snake
+            {static} + getRandomHexColor()
+            {static} + getRandomLocation()
+            {static} - roundByGridSize()
+            + SnakeAnnotation()
+            + onOpen()
+            + onTextMessage()
+            + onClose()
+            + onError()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.snake {
+        class SnakeTimer {
+            {static} - log : Log
+            {static} - gameTimer : Timer
+            {static} - TICK_DELAY : long
+            {static} - snakes : ConcurrentHashMap<Integer, Snake>
+            {static} # addSnake()
+            {static} # getSnakes()
+            {static} # removeSnake()
+            {static} # tick()
+            {static} # broadcast()
+            {static} + startTimer()
+            {static} + stopTimer()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.snake {
+        class SnakeTimer {
+            {static} - log : Log
+            {static} - gameTimer : Timer
+            {static} - TICK_DELAY : long
+            {static} - snakes : ConcurrentHashMap<Integer, Snake>
+            + SnakeTimer()
+            {static} # addSnake()
+            {static} # getSnakes()
+            {static} # removeSnake()
+            {static} # tick()
+            {static} # broadcast()
+            {static} + startTimer()
+            {static} + stopTimer()
+        }
+      }
+    }
+  }
+  
+
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

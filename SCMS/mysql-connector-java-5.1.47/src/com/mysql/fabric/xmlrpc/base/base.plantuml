@@ -1,0 +1,241 @@
+@startuml
+
+title __BASE's Class Diagram__\n
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.xmlrpc {
+        package com.mysql.fabric.xmlrpc.base {
+          class Array {
+              # data : Data
+              + getData()
+              + setData()
+              + addValue()
+              + toString()
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.xmlrpc {
+        package com.mysql.fabric.xmlrpc.base {
+          class Data {
+              # value : List<Value>
+              + getValue()
+              + addValue()
+              + toString()
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.xmlrpc {
+        package com.mysql.fabric.xmlrpc.base {
+          class Fault {
+              # value : Value
+              + getValue()
+              + setValue()
+              + toString()
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.xmlrpc {
+        package com.mysql.fabric.xmlrpc.base {
+          class Member {
+              # name : String
+              # value : Value
+              + Member()
+              + Member()
+              + getName()
+              + setName()
+              + getValue()
+              + setValue()
+              + toString()
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.xmlrpc {
+        package com.mysql.fabric.xmlrpc.base {
+          class MethodCall {
+              # methodName : String
+              # params : Params
+              + getMethodName()
+              + setMethodName()
+              + getParams()
+              + setParams()
+              + toString()
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.xmlrpc {
+        package com.mysql.fabric.xmlrpc.base {
+          class MethodResponse {
+              # params : Params
+              # fault : Fault
+              + getParams()
+              + setParams()
+              + getFault()
+              + setFault()
+              + toString()
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.xmlrpc {
+        package com.mysql.fabric.xmlrpc.base {
+          class Param {
+              # value : Value
+              + Param()
+              + Param()
+              + getValue()
+              + setValue()
+              + toString()
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.xmlrpc {
+        package com.mysql.fabric.xmlrpc.base {
+          class Params {
+              # param : List<Param>
+              + getParam()
+              + addParam()
+              + toString()
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.xmlrpc {
+        package com.mysql.fabric.xmlrpc.base {
+          class ResponseParser {
+              - resp : MethodResponse
+              ~ elNames : Stack<Object>
+              ~ objects : Stack<Object>
+              + getMethodResponse()
+              + startElement()
+              + endElement()
+              + characters()
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.xmlrpc {
+        package com.mysql.fabric.xmlrpc.base {
+          class Struct {
+              # member : List<Member>
+              + getMember()
+              + addMember()
+              + toString()
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.xmlrpc {
+        package com.mysql.fabric.xmlrpc.base {
+          class Value {
+              {static} + TYPE_i4 : byte
+              {static} + TYPE_int : byte
+              {static} + TYPE_boolean : byte
+              {static} + TYPE_string : byte
+              {static} + TYPE_double : byte
+              {static} + TYPE_dateTime_iso8601 : byte
+              {static} + TYPE_base64 : byte
+              {static} + TYPE_struct : byte
+              {static} + TYPE_array : byte
+              # objValue : Object
+              # objType : byte
+              - dtf : DatatypeFactory
+              + Value()
+              + Value()
+              + Value()
+              + Value()
+              + Value()
+              + Value()
+              + Value()
+              + Value()
+              + Value()
+              + getValue()
+              + getType()
+              + setInt()
+              + setInt()
+              + setString()
+              + appendString()
+              + setBoolean()
+              + setBoolean()
+              + setDouble()
+              + setDouble()
+              + setDateTime()
+              + setDateTime()
+              + setBase64()
+              + setStruct()
+              + setArray()
+              + toString()
+              - escapeXMLChars()
+          }
+        }
+      }
+    }
+  }
+  
+
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

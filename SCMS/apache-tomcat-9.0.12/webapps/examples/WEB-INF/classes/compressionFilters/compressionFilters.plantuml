@@ -1,0 +1,200 @@
+@startuml
+
+title __COMPRESSIONFILTERS's Class Diagram__\n
+
+  package  {
+    package compressionFilters {
+      class CompressionFilter {
+          {static} - serialVersionUID : long
+          {static} - MIN_THRESHOLD : int
+          {static} - MIN_BUFFER : int
+          # compressionThreshold : int
+          # compressionBuffer : int
+          # compressionMimeTypes : String[]
+          - debug : int
+          + CompressionFilter()
+          + init()
+          + doFilter()
+      }
+    }
+  }
+  
+
+  package  {
+    package compressionFilters {
+      class CompressionFilter {
+          {static} - serialVersionUID : long
+          {static} - MIN_THRESHOLD : int
+          {static} - MIN_BUFFER : int
+          # compressionThreshold : int
+          # compressionBuffer : int
+          # compressionMimeTypes : String[]
+          - debug : int
+          + init()
+          + doFilter()
+      }
+    }
+  }
+  
+
+  package  {
+    package compressionFilters {
+      class CompressionFilterTestServlet {
+          {static} - serialVersionUID : long
+          + CompressionFilterTestServlet()
+          + doGet()
+      }
+    }
+  }
+  
+
+  package  {
+    package compressionFilters {
+      class CompressionFilterTestServlet {
+          {static} - serialVersionUID : long
+          + doGet()
+      }
+    }
+  }
+  
+
+  package  {
+    package compressionFilters {
+      class CompressionResponseStream {
+          # compressionThreshold : int
+          # compressionBuffer : int
+          # compressionMimeTypes : String[]
+          - debug : int
+          # buffer : byte[]
+          # bufferCount : int
+          # gzipstream : OutputStream
+          # closed : boolean
+          # response : CompressionServletResponseWrapper
+          # output : ServletOutputStream
+          + CompressionResponseStream()
+          + setDebugLevel()
+          # setCompressionThreshold()
+          # setCompressionBuffer()
+          + setCompressionMimeTypes()
+          + close()
+          + flush()
+          + flushToGZip()
+          + write()
+          + write()
+          + isReady()
+          + setWriteListener()
+          + write()
+          + writeToGZip()
+          + closed()
+          - startsWithStringArray()
+      }
+    }
+  }
+  
+
+  package  {
+    package compressionFilters {
+      class CompressionResponseStream {
+          # compressionThreshold : int
+          # compressionBuffer : int
+          # compressionMimeTypes : String[]
+          - debug : int
+          # buffer : byte[]
+          # bufferCount : int
+          # gzipstream : OutputStream
+          # closed : boolean
+          # response : CompressionServletResponseWrapper
+          # output : ServletOutputStream
+          + CompressionResponseStream()
+          + setDebugLevel()
+          # setCompressionThreshold()
+          # setCompressionBuffer()
+          + setCompressionMimeTypes()
+          + close()
+          + flush()
+          + flushToGZip()
+          + write()
+          + write()
+          + isReady()
+          + setWriteListener()
+          + write()
+          + writeToGZip()
+          + closed()
+          - startsWithStringArray()
+      }
+    }
+  }
+  
+
+  package  {
+    package compressionFilters {
+      class CompressionServletResponseWrapper {
+          # origResponse : HttpServletResponse
+          # stream : ServletOutputStream
+          # writer : PrintWriter
+          # compressionThreshold : int
+          # compressionBuffer : int
+          # compressionMimeTypes : String[]
+          # debug : int
+          - headerCopies : Map<String, String>
+          + CompressionServletResponseWrapper()
+          + setCompressionThreshold()
+          + setCompressionBuffer()
+          + setCompressionMimeTypes()
+          + setDebugLevel()
+          # createOutputStream()
+          + finishResponse()
+          + flushBuffer()
+          + getOutputStream()
+          + getWriter()
+          + getHeader()
+          + addHeader()
+          + setHeader()
+      }
+    }
+  }
+  
+
+  package  {
+    package compressionFilters {
+      class CompressionServletResponseWrapper {
+          # origResponse : HttpServletResponse
+          # stream : ServletOutputStream
+          # writer : PrintWriter
+          # compressionThreshold : int
+          # compressionBuffer : int
+          # compressionMimeTypes : String[]
+          # debug : int
+          - headerCopies : Map<String, String>
+          + CompressionServletResponseWrapper()
+          + setCompressionThreshold()
+          + setCompressionBuffer()
+          + setCompressionMimeTypes()
+          + setDebugLevel()
+          # createOutputStream()
+          + finishResponse()
+          + flushBuffer()
+          + getOutputStream()
+          + getWriter()
+          + getHeader()
+          + addHeader()
+          + setHeader()
+      }
+    }
+  }
+  
+
+  CompressionFilter -up-|> GenericFilter
+  CompressionFilterTestServlet -up-|> HttpServlet
+  CompressionResponseStream -up-|> ServletOutputStream
+  CompressionServletResponseWrapper -up-|> HttpServletResponseWrapper
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

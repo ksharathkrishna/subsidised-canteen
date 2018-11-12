@@ -27,11 +27,11 @@ public class addVendor extends HttpServlet {
         }
         else {
             if(a2.f==1) {
-                request.setAttribute("errorMessage", "Account with this username or Card Number already exists");
+                request.setAttribute("errorMessage", "Account with this username already exists");
                 request.getRequestDispatcher("/addVendor.jsp").forward(request, response);
             }
             else{
-                request.setAttribute("errorMessage", "Enter a Valid card number ");
+                request.setAttribute("errorMessage", "Enter a Valid username ");
                 request.getRequestDispatcher("/addVendor.jsp").forward(request, response);
 
             }

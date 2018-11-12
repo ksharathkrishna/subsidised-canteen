@@ -1,0 +1,422 @@
+@startuml
+
+title __DRAWBOARD's Class Diagram__\n
+
+  package  {
+    package websocket {
+      package websocket.drawboard {
+        class Client {
+            - session : Session
+            - async : Async
+            - messagesToSend : LinkedList<AbstractWebsocketMessage>
+            - isSendingMessage : boolean
+            - isClosing : boolean
+            - messagesToSendLength : long
+            - sendHandler : SendHandler
+            + Client()
+            + close()
+            + sendMessage()
+            - calculateMessageLength()
+            - internalSendMessageAsync()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.drawboard {
+        class Client {
+            - session : Session
+            - async : Async
+            - messagesToSend : LinkedList<AbstractWebsocketMessage>
+            - isSendingMessage : boolean
+            - isClosing : boolean
+            - messagesToSendLength : long
+            - sendHandler : SendHandler
+            + Client()
+            + close()
+            + sendMessage()
+            - calculateMessageLength()
+            - internalSendMessageAsync()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.drawboard {
+        class DrawMessage {
+            - type : int
+            - colorR : byte
+            - colorG : byte
+            - colorB : byte
+            - colorA : byte
+            - thickness : double
+            - x1 : double
+            - y1 : double
+            - x2 : double
+            - y2 : double
+            + getType()
+            + setType()
+            + getThickness()
+            + setThickness()
+            + getColorR()
+            + setColorR()
+            + getColorG()
+            + setColorG()
+            + getColorB()
+            + setColorB()
+            + getColorA()
+            + setColorA()
+            + getX1()
+            + setX1()
+            + getX2()
+            + setX2()
+            + getY1()
+            + setY1()
+            + getY2()
+            + setY2()
+            + DrawMessage()
+            + draw()
+            + toString()
+            {static} + parseFromString()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.drawboard {
+        class ParseException {
+            {static} - serialVersionUID : long
+            + ParseException()
+            + ParseException()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.drawboard {
+        class DrawMessage {
+            - type : int
+            - colorR : byte
+            - colorG : byte
+            - colorB : byte
+            - colorA : byte
+            - thickness : double
+            - x1 : double
+            - y1 : double
+            - x2 : double
+            - y2 : double
+            + getType()
+            + setType()
+            + getThickness()
+            + setThickness()
+            + getColorR()
+            + setColorR()
+            + getColorG()
+            + setColorG()
+            + getColorB()
+            + setColorB()
+            + getColorA()
+            + setColorA()
+            + getX1()
+            + setX1()
+            + getX2()
+            + setX2()
+            + getY1()
+            + setY1()
+            + getY2()
+            + setY2()
+            + DrawMessage()
+            + draw()
+            + toString()
+            {static} + parseFromString()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.drawboard {
+        class ParseException {
+            {static} - serialVersionUID : long
+            + ParseException()
+            + ParseException()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    class WrappedPrintWriter {
+        - printWriter : PrintWriter
+        ~ WrappedPrintWriter()
+        ~ lock()
+        ~ println()
+    }
+  }
+  
+
+  package  {
+    class WrappedPrintStream {
+        - printStream : PrintStream
+        ~ WrappedPrintStream()
+        ~ lock()
+        ~ println()
+    }
+  }
+  
+
+  package  {
+    abstract class PrintStreamOrWriter {
+        - PrintStreamOrWriter()
+        {abstract} ~ lock()
+        {abstract} ~ println()
+    }
+  }
+  
+
+  package  {
+    class SentinelHolder {
+        {static} + STACK_TRACE_ELEMENT_SENTINEL : StackTraceElement
+        {static} + STACK_TRACE_SENTINEL : StackTraceElement[]
+        - SentinelHolder()
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.drawboard {
+        class DrawboardContextListener {
+            + contextDestroyed()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.drawboard {
+        class DrawboardContextListener {
+            + DrawboardContextListener()
+            + contextDestroyed()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.drawboard {
+        class DrawboardEndpoint {
+            {static} - log : Log
+            {static} - room : Room
+            {static} - roomLock : Object
+            - player : Player
+            - stringHandler : Whole<String>
+            + DrawboardEndpoint()
+            {static} + getRoom()
+            + onOpen()
+            + onClose()
+            + onError()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.drawboard {
+        class DrawboardEndpoint {
+            {static} - log : Log
+            {static} - room : Room
+            {static} - roomLock : Object
+            - player : Player
+            - stringHandler : Whole<String>
+            {static} + getRoom()
+            + onOpen()
+            + onClose()
+            + onError()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.drawboard {
+        class Room {
+            - roomLock : ReentrantLock
+            - closed : boolean
+            {static} - BUFFER_DRAW_MESSAGES : boolean
+            - drawmessageBroadcastTimer : Timer
+            {static} - TIMER_DELAY : int
+            - activeBroadcastTimerTask : TimerTask
+            - roomImage : BufferedImage
+            - roomGraphics : Graphics2D
+            {static} - MAX_PLAYER_COUNT : int
+            - players : List<Player>
+            - cachedRunnables : List<Runnable>
+            + Room()
+            - createBroadcastTimerTask()
+            + createAndAddPlayer()
+            - internalRemovePlayer()
+            - internalHandleDrawMessage()
+            - broadcastRoomMessage()
+            - broadcastDrawMessage()
+            - broadcastTimerTick()
+            + invokeAndWait()
+            + shutdown()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.drawboard {
+        enum MessageType {
+          ERROR
+          DRAW_MESSAGE
+          IMAGE_MESSAGE
+          PLAYER_CHANGED
+          flag
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.drawboard {
+        class Player {
+            - lastReceivedMessageId : long
+            - client : Client
+            - bufferedDrawMessages : List<DrawMessage>
+            - getBufferedDrawMessages()
+            - Player()
+            + getRoom()
+            + getClient()
+            + removeFromRoom()
+            - getLastReceivedMessageId()
+            - setLastReceivedMessageId()
+            + handleDrawMessage()
+            - sendRoomMessage()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.drawboard {
+        class Room {
+            - roomLock : ReentrantLock
+            - closed : boolean
+            {static} - BUFFER_DRAW_MESSAGES : boolean
+            - drawmessageBroadcastTimer : Timer
+            {static} - TIMER_DELAY : int
+            - activeBroadcastTimerTask : TimerTask
+            - roomImage : BufferedImage
+            - roomGraphics : Graphics2D
+            {static} - MAX_PLAYER_COUNT : int
+            - players : List<Player>
+            - cachedRunnables : List<Runnable>
+            + Room()
+            - createBroadcastTimerTask()
+            + createAndAddPlayer()
+            - internalRemovePlayer()
+            - internalHandleDrawMessage()
+            - broadcastRoomMessage()
+            - broadcastDrawMessage()
+            - broadcastTimerTick()
+            + invokeAndWait()
+            + shutdown()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.drawboard {
+        class Player {
+            - room : Room
+            - lastReceivedMessageId : long
+            - client : Client
+            - bufferedDrawMessages : List<DrawMessage>
+            - getBufferedDrawMessages()
+            - Player()
+            + getRoom()
+            + getClient()
+            + removeFromRoom()
+            - getLastReceivedMessageId()
+            - setLastReceivedMessageId()
+            + handleDrawMessage()
+            - sendRoomMessage()
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.drawboard {
+        enum MessageType {
+          ERROR
+          DRAW_MESSAGE
+          IMAGE_MESSAGE
+          PLAYER_CHANGED
+          flag
+        }
+      }
+    }
+  }
+  
+
+  DrawMessage +-down- ParseException
+  DrawMessage +-down- ParseException
+  ParseException +-down- WrappedPrintWriter
+  ParseException +-down- WrappedPrintStream
+  ParseException +-down- PrintStreamOrWriter
+  ParseException +-down- SentinelHolder
+  DrawboardContextListener -up-|> ServletContextListener
+  DrawboardContextListener -up-|> ServletContextListener
+  Room +-down- MessageType
+  Room +-down- Player
+  Player o-- Room : room
+  Room +-down- Player
+  Room +-down- MessageType
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

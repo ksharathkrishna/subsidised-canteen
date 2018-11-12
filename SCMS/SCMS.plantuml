@@ -1,0 +1,4969 @@
+@startuml
+
+title __SUBSIDISED CANTEEN's Class Diagram__\n
+
+  package  {
+    package com.mysql.jdbc {
+      class AbandonedConnectionCleanupThread {
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.drawboard {
+        package websocket.drawboard.wsmessages {
+          abstract class AbstractWebsocketMessage {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.drawboard {
+        package websocket.drawboard.wsmessages {
+          abstract class AbstractWebsocketMessage {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.xmlrpc {
+        package com.mysql.fabric.xmlrpc.base {
+          class Array {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class AssertionFailedException {
+      }
+    }
+  }
+  
+
+  package  {
+    package async {
+      class Async0 {
+      }
+    }
+  }
+  
+
+  package  {
+    package async {
+      class Async0 {
+      }
+    }
+  }
+  
+
+  package  {
+    package async {
+      class Async1 {
+      }
+    }
+  }
+  
+
+  package  {
+    package async {
+      class Async1 {
+      }
+    }
+  }
+  
+
+  package  {
+    package async {
+      class Async2 {
+      }
+    }
+  }
+  
+
+  package  {
+    package async {
+      class Async2 {
+      }
+    }
+  }
+  
+
+  package  {
+    package async {
+      class Async3 {
+      }
+    }
+  }
+  
+
+  package  {
+    package async {
+      class Async3 {
+      }
+    }
+  }
+  
+
+  package  {
+    package async {
+      class AsyncStockContextListener {
+      }
+    }
+  }
+  
+
+  package  {
+    package async {
+      class AsyncStockContextListener {
+      }
+    }
+  }
+  
+
+  package  {
+    package async {
+      class AsyncStockServlet {
+      }
+    }
+  }
+  
+
+  package  {
+    package async {
+      class AsyncStockServlet {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.proto.xmlrpc {
+        class AuthenticatedXmlRpcMethodCaller {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      interface AuthenticationPlugin {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      interface BalanceStrategy {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.util {
+        class Base64Decoder {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.util {
+        abstract class BaseBugReport {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class BestResponseTimeBalanceStrategy {
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.drawboard {
+        package websocket.drawboard.wsmessages {
+          class BinaryWebsocketMessage {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.drawboard {
+        package websocket.drawboard.wsmessages {
+          class BinaryWebsocketMessage {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class Blob {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class BlobFromLocator {
+      }
+    }
+  }
+  
+
+  package  {
+    package jsp2.examples {
+      class BookBean {
+      }
+    }
+  }
+  
+
+  package  {
+    package jsp2.examples {
+      class BookBean {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class Buffer {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class BufferRow {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class ByteArrayRow {
+      }
+    }
+  }
+  
+
+  package  {
+    package nonblocking {
+      class ByteCounter {
+      }
+    }
+  }
+  
+
+  package  {
+    package nonblocking {
+      class ByteCounter {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      interface CacheAdapter {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      interface CacheAdapterFactory {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class CachedResultSetMetaData {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.authentication {
+        class CachingSha2PasswordPlugin {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class CallableStatement {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.jdbc2.optional {
+        class CallableStatementWrapper {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class CharsetMapping {
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.chat {
+        class ChatAnnotation {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.chat {
+        class ChatAnnotation {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package checkbox {
+      class CheckTest {
+      }
+    }
+  }
+  
+
+  package  {
+    package checkbox {
+      class CheckTest {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.xmlrpc {
+        class Client {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.drawboard {
+        class Client {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.drawboard {
+        class Client {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package demo.fabric {
+      class Client1_Fabric {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class Clob {
+      }
+    }
+  }
+  
+
+  package  {
+    class Clock2 {
+    }
+  }
+  
+
+  package  {
+    class Clock2 {
+    }
+  }
+  
+
+  package  {
+    class Clock2 {
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.drawboard {
+        package websocket.drawboard.wsmessages {
+          class CloseWebsocketMessage {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.drawboard {
+        package websocket.drawboard.wsmessages {
+          class CloseWebsocketMessage {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class Collation {
+      }
+    }
+  }
+  
+
+  package  {
+    package colors {
+      class ColorGameBean {
+      }
+    }
+  }
+  
+
+  package  {
+    package colors {
+      class ColorGameBean {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.exceptions {
+        package com.mysql.jdbc.exceptions.jdbc4 {
+          class CommunicationsException {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class CommunicationsException {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class CompressedInputStream {
+      }
+    }
+  }
+  
+
+  package  {
+    package compressionFilters {
+      class CompressionFilter {
+      }
+    }
+  }
+  
+
+  package  {
+    package compressionFilters {
+      class CompressionFilter {
+      }
+    }
+  }
+  
+
+  package  {
+    package compressionFilters {
+      class CompressionFilterTestServlet {
+      }
+    }
+  }
+  
+
+  package  {
+    package compressionFilters {
+      class CompressionFilterTestServlet {
+      }
+    }
+  }
+  
+
+  package  {
+    package compressionFilters {
+      class CompressionResponseStream {
+      }
+    }
+  }
+  
+
+  package  {
+    package compressionFilters {
+      class CompressionResponseStream {
+      }
+    }
+  }
+  
+
+  package  {
+    package compressionFilters {
+      class CompressionServletResponseWrapper {
+      }
+    }
+  }
+  
+
+  package  {
+    package compressionFilters {
+      class CompressionServletResponseWrapper {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      interface Connection {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class ConnectionFeatureNotAvailableException {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class ConnectionGroup {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class ConnectionGroupManager {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class ConnectionImpl {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      interface ConnectionLifecycleInterceptor {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      interface ConnectionProperties {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class ConnectionPropertiesImpl {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      interface ConnectionPropertiesTransform {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.jdbc2.optional {
+        class ConnectionWrapper {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class Constants {
+      }
+    }
+  }
+  
+
+  package  {
+    package listeners {
+      class ContextListener {
+      }
+    }
+  }
+  
+
+  package  {
+    package listeners {
+      class ContextListener {
+      }
+    }
+  }
+  
+
+  package  {
+    class CookieExample {
+    }
+  }
+  
+
+  package  {
+    class CookieExample {
+    }
+  }
+  
+
+  package  {
+    package util {
+      class CookieFilter {
+      }
+    }
+  }
+  
+
+  package  {
+    package util {
+      class CookieFilter {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.xmlrpc {
+        package com.mysql.fabric.xmlrpc.base {
+          class Data {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class DatabaseMetaData {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class DatabaseMetaDataUsingInfoSchema {
+      }
+    }
+  }
+  
+
+  package  {
+    package webLayer {
+      class DateTets {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.exceptions {
+        interface DeadlockTimeoutRollbackMarker {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package validators {
+      class DebugValidator {
+      }
+    }
+  }
+  
+
+  package  {
+    package validators {
+      class DebugValidator {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.proto.xmlrpc {
+        class DigestAuthentication {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.snake {
+        enum Direction {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.snake {
+        enum Direction {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class DocsConnectionPropsHelper {
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.drawboard {
+        class DrawMessage {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.drawboard {
+        class DrawMessage {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.drawboard {
+        class DrawboardContextListener {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.drawboard {
+        class DrawboardContextListener {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.drawboard {
+        class DrawboardEndpoint {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.drawboard {
+        class DrawboardEndpoint {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class Driver {
+      }
+    }
+  }
+  
+
+  package  {
+    package org.gjt.mm.mysql {
+      class Driver {
+      }
+    }
+  }
+  
+
+  package  {
+    package sessions {
+      class DummyCart {
+      }
+    }
+  }
+  
+
+  package  {
+    package sessions {
+      class DummyCart {
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.echo {
+        class EchoAnnotation {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.echo {
+        class EchoAnnotation {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.echo {
+        class EchoAsyncAnnotation {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.echo {
+        class EchoAsyncAnnotation {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package jsp2.examples {
+      package jsp2.examples.simpletag {
+        class EchoAttributesTag {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package jsp2.examples {
+      package jsp2.examples.simpletag {
+        class EchoAttributesTag {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.echo {
+        class EchoEndpoint {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.echo {
+        class EchoEndpoint {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.echo {
+        class EchoStreamAnnotation {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.echo {
+        class EchoStreamAnnotation {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package demo.fabric {
+      class Employee {
+      }
+    }
+  }
+  
+
+  package  {
+    package demo.fabric {
+      class EmployeesDataSource {
+      }
+    }
+  }
+  
+
+  package  {
+    package demo.fabric {
+      class EmployeesJdbc {
+      }
+    }
+  }
+  
+
+  package  {
+    package cal {
+      class Entries {
+      }
+    }
+  }
+  
+
+  package  {
+    package cal {
+      class Entries {
+      }
+    }
+  }
+  
+
+  package  {
+    package cal {
+      class Entry {
+      }
+    }
+  }
+  
+
+  package  {
+    package cal {
+      class Entry {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.util {
+        class ErrorMappingsDocGenerator {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.jdbc {
+        class ErrorReportingExceptionInterceptor {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class EscapeProcessor {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class EscapeProcessorResult {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class EscapeTokenizer {
+      }
+    }
+  }
+  
+
+  package  {
+    package filters {
+      class ExampleFilter {
+      }
+    }
+  }
+  
+
+  package  {
+    package filters {
+      class ExampleFilter {
+      }
+    }
+  }
+  
+
+  package  {
+    package examples {
+      abstract class ExampleTagBase {
+      }
+    }
+  }
+  
+
+  package  {
+    package examples {
+      abstract class ExampleTagBase {
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      class ExamplesConfig {
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      class ExamplesConfig {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      interface ExceptionInterceptor {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class ExportControlled {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.integration.jboss {
+        class ExtendedMysqlExceptionSorter {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      interface Extension {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      class FabricCommunicationException {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      class FabricConnection {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.hibernate {
+        class FabricMultiTenantConnectionProvider {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.jdbc {
+        interface FabricMySQLConnection {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.jdbc {
+        interface FabricMySQLConnectionProperties {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.jdbc {
+        class FabricMySQLConnectionProxy {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.jdbc {
+        class FabricMySQLDataSource {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.jdbc {
+        class FabricMySQLDriver {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      class FabricStateResponse {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class FailoverConnectionProxy {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.xmlrpc {
+        package com.mysql.fabric.xmlrpc.base {
+          class Fault {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class Field {
+      }
+    }
+  }
+  
+
+  package  {
+    package jsp2.examples {
+      package jsp2.examples.simpletag {
+        class FindBookSimpleTag {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package jsp2.examples {
+      package jsp2.examples.simpletag {
+        class FindBookSimpleTag {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package jsp2.examples {
+      class FooBean {
+      }
+    }
+  }
+  
+
+  package  {
+    package jsp2.examples {
+      class FooBean {
+      }
+    }
+  }
+  
+
+  package  {
+    package examples {
+      class FooTag {
+      }
+    }
+  }
+  
+
+  package  {
+    package examples {
+      class FooTag {
+      }
+    }
+  }
+  
+
+  package  {
+    package examples {
+      class FooTagExtraInfo {
+      }
+    }
+  }
+  
+
+  package  {
+    package examples {
+      class FooTagExtraInfo {
+      }
+    }
+  }
+  
+
+  package  {
+    package jsp2.examples {
+      package jsp2.examples.el {
+        class Functions {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package jsp2.examples {
+      package jsp2.examples.el {
+        class Functions {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package util {
+      class HTMLFilter {
+      }
+    }
+  }
+  
+
+  package  {
+    package util {
+      class HTMLFilter {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      class HashShardMapping {
+      }
+    }
+  }
+  
+
+  package  {
+    package mypackage {
+      class Hello {
+      }
+    }
+  }
+  
+
+  package  {
+    class HelloWorldExample {
+    }
+  }
+  
+
+  package  {
+    class HelloWorldExample {
+    }
+  }
+  
+
+  package  {
+    package jsp2.examples {
+      package jsp2.examples.simpletag {
+        class HelloWorldSimpleTag {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package jsp2.examples {
+      package jsp2.examples.simpletag {
+        class HelloWorldSimpleTag {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package demo.fabric {
+      class HibernateFabric {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.proto.xmlrpc {
+        class InternalXmlRpcMethodCaller {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      abstract class IterateBlock {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class JDBC42CallableStatement {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.jdbc2.optional {
+        class JDBC42CallableStatementWrapper {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class JDBC42Helper {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class JDBC42PreparedStatement {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.jdbc2.optional {
+        class JDBC42PreparedStatementWrapper {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class JDBC42ResultSet {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class JDBC42ServerPreparedStatement {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class JDBC42UpdatableResultSet {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class JDBC4CallableStatement {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.jdbc2.optional {
+        class JDBC4CallableStatementWrapper {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      interface JDBC4ClientInfoProvider {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class JDBC4ClientInfoProviderSP {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class JDBC4CommentClientInfoProvider {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class JDBC4Connection {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.jdbc2.optional {
+        class JDBC4ConnectionWrapper {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class JDBC4DatabaseMetaData {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class JDBC4DatabaseMetaDataUsingInfoSchema {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.jdbc {
+        interface JDBC4FabricMySQLConnection {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.jdbc {
+        class JDBC4FabricMySQLConnectionProxy {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class JDBC4LoadBalancedMySQLConnection {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class JDBC4MultiHostMySQLConnection {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      interface JDBC4MySQLConnection {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.jdbc2.optional {
+        class JDBC4MysqlPooledConnection {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class JDBC4MysqlSQLXML {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.jdbc2.optional {
+        class JDBC4MysqlXAConnection {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class JDBC4NClob {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class JDBC4PreparedStatement {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class JDBC4PreparedStatementHelper {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.jdbc2.optional {
+        class JDBC4PreparedStatementWrapper {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class JDBC4ReplicationMySQLConnection {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class JDBC4ResultSet {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class JDBC4ServerPreparedStatement {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.jdbc2.optional {
+        class JDBC4StatementWrapper {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.jdbc2.optional {
+        class JDBC4SuspendableXAConnection {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class JDBC4UpdatableResultSet {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.log {
+        class Jdk14Logger {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package cal {
+      class JspCalendar {
+      }
+    }
+  }
+  
+
+  package  {
+    package dates {
+      class JspCalendar {
+      }
+    }
+  }
+  
+
+  package  {
+    package dates {
+      class JspCalendar {
+      }
+    }
+  }
+  
+
+  package  {
+    package cal {
+      class JspCalendar {
+      }
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    class JspClass {
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.util {
+        class LRUCache {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class LicenseConfiguration {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.jmx {
+        class LoadBalanceConnectionGroupManager {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.jmx {
+        interface LoadBalanceConnectionGroupManagerMBean {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      interface LoadBalanceExceptionChecker {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class LoadBalancedAutoCommitInterceptor {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      interface LoadBalancedConnection {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class LoadBalancedConnectionProxy {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class LoadBalancedMySQLConnection {
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.snake {
+        class Location {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.snake {
+        class Location {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.log {
+        interface Log {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.log {
+        class LogFactory {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package examples {
+      class LogTag {
+      }
+    }
+  }
+  
+
+  package  {
+    package examples {
+      class LogTag {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.log {
+        class LogUtils {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.profiler {
+        class LoggingProfilerEventHandler {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.xmlrpc {
+        package com.mysql.fabric.xmlrpc.base {
+          class Member {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class Messages {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.xmlrpc {
+        package com.mysql.fabric.xmlrpc.base {
+          class MethodCall {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.xmlrpc {
+        package com.mysql.fabric.xmlrpc.base {
+          class MethodResponse {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class MiniAdmin {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      abstract class MultiHostConnectionProxy {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class MultiHostMySQLConnection {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      interface MySQLConnection {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.exceptions {
+        class MySQLDataException {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.exceptions {
+        package com.mysql.jdbc.exceptions.jdbc4 {
+          class MySQLDataException {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.xmlrpc {
+        package com.mysql.fabric.xmlrpc.exceptions {
+          class MySQLFabricException {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.exceptions {
+        class MySQLIntegrityConstraintViolationException {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.exceptions {
+        package com.mysql.jdbc.exceptions.jdbc4 {
+          class MySQLIntegrityConstraintViolationException {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.exceptions {
+        package com.mysql.jdbc.exceptions.jdbc4 {
+          class MySQLInvalidAuthorizationSpecException {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.exceptions {
+        class MySQLInvalidAuthorizationSpecException {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.exceptions {
+        class MySQLNonTransientConnectionException {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.exceptions {
+        package com.mysql.jdbc.exceptions.jdbc4 {
+          class MySQLNonTransientConnectionException {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.exceptions {
+        class MySQLNonTransientException {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.exceptions {
+        package com.mysql.jdbc.exceptions.jdbc4 {
+          class MySQLNonTransientException {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.exceptions {
+        class MySQLQueryInterruptedException {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.exceptions {
+        package com.mysql.jdbc.exceptions.jdbc4 {
+          class MySQLQueryInterruptedException {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.exceptions {
+        class MySQLStatementCancelledException {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.exceptions {
+        package com.mysql.jdbc.exceptions.jdbc4 {
+          class MySQLSyntaxErrorException {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.exceptions {
+        class MySQLSyntaxErrorException {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.exceptions {
+        package com.mysql.jdbc.exceptions.jdbc4 {
+          class MySQLTimeoutException {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.exceptions {
+        class MySQLTimeoutException {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.exceptions {
+        class MySQLTransactionRollbackException {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.exceptions {
+        package com.mysql.jdbc.exceptions.jdbc4 {
+          class MySQLTransactionRollbackException {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.exceptions {
+        class MySQLTransientConnectionException {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.exceptions {
+        package com.mysql.jdbc.exceptions.jdbc4 {
+          class MySQLTransientConnectionException {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.exceptions {
+        class MySQLTransientException {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.exceptions {
+        package com.mysql.jdbc.exceptions.jdbc4 {
+          class MySQLTransientException {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class MysqlCharset {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.authentication {
+        class MysqlClearPasswordPlugin {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.jdbc2.optional {
+        class MysqlConnectionPoolDataSource {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.integration.c3p0 {
+        class MysqlConnectionTester {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.jdbc2.optional {
+        class MysqlDataSource {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.jdbc2.optional {
+        class MysqlDataSourceFactory {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class MysqlDataTruncation {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class MysqlDefs {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class MysqlErrorNumbers {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class MysqlIO {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.authentication {
+        class MysqlNativePasswordPlugin {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.authentication {
+        class MysqlOldPasswordPlugin {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class MysqlParameterMetadata {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.jdbc2.optional {
+        class MysqlPooledConnection {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class MysqlSavepoint {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.integration.jboss {
+        class MysqlValidConnectionChecker {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.jdbc2.optional {
+        class MysqlXAConnection {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.jdbc2.optional {
+        class MysqlXADataSource {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.jdbc2.optional {
+        class MysqlXAException {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.jdbc2.optional {
+        class MysqlXid {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class NamedPipeSocketFactory {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class NdbLoadBalanceExceptionChecker {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class NetworkResources {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class NoSubInterceptorWrapper {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class NonRegisteringDriver {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class NonRegisteringReplicationDriver {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class NotImplemented {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class NotUpdatable {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.log {
+        class NullLogger {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package num {
+      class NumberGuessBean {
+      }
+    }
+  }
+  
+
+  package  {
+    package num {
+      class NumberGuessBean {
+      }
+    }
+  }
+  
+
+  package  {
+    package nonblocking {
+      class NumberWriter {
+      }
+    }
+  }
+  
+
+  package  {
+    package nonblocking {
+      class NumberWriter {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class OperationNotSupportedException {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      interface OutputStreamWatcher {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class PacketTooBigException {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.xmlrpc {
+        package com.mysql.fabric.xmlrpc.base {
+          class Param {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      interface ParameterBindings {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.xmlrpc {
+        package com.mysql.fabric.xmlrpc.base {
+          class Params {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class PerConnectionLRUFactory {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class PerVmServerConfigCacheFactory {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      interface PingTarget {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class PreparedStatement {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.jdbc2.optional {
+        class PreparedStatementWrapper {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.profiler {
+        class ProfilerEvent {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.profiler {
+        interface ProfilerEventHandler {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class ProfilerEventHandlerFactory {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.util {
+        class PropertiesDocGenerator {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class RandomBalanceStrategy {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      class RangeShardMapping {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.util {
+        class ReadAheadInputStream {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class ReflectiveStatementInterceptorAdapter {
+      }
+    }
+  }
+  
+
+  package  {
+    package jsp2.examples {
+      package jsp2.examples.simpletag {
+        class RepeatSimpleTag {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package jsp2.examples {
+      package jsp2.examples.simpletag {
+        class RepeatSimpleTag {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      interface ReplicationConnection {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class ReplicationConnectionGroup {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class ReplicationConnectionGroupManager {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class ReplicationConnectionProxy {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class ReplicationDriver {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.jmx {
+        class ReplicationGroupManager {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.jmx {
+        interface ReplicationGroupManagerMBean {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class ReplicationMySQLConnection {
+      }
+    }
+  }
+  
+
+  package  {
+    class RequestHeaderExample {
+    }
+  }
+  
+
+  package  {
+    class RequestHeaderExample {
+    }
+  }
+  
+
+  package  {
+    class RequestInfoExample {
+    }
+  }
+  
+
+  package  {
+    class RequestInfoExample {
+    }
+  }
+  
+
+  package  {
+    class RequestParamExample {
+    }
+  }
+  
+
+  package  {
+    class RequestParamExample {
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      class Response {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.xmlrpc {
+        package com.mysql.fabric.xmlrpc.base {
+          class ResponseParser {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package trailers {
+      class ResponseTrailers {
+      }
+    }
+  }
+  
+
+  package  {
+    package trailers {
+      class ResponseTrailers {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class ResultSetImpl {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      interface ResultSetInternalMethods {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class ResultSetMetaData {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.proto.xmlrpc {
+        class ResultSetParser {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      abstract class ResultSetRow {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.interceptors {
+        class ResultSetScannerInterceptor {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.util {
+        class ResultSetUtil {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package webLayer {
+      class Reviews {
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.drawboard {
+        class Room {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.drawboard {
+        class Room {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      interface RowData {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class RowDataCursor {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class RowDataDynamic {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class RowDataStatic {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class SQLError {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class Security {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class SequentialBalanceStrategy {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      class Server {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class ServerAffinityStrategy {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.util {
+        class ServerController {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      class ServerGroup {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      enum ServerMode {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class ServerPreparedStatement {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      enum ServerRole {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.interceptors {
+        class ServerStatusDiffInterceptor {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    class ServletToJsp {
+    }
+  }
+  
+
+  package  {
+    class ServletToJsp {
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.interceptors {
+        class SessionAssociationInterceptor {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    class SessionExample {
+    }
+  }
+  
+
+  package  {
+    class SessionExample {
+    }
+  }
+  
+
+  package  {
+    package listeners {
+      class SessionListener {
+      }
+    }
+  }
+  
+
+  package  {
+    package listeners {
+      class SessionListener {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.authentication {
+        class Sha256PasswordPlugin {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      class ShardIndex {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      abstract class ShardMapping {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      class ShardMappingFactory {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      class ShardTable {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      enum ShardingType {
+      }
+    }
+  }
+  
+
+  package  {
+    package examples {
+      class ShowSource {
+      }
+    }
+  }
+  
+
+  package  {
+    package examples {
+      class ShowSource {
+      }
+    }
+  }
+  
+
+  package  {
+    package jsp2.examples {
+      package jsp2.examples.simpletag {
+        class ShuffleSimpleTag {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package jsp2.examples {
+      package jsp2.examples.simpletag {
+        class ShuffleSimpleTag {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package http2 {
+      class SimpleImagePush {
+      }
+    }
+  }
+  
+
+  package  {
+    package http2 {
+      class SimpleImagePush {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class SingleByteCharsetConverter {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.log {
+        class Slf4JLogger {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package error {
+      class Smart {
+      }
+    }
+  }
+  
+
+  package  {
+    package error {
+      class Smart {
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.snake {
+        class Snake {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.snake {
+        class Snake {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.snake {
+        class SnakeAnnotation {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.snake {
+        class SnakeAnnotation {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.snake {
+        class SnakeTimer {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.snake {
+        class SnakeTimer {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      interface SocketFactory {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      interface SocketMetadata {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class SocksProxySocketFactory {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class StandardLoadBalanceExceptionChecker {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.log {
+        class StandardLogger {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class StandardSocketFactory {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      interface Statement {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class StatementImpl {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      interface StatementInterceptor {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      interface StatementInterceptorV2 {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.jdbc2.optional {
+        class StatementWrapper {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package async {
+      class Stockticker {
+      }
+    }
+  }
+  
+
+  package  {
+    package async {
+      class Stockticker {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      interface StreamingNotifiable {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class StringUtils {
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.drawboard {
+        package websocket.drawboard.wsmessages {
+          class StringWebsocketMessage {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package websocket {
+      package websocket.drawboard {
+        package websocket.drawboard.wsmessages {
+          class StringWebsocketMessage {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.xmlrpc {
+        package com.mysql.fabric.xmlrpc.base {
+          class Struct {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.jdbc2.optional {
+        class SuspendableXAConnection {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package cal {
+      class TableBean {
+      }
+    }
+  }
+  
+
+  package  {
+    package cal {
+      class TableBean {
+      }
+    }
+  }
+  
+
+  package  {
+    package jsp2.examples {
+      package jsp2.examples.simpletag {
+        class TileSimpleTag {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package jsp2.examples {
+      package jsp2.examples.simpletag {
+        class TileSimpleTag {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class TimeUtil {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.util {
+        class TimezoneDump {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class UpdatableResultSet {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class Util {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class V1toV2StatementInterceptorAdapter {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.xmlrpc {
+        package com.mysql.fabric.xmlrpc.base {
+          class Value {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package jsp2.examples {
+      class ValuesBean {
+      }
+    }
+  }
+  
+
+  package  {
+    package jsp2.examples {
+      class ValuesBean {
+      }
+    }
+  }
+  
+
+  package  {
+    package examples {
+      class ValuesTag {
+      }
+    }
+  }
+  
+
+  package  {
+    package examples {
+      class ValuesTag {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.util {
+        class VersionFSHierarchyMaker {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class WatchableOutputStream {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      class WatchableWriter {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      interface Wrapper {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      package com.mysql.jdbc.jdbc2.optional {
+        abstract class WrapperBase {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.jdbc {
+      interface WriterWatcher {
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.proto.xmlrpc {
+        class XmlRpcClient {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      package com.mysql.fabric.proto.xmlrpc {
+        interface XmlRpcMethodCaller {
+        }
+      }
+    }
+  }
+  
+
+  package  {
+    package DataLayer {
+      class accountDetails {
+      }
+    }
+  }
+  
+
+  package  {
+    package webLayer {
+      class addFood {
+      }
+    }
+  }
+  
+
+  package  {
+    package webLayer {
+      class addStudent {
+      }
+    }
+  }
+  
+
+  package  {
+    package webLayer {
+      class addVendor {
+      }
+    }
+  }
+  
+
+  package  {
+    package webLayer {
+      class addWorker {
+      }
+    }
+  }
+  
+
+  package  {
+    package webLayer {
+      class adminLogin {
+      }
+    }
+  }
+  
+
+  package  {
+    package webLayer {
+      class deleteStudent {
+      }
+    }
+  }
+  
+
+  package  {
+    package webLayer {
+      class deleteVendor {
+      }
+    }
+  }
+  
+
+  package  {
+    package webLayer {
+      class deleteWorker {
+      }
+    }
+  }
+  
+
+  package  {
+    package webLayer {
+      class generateToken {
+      }
+    }
+  }
+  
+
+  package  {
+    package webLayer {
+      class invLogin {
+      }
+    }
+  }
+  
+
+  package  {
+    package webLayer {
+      class order {
+      }
+    }
+  }
+  
+
+  package  {
+    package DataLayer {
+      class reviews {
+      }
+    }
+  }
+  
+
+  package  {
+    package webLayer {
+      class userLogin {
+      }
+    }
+  }
+  
+
+  package  {
+    package webLayer {
+      class vendorLogin {
+      }
+    }
+  }
+  
+
+  package  {
+    package DataLayer {
+      class workerDetails {
+      }
+    }
+  }
+  
+
+  AbandonedConnectionCleanupThread -up-|> Runnable
+  Async0 -up-|> HttpServlet
+  Async1 -up-|> HttpServlet
+  Async2 -up-|> HttpServlet
+  Async3 -up-|> HttpServlet
+  AsyncStockContextListener -up-|> ServletContextListener
+  AsyncStockContextListener -up-|> ServletContextListener
+  AsyncStockServlet -up-|> TickListener
+  AsyncStockServlet -up-|> AsyncListener
+  AsyncStockServlet -up-|> TickListener
+  AsyncStockServlet -up-|> AsyncListener
+  AsyncStockServlet -up-|> HttpServlet
+  AuthenticatedXmlRpcMethodCaller -up-|> XmlRpcMethodCaller
+  BestResponseTimeBalanceStrategy -up-|> BalanceStrategy
+  Blob -up-|> Blob
+  Blob -up-|> OutputStreamWatcher
+  BlobFromLocator -up-|> Blob
+  ByteCounter -up-|> HttpServlet
+  CachingSha2PasswordPlugin o-- AuthStage : stage
+  CallableStatement -up-|> CallableStatement
+  CallableStatement o-- CallableStatementParamInfo : paramInfo
+  CallableStatement o-- CallableStatementParam : returnValueParam
+  CallableStatementWrapper -up-|> CallableStatement
+  Clob -up-|> Clob
+  Clob -up-|> OutputStreamWatcher
+  Clob -up-|> WriterWatcher
+  Clock2 -up-|> Runnable
+  Clock2 -up-|> Applet
+  Clock2 -up-|> Runnable
+  Clock2 -up-|> Runnable
+  Collation o-- MysqlCharset : mysqlCharset
+  CommunicationsException -up-|> StreamingNotifiable
+  CommunicationsException -up-|> StreamingNotifiable
+  CompressionFilter -up-|> GenericFilter
+  CompressionFilterTestServlet -up-|> HttpServlet
+  CompressionResponseStream -up-|> ServletOutputStream
+  CompressionServletResponseWrapper -up-|> HttpServletResponseWrapper
+  ConnectionImpl -up-|> MySQLConnection
+  ConnectionPropertiesImpl -up-|> Serializable
+  ConnectionPropertiesImpl -up-|> ConnectionProperties
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : allowLoadLocalInfile
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : allowMultiQueries
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : allowNanAndInf
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : allowUrlInLocalInfile
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : alwaysSendSetIsolation
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : autoClosePStmtStreams
+  ConnectionPropertiesImpl o-- StringConnectionProperty : replicationConnectionGroup
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : allowMasterDownConnections
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : allowSlaveDownConnections
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : readFromMasterWhenNoSlaves
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : autoDeserialize
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : autoGenerateTestcaseScript
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : autoReconnect
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : autoReconnectForPools
+  ConnectionPropertiesImpl o-- MemorySizeConnectionProperty : blobSendChunkSize
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : autoSlowLog
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : blobsAreStrings
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : functionsNeverReturnBlobs
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : cacheCallableStatements
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : cachePreparedStatements
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : cacheResultSetMetadata
+  ConnectionPropertiesImpl o-- StringConnectionProperty : serverConfigCacheFactory
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : cacheServerConfiguration
+  ConnectionPropertiesImpl o-- IntegerConnectionProperty : callableStatementCacheSize
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : capitalizeTypeNames
+  ConnectionPropertiesImpl o-- StringConnectionProperty : characterEncoding
+  ConnectionPropertiesImpl o-- StringConnectionProperty : characterSetResults
+  ConnectionPropertiesImpl o-- StringConnectionProperty : connectionAttributes
+  ConnectionPropertiesImpl o-- StringConnectionProperty : clientInfoProvider
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : clobberStreamingResults
+  ConnectionPropertiesImpl o-- StringConnectionProperty : clobCharacterEncoding
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : compensateOnDuplicateKeyUpdateCounts
+  ConnectionPropertiesImpl o-- StringConnectionProperty : connectionCollation
+  ConnectionPropertiesImpl o-- StringConnectionProperty : connectionLifecycleInterceptors
+  ConnectionPropertiesImpl o-- IntegerConnectionProperty : connectTimeout
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : continueBatchOnError
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : createDatabaseIfNotExist
+  ConnectionPropertiesImpl o-- IntegerConnectionProperty : defaultFetchSize
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : detectServerPreparedStmts
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : dontTrackOpenResources
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : dumpQueriesOnException
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : dynamicCalendars
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : elideSetAutoCommits
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : emptyStringsConvertToZero
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : emulateLocators
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : emulateUnsupportedPstmts
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : enablePacketDebug
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : enableQueryTimeouts
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : explainSlowQueries
+  ConnectionPropertiesImpl o-- StringConnectionProperty : exceptionInterceptors
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : failOverReadOnly
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : gatherPerformanceMetrics
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : generateSimpleParameterMetadata
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : holdResultsOpenOverStatementClose
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : includeInnodbStatusInDeadlockExceptions
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : includeThreadDumpInDeadlockExceptions
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : includeThreadNamesAsStatementComment
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : ignoreNonTxTables
+  ConnectionPropertiesImpl o-- IntegerConnectionProperty : initialTimeout
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : isInteractiveClient
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : jdbcCompliantTruncation
+  ConnectionPropertiesImpl o-- MemorySizeConnectionProperty : largeRowSizeThreshold
+  ConnectionPropertiesImpl o-- StringConnectionProperty : loadBalanceStrategy
+  ConnectionPropertiesImpl o-- StringConnectionProperty : serverAffinityOrder
+  ConnectionPropertiesImpl o-- IntegerConnectionProperty : loadBalanceBlacklistTimeout
+  ConnectionPropertiesImpl o-- IntegerConnectionProperty : loadBalancePingTimeout
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : loadBalanceValidateConnectionOnSwapServer
+  ConnectionPropertiesImpl o-- StringConnectionProperty : loadBalanceConnectionGroup
+  ConnectionPropertiesImpl o-- StringConnectionProperty : loadBalanceExceptionChecker
+  ConnectionPropertiesImpl o-- StringConnectionProperty : loadBalanceSQLStateFailover
+  ConnectionPropertiesImpl o-- StringConnectionProperty : loadBalanceSQLExceptionSubclassFailover
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : loadBalanceEnableJMX
+  ConnectionPropertiesImpl o-- IntegerConnectionProperty : loadBalanceHostRemovalGracePeriod
+  ConnectionPropertiesImpl o-- StringConnectionProperty : loadBalanceAutoCommitStatementRegex
+  ConnectionPropertiesImpl o-- IntegerConnectionProperty : loadBalanceAutoCommitStatementThreshold
+  ConnectionPropertiesImpl o-- StringConnectionProperty : localSocketAddress
+  ConnectionPropertiesImpl o-- MemorySizeConnectionProperty : locatorFetchBufferSize
+  ConnectionPropertiesImpl o-- StringConnectionProperty : loggerClassName
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : logSlowQueries
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : logXaCommands
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : maintainTimeStats
+  ConnectionPropertiesImpl o-- IntegerConnectionProperty : maxQuerySizeToLog
+  ConnectionPropertiesImpl o-- IntegerConnectionProperty : maxReconnects
+  ConnectionPropertiesImpl o-- IntegerConnectionProperty : retriesAllDown
+  ConnectionPropertiesImpl o-- IntegerConnectionProperty : maxRows
+  ConnectionPropertiesImpl o-- IntegerConnectionProperty : metadataCacheSize
+  ConnectionPropertiesImpl o-- IntegerConnectionProperty : netTimeoutForStreamingResults
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : noAccessToProcedureBodies
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : noDatetimeStringSync
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : noTimezoneConversionForTimeType
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : noTimezoneConversionForDateType
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : cacheDefaultTimezone
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : nullCatalogMeansCurrent
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : nullNamePatternMatchesAll
+  ConnectionPropertiesImpl o-- IntegerConnectionProperty : packetDebugBufferSize
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : padCharsWithSpace
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : paranoid
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : pedantic
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : pinGlobalTxToPhysicalConnection
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : populateInsertRowWithDefaultValues
+  ConnectionPropertiesImpl o-- IntegerConnectionProperty : preparedStatementCacheSize
+  ConnectionPropertiesImpl o-- IntegerConnectionProperty : preparedStatementCacheSqlLimit
+  ConnectionPropertiesImpl o-- StringConnectionProperty : parseInfoCacheFactory
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : processEscapeCodesForPrepStmts
+  ConnectionPropertiesImpl o-- StringConnectionProperty : profilerEventHandler
+  ConnectionPropertiesImpl o-- StringConnectionProperty : profileSql
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : profileSQL
+  ConnectionPropertiesImpl o-- StringConnectionProperty : propertiesTransform
+  ConnectionPropertiesImpl o-- IntegerConnectionProperty : queriesBeforeRetryMaster
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : queryTimeoutKillsConnection
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : reconnectAtTxEnd
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : relaxAutoCommit
+  ConnectionPropertiesImpl o-- IntegerConnectionProperty : reportMetricsIntervalMillis
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : requireSSL
+  ConnectionPropertiesImpl o-- StringConnectionProperty : resourceId
+  ConnectionPropertiesImpl o-- IntegerConnectionProperty : resultSetSizeThreshold
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : retainStatementAfterResultSetClose
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : rewriteBatchedStatements
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : rollbackOnPooledClose
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : roundRobinLoadBalance
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : runningCTS13
+  ConnectionPropertiesImpl o-- IntegerConnectionProperty : secondsBeforeRetryMaster
+  ConnectionPropertiesImpl o-- IntegerConnectionProperty : selfDestructOnPingSecondsLifetime
+  ConnectionPropertiesImpl o-- IntegerConnectionProperty : selfDestructOnPingMaxOperations
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : replicationEnableJMX
+  ConnectionPropertiesImpl o-- StringConnectionProperty : serverTimezone
+  ConnectionPropertiesImpl o-- StringConnectionProperty : sessionVariables
+  ConnectionPropertiesImpl o-- IntegerConnectionProperty : slowQueryThresholdMillis
+  ConnectionPropertiesImpl o-- LongConnectionProperty : slowQueryThresholdNanos
+  ConnectionPropertiesImpl o-- StringConnectionProperty : socketFactoryClassName
+  ConnectionPropertiesImpl o-- StringConnectionProperty : socksProxyHost
+  ConnectionPropertiesImpl o-- IntegerConnectionProperty : socksProxyPort
+  ConnectionPropertiesImpl o-- IntegerConnectionProperty : socketTimeout
+  ConnectionPropertiesImpl o-- StringConnectionProperty : statementInterceptors
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : strictFloatingPoint
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : strictUpdates
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : overrideSupportsIntegrityEnhancementFacility
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : tcpNoDelay
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : tcpKeepAlive
+  ConnectionPropertiesImpl o-- IntegerConnectionProperty : tcpRcvBuf
+  ConnectionPropertiesImpl o-- IntegerConnectionProperty : tcpSndBuf
+  ConnectionPropertiesImpl o-- IntegerConnectionProperty : tcpTrafficClass
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : tinyInt1isBit
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : traceProtocol
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : treatUtilDateAsTimestamp
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : transformedBitIsBoolean
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : useBlobToStoreUTF8OutsideBMP
+  ConnectionPropertiesImpl o-- StringConnectionProperty : utf8OutsideBmpExcludedColumnNamePattern
+  ConnectionPropertiesImpl o-- StringConnectionProperty : utf8OutsideBmpIncludedColumnNamePattern
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : useCompression
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : useColumnNamesInFindColumn
+  ConnectionPropertiesImpl o-- StringConnectionProperty : useConfigs
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : useCursorFetch
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : useDynamicCharsetInfo
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : useDirectRowUnpack
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : useFastIntParsing
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : useFastDateParsing
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : useHostsInPrivileges
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : useInformationSchema
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : useJDBCCompliantTimezoneShift
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : useLocalSessionState
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : useLocalTransactionState
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : useLegacyDatetimeCode
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : sendFractionalSeconds
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : useNanosForElapsedTime
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : useOldAliasMetadataBehavior
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : useOldUTF8Behavior
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : useOnlyServerErrorMessages
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : useReadAheadInput
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : useSqlStateCodes
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : useSSL
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : useSSPSCompatibleTimezoneShift
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : useStreamLengthsInPrepStmts
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : useTimezone
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : useUltraDevWorkAround
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : useUnbufferedInput
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : useUnicode
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : useUsageAdvisor
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : yearIsDateType
+  ConnectionPropertiesImpl o-- StringConnectionProperty : zeroDateTimeBehavior
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : useJvmCharsetConverters
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : useGmtMillisForDatetimes
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : dumpMetadataOnColumnNotFound
+  ConnectionPropertiesImpl o-- StringConnectionProperty : clientCertificateKeyStoreUrl
+  ConnectionPropertiesImpl o-- StringConnectionProperty : trustCertificateKeyStoreUrl
+  ConnectionPropertiesImpl o-- StringConnectionProperty : clientCertificateKeyStoreType
+  ConnectionPropertiesImpl o-- StringConnectionProperty : clientCertificateKeyStorePassword
+  ConnectionPropertiesImpl o-- StringConnectionProperty : trustCertificateKeyStoreType
+  ConnectionPropertiesImpl o-- StringConnectionProperty : trustCertificateKeyStorePassword
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : verifyServerCertificate
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : useAffectedRows
+  ConnectionPropertiesImpl o-- StringConnectionProperty : passwordCharacterEncoding
+  ConnectionPropertiesImpl o-- IntegerConnectionProperty : maxAllowedPacket
+  ConnectionPropertiesImpl o-- StringConnectionProperty : authenticationPlugins
+  ConnectionPropertiesImpl o-- StringConnectionProperty : disabledAuthenticationPlugins
+  ConnectionPropertiesImpl o-- StringConnectionProperty : defaultAuthenticationPlugin
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : disconnectOnExpiredPasswords
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : getProceduresReturnsFunctions
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : detectCustomCollations
+  ConnectionPropertiesImpl o-- StringConnectionProperty : serverRSAPublicKeyFile
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : allowPublicKeyRetrieval
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : dontCheckOnDuplicateKeyUpdateInSQL
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : readOnlyPropagatesToServer
+  ConnectionPropertiesImpl o-- StringConnectionProperty : enabledSSLCipherSuites
+  ConnectionPropertiesImpl o-- StringConnectionProperty : enabledTLSProtocols
+  ConnectionPropertiesImpl o-- BooleanConnectionProperty : enableEscapeProcessing
+  ConnectionWrapper -up-|> Connection
+  ContextListener -up-|> ServletContextAttributeListener
+  ContextListener -up-|> ServletContextListener
+  ContextListener -up-|> ServletContextAttributeListener
+  ContextListener -up-|> ServletContextListener
+  CookieExample -up-|> HttpServlet
+  DatabaseMetaData -up-|> DatabaseMetaData
+  DebugValidator -up-|> TagLibraryValidator
+  DrawboardContextListener -up-|> ServletContextListener
+  DrawboardContextListener -up-|> ServletContextListener
+  Driver -up-|> Driver
+  EchoAttributesTag -up-|> DynamicAttributes
+  EchoAttributesTag -up-|> SimpleTagSupport
+  EchoAttributesTag -up-|> DynamicAttributes
+  ErrorReportingExceptionInterceptor -up-|> ExceptionInterceptor
+  ExampleFilter -up-|> GenericFilter
+  ExampleTagBase -up-|> BodyTagSupport
+  ExamplesConfig -up-|> ServerApplicationConfig
+  ExamplesConfig -up-|> ServerApplicationConfig
+  FabricMultiTenantConnectionProvider -up-|> MultiTenantConnectionProvider
+  FabricMySQLConnectionProxy -up-|> FabricMySQLConnection
+  FabricMySQLConnectionProxy -up-|> FabricMySQLConnectionProperties
+  FabricMySQLDataSource -up-|> FabricMySQLConnectionProperties
+  FabricMySQLDriver -up-|> Driver
+  FabricStateResponse o-- T : data
+  FindBookSimpleTag -up-|> SimpleTagSupport
+  FooTagExtraInfo -up-|> TagExtraInfo
+  HelloWorldExample -up-|> HttpServlet
+  HelloWorldSimpleTag -up-|> SimpleTagSupport
+  InternalXmlRpcMethodCaller -up-|> XmlRpcMethodCaller
+  JDBC4ClientInfoProviderSP -up-|> JDBC4ClientInfoProvider
+  JDBC4CommentClientInfoProvider -up-|> JDBC4ClientInfoProvider
+  JDBC4Connection -up-|> JDBC4MySQLConnection
+  JDBC4FabricMySQLConnectionProxy -up-|> JDBC4FabricMySQLConnection
+  JDBC4FabricMySQLConnectionProxy -up-|> FabricMySQLConnectionProperties
+  JDBC4LoadBalancedMySQLConnection -up-|> JDBC4MySQLConnection
+  JDBC4MultiHostMySQLConnection -up-|> JDBC4MySQLConnection
+  JDBC4MysqlSQLXML -up-|> SQLXML
+  JDBC4MysqlSQLXML o-- SimpleSaxToReader : saxToReaderConverter
+  JDBC4NClob -up-|> NClob
+  JDBC4ReplicationMySQLConnection -up-|> JDBC4MySQLConnection
+  Jdk14Logger -up-|> Log
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> SimpleTag
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> SimpleTag
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> SimpleTag
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  JspClass -up-|> HttpJspPage
+  LoadBalanceConnectionGroupManager -up-|> LoadBalanceConnectionGroupManagerMBean
+  LoadBalancedAutoCommitInterceptor -up-|> StatementInterceptorV2
+  LoadBalancedConnectionProxy -up-|> PingTarget
+  LoadBalancedMySQLConnection -up-|> LoadBalancedConnection
+  LoggingProfilerEventHandler -up-|> ProfilerEventHandler
+  MultiHostConnectionProxy -up-|> InvocationHandler
+  MultiHostMySQLConnection -up-|> MySQLConnection
+  MySQLTransactionRollbackException -up-|> DeadlockTimeoutRollbackMarker
+  MySQLTransactionRollbackException -up-|> DeadlockTimeoutRollbackMarker
+  MysqlClearPasswordPlugin -up-|> AuthenticationPlugin
+  MysqlConnectionPoolDataSource -up-|> ConnectionPoolDataSource
+  MysqlConnectionTester -up-|> QueryConnectionTester
+  MysqlDataSource -up-|> DataSource
+  MysqlDataSource -up-|> Referenceable
+  MysqlDataSource -up-|> Serializable
+  MysqlDataSourceFactory -up-|> ObjectFactory
+  MysqlNativePasswordPlugin -up-|> AuthenticationPlugin
+  MysqlOldPasswordPlugin -up-|> AuthenticationPlugin
+  MysqlParameterMetadata -up-|> ParameterMetaData
+  MysqlPooledConnection -up-|> PooledConnection
+  MysqlSavepoint -up-|> Savepoint
+  MysqlValidConnectionChecker -up-|> ValidConnectionChecker
+  MysqlValidConnectionChecker -up-|> Serializable
+  MysqlXAConnection -up-|> XAConnection
+  MysqlXAConnection -up-|> XAResource
+  MysqlXADataSource -up-|> XADataSource
+  MysqlXid -up-|> Xid
+  NamedPipeSocketFactory -up-|> SocketFactory
+  NamedPipeSocketFactory -up-|> SocketMetadata
+  NoSubInterceptorWrapper -up-|> StatementInterceptorV2
+  NonRegisteringDriver -up-|> Driver
+  NullLogger -up-|> Log
+  NumberGuessBean -up-|> Serializable
+  NumberGuessBean -up-|> Serializable
+  NumberWriter -up-|> HttpServlet
+  PerConnectionLRUFactory -up-|> CacheAdapterFactory
+  PerVmServerConfigCacheFactory -up-|> CacheAdapterFactory
+  PreparedStatement -up-|> PreparedStatement
+  PreparedStatement o-- ParseInfo : parseInfo
+  PreparedStatementWrapper -up-|> PreparedStatement
+  RandomBalanceStrategy -up-|> BalanceStrategy
+  ReflectiveStatementInterceptorAdapter -up-|> StatementInterceptorV2
+  RepeatSimpleTag -up-|> SimpleTagSupport
+  ReplicationConnectionProxy -up-|> PingTarget
+  ReplicationDriver -up-|> Driver
+  ReplicationGroupManager -up-|> ReplicationGroupManagerMBean
+  ReplicationMySQLConnection -up-|> ReplicationConnection
+  RequestHeaderExample -up-|> HttpServlet
+  RequestInfoExample -up-|> HttpServlet
+  RequestParamExample -up-|> HttpServlet
+  ResponseTrailers -up-|> HttpServlet
+  ResultSetImpl -up-|> ResultSetInternalMethods
+  ResultSetMetaData -up-|> ResultSetMetaData
+  ResultSetScannerInterceptor -up-|> StatementInterceptor
+  Reviews -up-|> HttpServlet
+  RowDataCursor -up-|> RowData
+  RowDataDynamic -up-|> RowData
+  RowDataStatic -up-|> RowData
+  SequentialBalanceStrategy -up-|> BalanceStrategy
+  Server -up-|> Comparable
+  ServerStatusDiffInterceptor -up-|> StatementInterceptor
+  ServletToJsp -up-|> HttpServlet
+  SessionAssociationInterceptor -up-|> StatementInterceptor
+  SessionExample -up-|> HttpServlet
+  SessionListener -up-|> ServletContextListener
+  SessionListener -up-|> HttpSessionAttributeListener
+  SessionListener -up-|> HttpSessionListener
+  SessionListener -up-|> ServletContextListener
+  SessionListener -up-|> HttpSessionAttributeListener
+  SessionListener -up-|> HttpSessionListener
+  Sha256PasswordPlugin -up-|> AuthenticationPlugin
+  ShowSource -up-|> TagSupport
+  ShuffleSimpleTag -up-|> SimpleTagSupport
+  SimpleImagePush -up-|> HttpServlet
+  Slf4JLogger -up-|> Log
+  StandardLoadBalanceExceptionChecker -up-|> LoadBalanceExceptionChecker
+  StandardLogger -up-|> Log
+  StandardSocketFactory -up-|> SocketFactory
+  StandardSocketFactory -up-|> SocketMetadata
+  StatementImpl -up-|> Statement
+  StatementWrapper -up-|> Statement
+  Stockticker -up-|> Runnable
+  Stockticker -up-|> Runnable
+  SuspendableXAConnection -up-|> XAConnection
+  SuspendableXAConnection -up-|> XAResource
+  TileSimpleTag -up-|> SimpleTagSupport
+  V1toV2StatementInterceptorAdapter -up-|> StatementInterceptorV2
+  ValuesTag -up-|> TagSupport
+  addFood -up-|> HttpServlet
+  addStudent -up-|> HttpServlet
+  addVendor -up-|> HttpServlet
+  addWorker -up-|> HttpServlet
+  adminLogin -up-|> HttpServlet
+  deleteStudent -up-|> HttpServlet
+  deleteVendor -up-|> HttpServlet
+  deleteWorker -up-|> HttpServlet
+  generateToken -up-|> HttpServlet
+  invLogin -up-|> HttpServlet
+  order -up-|> HttpServlet
+  userLogin -up-|> HttpServlet
+  vendorLogin -up-|> HttpServlet
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

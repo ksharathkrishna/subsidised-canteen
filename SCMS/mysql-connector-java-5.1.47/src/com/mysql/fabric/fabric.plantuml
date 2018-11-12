@@ -1,0 +1,275 @@
+@startuml
+
+title __FABRIC's Class Diagram__\n
+
+  package  {
+    package com.mysql.fabric {
+      class FabricCommunicationException {
+          {static} - serialVersionUID : long
+          + FabricCommunicationException()
+          + FabricCommunicationException()
+          + FabricCommunicationException()
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      class FabricConnection {
+          - client : XmlRpcClient
+          - shardMappingsByTableName : Map<String, ShardMapping>
+          - serverGroupsByName : Map<String, ServerGroup>
+          - shardMappingsExpiration : long
+          - shardMappingsTtl : int
+          - serverGroupsExpiration : long
+          - serverGroupsTtl : int
+          + FabricConnection()
+          + FabricConnection()
+          + getInstanceUuid()
+          + getVersion()
+          + refreshState()
+          + refreshStatePassive()
+          + getServerGroup()
+          + getShardMapping()
+          + isStateExpired()
+          + getFabricHosts()
+          + getClient()
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      class FabricStateResponse {
+          - secsTtl : int
+          - expireTimeMillis : long
+          + FabricStateResponse()
+          + FabricStateResponse()
+          + getData()
+          + getTtl()
+          + getExpireTimeMillis()
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      class HashShardMapping {
+          {static} - md5Hasher : MessageDigest
+          + HashShardMapping()
+          # getShardIndexForKey()
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      class ReverseShardIndexSorter {
+          {static} + instance : ReverseShardIndexSorter
+          + compare()
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      class RangeShardMapping {
+          + RangeShardMapping()
+          # getShardIndexForKey()
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      class RangeShardIndexSorter {
+          {static} + instance : RangeShardIndexSorter
+          + compare()
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      class Response {
+          - protocolVersion : int
+          - fabricUuid : String
+          - ttl : int
+          - errorMessage : String
+          - resultSet : List<Map<String, ?>>
+          + Response()
+          + getProtocolVersion()
+          + getFabricUuid()
+          + getTtl()
+          + getErrorMessage()
+          + getResultSet()
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      class Server {
+          - groupName : String
+          - uuid : String
+          - hostname : String
+          - port : int
+          - mode : ServerMode
+          - role : ServerRole
+          - weight : double
+          + Server()
+          + getGroupName()
+          + getUuid()
+          + getHostname()
+          + getPort()
+          + getMode()
+          + getRole()
+          + getWeight()
+          + getHostPortString()
+          + isMaster()
+          + isSlave()
+          + toString()
+          + equals()
+          + hashCode()
+          + compareTo()
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      class ServerGroup {
+          - name : String
+          - servers : Set<Server>
+          + ServerGroup()
+          + getName()
+          + getServers()
+          + getMaster()
+          + getServer()
+          + toString()
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      enum ServerMode {
+        OFFLINE
+        READ_ONLY
+        WRITE_ONLY
+        READ_WRITE
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      enum ServerRole {
+        FAULTY
+        SPARE
+        SECONDARY
+        PRIMARY
+        CONFIGURING
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      class ShardIndex {
+          - bound : String
+          - shardId : Integer
+          - groupName : String
+          + ShardIndex()
+          + getBound()
+          + getShardId()
+          + getGroupName()
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      abstract class ShardMapping {
+          - mappingId : int
+          - shardingType : ShardingType
+          - globalGroupName : String
+          # shardTables : Set<ShardTable>
+          # shardIndices : Set<ShardIndex>
+          + ShardMapping()
+          + getGroupNameForKey()
+          {abstract} # getShardIndexForKey()
+          + getMappingId()
+          + getShardingType()
+          + getGlobalGroupName()
+          + getShardTables()
+          + getShardIndices()
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      class ShardMappingFactory {
+          + createShardMapping()
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      class ShardTable {
+          - database : String
+          - table : String
+          - column : String
+          + ShardTable()
+          + getDatabase()
+          + getTable()
+          + getColumn()
+      }
+    }
+  }
+  
+
+  package  {
+    package com.mysql.fabric {
+      enum ShardingType {
+        LIST
+        RANGE
+        HASH
+      }
+    }
+  }
+  
+
+  FabricStateResponse o-- T : data
+  HashShardMapping +-down- ReverseShardIndexSorter
+  ReverseShardIndexSorter -up-|> Comparator
+  RangeShardMapping +-down- RangeShardIndexSorter
+  RangeShardIndexSorter -up-|> Comparator
+  Server -up-|> Comparable
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
