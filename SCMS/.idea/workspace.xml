@@ -66,7 +66,7 @@
                 <Category>Methods</Category>
                 <Category>Constructors</Category>
                 <Category>Fields</Category>
-                <Category>Inner Classes</Category>
+                <Category />
                 <Category>Properties</Category>
               </Categories>
               <SCOPE>All</SCOPE>
@@ -130,7 +130,7 @@
                 <Category>Methods</Category>
                 <Category>Constructors</Category>
                 <Category>Fields</Category>
-                <Category>Inner Classes</Category>
+                <Category />
               </Categories>
               <SCOPE>All</SCOPE>
               <VISIBILITY>private</VISIBILITY>
@@ -172,7 +172,7 @@
                 <Category>Constructors</Category>
                 <Category>Methods</Category>
                 <Category>Properties</Category>
-                <Category>Inner Classes</Category>
+                <Category />
               </Categories>
               <SCOPE>All</SCOPE>
               <VISIBILITY>private</VISIBILITY>
@@ -1345,7 +1345,7 @@
             <Category>Constructors</Category>
             <Category>Methods</Category>
             <Category>Properties</Category>
-            <Category>Inner Classes</Category>
+            <Category />
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
@@ -1385,7 +1385,7 @@
             <Category>Methods</Category>
             <Category>Constructors</Category>
             <Category>Fields</Category>
-            <Category>Inner Classes</Category>
+            <Category />
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
@@ -1434,7 +1434,7 @@
             <Category>Methods</Category>
             <Category>Constructors</Category>
             <Category>Fields</Category>
-            <Category>Inner Classes</Category>
+            <Category />
             <Category>Properties</Category>
           </Categories>
           <SCOPE>All</SCOPE>
@@ -1448,7 +1448,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>web:war exploded</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1496,7 +1496,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Subsidised Canteen</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>
