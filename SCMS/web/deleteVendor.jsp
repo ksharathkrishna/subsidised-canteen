@@ -32,7 +32,7 @@
     <form align ="center" action="/deleteVendor" method="post">
         <%--Username: <input type="text" name="username" width="30"><br><br><br><br>--%>
         <%--<input type="submit" value="delete"><br><br><br><br>--%>
-        <label for="username">Email</label>
+        <label for="username">username</label>
         <input type="email" class="form-control" name="username" id="username" placeholder="username ">
         <br/><br/>
         <button type="submit" value="Delete" class="btn btn-Danger btn-lg">Remove</button>
