@@ -24,7 +24,7 @@
         <form align = "center" action="${pageContext.request.contextPath}/addStudent" method="post">
         <div class="form-row">
             <div class="form-group col-md-6">
-                <label for="username">Email</label>
+                <label for="username">Username</label>
                 <input type="email" minlength="5" pattern="[a-z0-9._%+-]+@scms" class="form-control" name="username" id="username" area-describedby="emailHelp" placeholder="username">
                 <large id="emailHelp" class="form-text text-muted">Username Should be of the form @scms</large>
             </div>
@@ -39,7 +39,7 @@
         <%--</div>--%>
         <div class="form-group">
             <label for="cardno">Card Number</label>
-            <input type="text" class="form-control" name="cardno" id="cardno" placeholder="Enter card number">
+            <input type="text" minlength="12" maxlength="12" class="form-control" name="cardno" id="cardno" placeholder="Enter 12 digit card number">
         </div>
         <%--<div class="container" style="width:40%">--%>
             <%--<div class="form-group ">--%>

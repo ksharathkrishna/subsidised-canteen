@@ -25,7 +25,7 @@
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label for="username">username</label>
-                <input type="email" pattern="[a-z0-9._%+-]+@inv" class="form-control" name="username" id="username" placeholder="username">
+                <input type="email" pattern="[a-zA-Z0-9._%+-]+@inv" class="form-control" name="username" id="username" placeholder="username">
             </div>
             <div class="form-group col-md-6">
                 <label for="password">Password</label>
@@ -42,8 +42,8 @@
         </div>
         <div class="container" style="width:40%">
             <div class="form-group ">
-                <label for="age">itemid</label>
-                <input type="text" class="form-control" name="itemid" id="age" placeholder="Enter ID">
+                <label for="age">Age</label>
+                <input type="number" min="18" class="form-control" name="itemid" id="age" placeholder="Enter ID">
             </div>
         </div>
 

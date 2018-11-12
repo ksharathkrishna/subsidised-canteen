@@ -18,14 +18,14 @@
 
     </style>
 </head>
-<header style="background:lightyellow">
+<header style="background:darkorange">
     <br/>
     <br>
     <br>
     <div class="container" style="width: 40%">
         <%--<h1 class="heading" ><input type="image" style="width: 30%" src="https://image.flaticon.com/sprites/new_packs/133293-restaurant-icons.png" alt=""></h1>--%>
     </div>
-    <h2 class="heading"  style="color: black" >WELCOME INVENTORY ADMIN</h2>
+    <h2 class="heading"  style="color: white" >INVENTORY ADMIN SECTION</h2>
     <br>
 </header>
 <br><br>

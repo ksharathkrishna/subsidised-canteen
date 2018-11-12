@@ -30,7 +30,7 @@
 
         <div class="card-body">
           <img src="https://image.flaticon.com/icons/svg/3/3729.svg" class="card-img-top">
-          <p class="card-text">Admin </p>
+          <p class="card-text">Customer Admin </p>
             </div></a>
     </div>
     <p               >
@@ -40,7 +40,7 @@
         <div class="card-body">
 
           <img src="https://image.flaticon.com/icons/svg/75/75721.svg" class="card-img-top">
-          <p class="card-text">Inv Admin </p>
+          <p class="card-text">Inventory Admin </p>
 
         </div></a>
 

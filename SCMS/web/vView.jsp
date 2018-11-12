@@ -28,7 +28,9 @@
     body {background-image:url("im.jpg");}
 
 </style>
-<h2 align="center"><font><strong>Customer Details</strong></font></h2>
+<br>
+<br>
+<h2 align="center"><font><strong>Vendor Details</strong></font></h2>
 <div class="container" align="centre" style="width: 20%">
     <br/>
     <a href="invSection.jsp"  align="centre" class="btn btn-success btn-lg" >Admin Page</a>
@@ -42,17 +44,17 @@
 
     </tr>
     <tr bgcolor="yellow">
-        <td width="20%"><b>Item no     </b></td>
+        <td width="20%"><b>Age     </b></td>
         <td width="30%"><b> Name  </b></td>
-        <td width="30%" d><b>Username</b></tdwid>
-        <td width="30%"><b> Phone Number     </b></td>
+        <td width="30%" ><b>Username</b></td>
+        <td width="30%"><b> Phone     </b></td>
         <%--<td width="10%"><b> Age</b></td>--%>
     </tr>
     <%
         try{
             connection = DriverManager.getConnection(connectionUrl+dbName, userId, password);
             statement=connection.createStatement();
-            String sql ="SELECT * FROM vendor WHERE itemid!=23 ";
+            String sql ="SELECT * FROM vendor WHERE username!='abc@xyz' ";
             System.out.println("sql"+sql);
 
             resultSet = statement.executeQuery(sql);
@@ -60,7 +62,7 @@
     %>
     <tr bgcolor="white">
 
-        <td><%=resultSet.getString("ItemID") %></td>
+        <td><%=resultSet.getString("Age") %></td>
         <td><%=resultSet.getString("name") %></td>
         <td><%=resultSet.getString("username") %></td>
         <td><%=resultSet.getString("phoneno") %></td>

@@ -28,7 +28,10 @@
     body {background-image:url("im.jpg");}
 
 </style>
-<h2 align="center"><font><strong>Customer Details</strong></font></h2>
+<br>
+<br>
+<br>
+<h2 align="center"><font><strong>CUSTOMER DETAILS</strong></font></h2>
 <div class="container" align="centre" style="width: 20%">
     <br/>
     <a href="admin.jsp"  align="centre" class="btn btn-success" >Return to Admin Page</a>
@@ -42,17 +45,20 @@
 
     </tr>
     <tr bgcolor="yellow">
-        <td width="30%"><b>CARD NO            </b></td>
-        <td width="30%"><b>USERNAME           </b></td>
+        <%--<td width="15%"><b>CARD NO            </b></td>--%>
+        <td width="20%"><b>USERNAME           </b></td>
         <!--<td><b>Password</b></td>-->
-        <td width="30%"><b>      NAME     </b></td>
-        <td width="10%"><b> Age</b></td>
+        <td width="20%"><b>     NAME     </b></td>
+        <td width="5%"><b> AGE</b></td>
+        <td width="15%"><b>PHONE</b></td>
+        <td width="20%"><b>      ADDRESS     </b></td>
+
     </tr>
     <%
         try{
             connection = DriverManager.getConnection(connectionUrl+dbName, userId, password);
             statement=connection.createStatement();
-            String sql ="SELECT PHONENO,USERNAME,NAME,AGE FROM customer,validation WHERE customer.cardno=validation.cardno";
+            String sql ="SELECT PHONENO,USERNAME,NAME,AGE,PHONENO,ADDRESS FROM customer,validation WHERE customer.cardno=validation.cardno";
             System.out.println("sql"+sql);
 
             resultSet = statement.executeQuery(sql);
@@ -60,11 +66,13 @@
     %>
     <tr bgcolor="white">
 
-        <td><%=resultSet.getString("phoneno") %></td>
+        <%--<td><%=resultSet.getString("") %></td>--%>
         <td><%=resultSet.getString("username") %></td>
         <%--<!--<td><%=resultSet.getString("password") %></td>-->--%>
         <td><%=resultSet.getString("name") %></td>
         <td><%=resultSet.getString("age") %></td>
+        <td><%=resultSet.getString("phoneno") %></td>
+        <td><%=resultSet.getString("address") %></td>
 
     </tr>
 

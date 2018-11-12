@@ -25,7 +25,7 @@
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label for="username">Worker ID</label>
-                <input type="text" maxlength="5" minlength="5"  class="form-control" name="username" id="username" placeholder="ID">
+                <input type="text" maxlength="5" minlength="5"  class="form-control" name="username" id="username" placeholder="Enter your 5 digit ID">
             </div>
             <div class="form-group col-md-6">
                 <label for="password">Salary</label>
@@ -37,12 +37,12 @@
             <input type="text" class="form-control" name="name" id="name" placeholder="Type your name">
         </div>
         <div class="form-group">
-            <label for="cardno">phone</label>
+            <label for="cardno">Phone</label>
             <input type="text" pattern="\d*" maxlength="10" minlength="10" class="form-control" name="phone" id="cardno" placeholder="Enter phone numbe">
         </div>
         <div class="container" style="width:40%">
             <div class="form-group ">
-                <label for="age">age</label>
+                <label for="age">Age</label>
                 <input type="text" pattern="\d*"  minlength="2" maxlength="2" class="form-control" name="age" id="age" placeholder="Enter Age">
             </div>
         </div>
