@@ -37,8 +37,8 @@
     </form>
 </div>
 
-<p align="center" style="color: red">${errorMessage}</p>
-<p align="center" style="color: yellow">${message}</p>
+<p align="center" class="" style="color: red">${errorMessage}</p>
+<p align="center" class="heading" style="font-size: xx-large">${message}</p>
 
 </body>
 </html>

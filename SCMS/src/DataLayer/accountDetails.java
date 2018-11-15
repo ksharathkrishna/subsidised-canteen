@@ -66,7 +66,7 @@ public class accountDetails {
         }
     }
     public int dc;
-    public  int decQuantity(String foodID,String Quantity ) {
+    public  int decQuantity(String foodID, int Quantity ) {
         Connection conn = null;
         Statement stmt = null;
         int flag = 1;
@@ -88,7 +88,7 @@ public class accountDetails {
             System.out.println("after rs");
             while (rs.next()) {
                 System.out.println("inside while");
-                flag = rs.getInt("quantity")-Integer.parseInt(Quantity);
+                flag = rs.getInt("quantity")-Quantity;
                 dc=1;
             }
             if(flag>=0) {
@@ -123,6 +123,7 @@ public class accountDetails {
         }
  return flag;
     }
+
     public boolean isPasswordCorrect(String adminName, String password) {
         Connection conn = null;
         Statement stmt = null;
