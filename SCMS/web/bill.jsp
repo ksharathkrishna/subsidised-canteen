@@ -116,7 +116,7 @@
         <%--<td><%=resultSet.getString("FoodID") %></td>--%>
         <td><%=resultSet.getString("Cost") %></td>
         <td><%=q %> </td>
-        <td><%=t %> </td>
+        <td ><%="Rs. "+t %> </td>
         <td><%=timestamp  %></td>
         <%--<td><%=hr  %></td>--%>
         <%--<td><%=mi  %></td>--%>

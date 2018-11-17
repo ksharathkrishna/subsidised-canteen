@@ -39,7 +39,7 @@
         <%--</div>--%>
         <div class="form-group">
             <label for="cardno">Card Number</label>
-            <input type="text" minlength="12" maxlength="12" class="form-control" name="cardno" id="cardno" placeholder="Enter 12 digit card number">
+            <input type="text" pattern=\d* minlength="12" maxlength="12" class="form-control" name="cardno" id="cardno" placeholder="Enter 12 digit card number">
         </div>
         <%--<div class="container" style="width:40%">--%>
             <%--<div class="form-group ">--%>
