@@ -38,7 +38,7 @@
                     <p class="card-text">Delete Worker </p>
 
                 </div></a>
-        </div><div class="card col-sm-4" ><a href="vWorker.jsp" class="btn btn-warning" >
+        </div><div class="card col-sm-4" ><a href="wView.jsp" class="btn btn-warning" >
         <div class="card-body">
             <img src="https://image.flaticon.com/icons/svg/33/33308.svg" class="card-img-top">
             <p class="card-text">Worker Details </p>

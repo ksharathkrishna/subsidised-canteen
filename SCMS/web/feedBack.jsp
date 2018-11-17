@@ -7,13 +7,11 @@
 
 
 </head>
-<%--<h2 class="heading" style="color: black" style="background: #009900">WELCOME ADMIN</h2>--%>
 <header style="background: darkorange">
     <br/>
     <br>
     <br>
     <div class="container" style="width: 40%">
-        <%--<h1 class="heading" ><input type="image" style="width: 30%" src="https://image.flaticon.com/sprites/new_packs/133293-restaurant-icons.png" alt=""></h1>--%>
     </div>
     <h2 class="heading"  style="color: white" >FEEDBACKS</h2>
     <br>
@@ -22,14 +20,7 @@
 
 <body><div class="container" style="width: 40%" >
     <div class="row">
-        <%--<div class="card col-sm-4" >--%>
-            <%--<a href="Mongo.jsp" class="btn btn-primary" >--%>
 
-                <%--<div class="card-body">--%>
-                    <%--<img src="https://image.flaticon.com/icons/svg/813/813418.svg" class="card-img-top">--%>
-                    <%--<p class="card-text">Give FeedBack </p>--%>
-                <%--</div></a>--%>
-        <%--</div>--%>
         <div class="card col-sm-6" >
             <a href="Mongo.jsp" class="btn btn-warning" >
 

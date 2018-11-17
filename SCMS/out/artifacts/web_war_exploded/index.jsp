@@ -65,7 +65,6 @@
 </div>
 <br>
 <br>
-<%--<a title="Print Screen" alt="Print Screen" class ="btn btn-primary" onclick="window.print();" target="_blank" style="cursor:pointer;" >PRINT</a>--%>
 
 </div>
 </body></html>

@@ -36,8 +36,6 @@
         <a href="Mongo.jsp"  align="centre" class="btn btn-link" > <h2 class="heading"  style="color: deepskyblue" >I would really appreciate any feedback you can give  :-) </h2></a>
         <hr>
         <br>
-    <%--<a title="Print Screen" alt="Print Screen" class ="btn btn-warning btn-lg " onclick="window.print();" target="_blank" style="cursor:pointer;" >PRINT</a>--%>
-    <%--<br>--%>
 
         <br>
     <a href="index.jsp"  align="centre" class="btn btn-info btn-lg" >Home</a>

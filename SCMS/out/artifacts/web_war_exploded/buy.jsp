@@ -25,7 +25,7 @@
         </div>
         <div class="form-group">
             <label for="exampleInputPassword1">Quantity</label>
-            <input type="number" min="1" name="quantity" class="form-control" id="exampleInputPassword1" placeholder="1">
+            <input type="text" pattern =\d* maxlength="2" minlength="1" name="quantity" class="form-control" id="exampleInputPassword1" placeholder="Enter Quantity">
         </div>
         <br>
         <button type="submit" value="Login" class="btn btn-warning btn-lg">Confirm</button>

@@ -35,7 +35,6 @@
 <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 <style>
 
-    /*body {background-image:url("im.jpg");}*/
 
 </style>
 <header style="background: deepskyblue">
@@ -54,14 +53,7 @@
 <br>
 
 
-<%--<div class="container" align="centre" style="width: 20%">--%>
-    <%--<br/>--%>
-    <%--<a href="orderFood.jsp"  align="centre" class="btn btn-success btn-lg" >Return to Food Menu</a>--%>
-    <%--<a href="buy.jsp"  align="centre" class="btn btn-warning btn-lg" >Order Food</a>--%>
-    <%--<br/>--%>
-    <%--<br/>--%>
-    <%--<hr>--%>
-<%--</div>--%>
+
 <table align="center" cellpadding="20" cellspacing="10" border="1" width="50%">
     <tr>
 
@@ -87,24 +79,11 @@
             statement=connection.createStatement();
 
           //  System.out.println("bgjbfdjbgjdfbgkfdgdfbgjkfd"+u);
-
-           // connection = DriverManager.getConnection(connectionUrl+dbName, userId, password);
-         //  System.out.println("bgjbfdjbgjdfbgkfdgdfbgjkfd"+u);
-
-           // statement=connection.createStatement();
-//            void getd(String x, int r){
-//                u=x;
-//                q=r;
-//
-//            }
-            order o=new order();
+   order o=new order();
             String u=o.FI;
             int q=o.Q;
             String sql ="SELECT FoodName,Cost,FoodID FROM food WHERE foodid =\""+u+"\"";
             System.out.println("sql"+sql+"dsfdsf"+u);
-//            int c= Integer.parseInt(resultSet.getString("Cost"));
-//            int t=q*c;
-
             resultSet = statement.executeQuery(sql);
             while(resultSet.next()){
                 int c= Integer.parseInt(resultSet.getString("Cost"));
@@ -113,18 +92,10 @@
     <tr bgcolor="white">
 
         <td><%=resultSet.getString("FoodName") %></td>
-        <%--<td><%=resultSet.getString("FoodID") %></td>--%>
         <td><%=resultSet.getString("Cost") %></td>
         <td><%=q %> </td>
         <td ><%="Rs. "+t %> </td>
         <td><%=timestamp  %></td>
-        <%--<td><%=hr  %></td>--%>
-        <%--<td><%=mi  %></td>--%>
-
-        <%--<td><%=ap  %></td>--%>
-
-
-
 
     </tr>
 
@@ -141,13 +112,6 @@
         }
     %>
 </table>
-<%--<div class="container" style="width: 40%">--%>
-<%--<br/><br/>--%>
-<%--<a href="index.jsp" class="btn btn-outline-dark" >Back</a>--%>
-<%--</div>--%>
-<%--<div class="container">--%>
-    <%--<p align="center" class="heading" style="font-size: xx-large">TOTAL BILL =<%=t %></p>--%>
-<%--</div>--%>
 <hr>
 <div class="heading" style="width: content-box">
     <h2 class="heading" style="color: black">Enjoy Your Food</h2>

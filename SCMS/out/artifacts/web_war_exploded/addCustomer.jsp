@@ -33,20 +33,11 @@
                 <input type="password" class="form-control" name="password" id="password" placeholder="Password">
             </div>
         </div>
-        <%--<div class="form-group">--%>
-            <%--<label for="name">Name</label>--%>
-            <%--<input type="text" class="form-control" name="name" id="name" placeholder="Type your name">--%>
-        <%--</div>--%>
         <div class="form-group">
             <label for="cardno">Card Number</label>
             <input type="text" pattern=\d* minlength="12" maxlength="12" class="form-control" name="cardno" id="cardno" placeholder="Enter 12 digit card number">
         </div>
-        <%--<div class="container" style="width:40%">--%>
-            <%--<div class="form-group ">--%>
-                <%--<label for="age">Age</label>--%>
-                <%--<input type="text" pattern="\d*"class="form-control" name="age" id="age" placeholder="Enter Age">--%>
-            <%--</div>--%>
-        <%--</div>--%>
+
 
 
 
