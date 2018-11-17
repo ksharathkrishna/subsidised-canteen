@@ -38,7 +38,7 @@
     /*body {background-image:url("im.jpg");}*/
 
 </style>
-<header style="background: lightgrey">
+<header style="background: deepskyblue">
     <br/>
     <div class="container" style="width: 40%">
         <h1 class="heading" ><input type="image" style="width: 30%" src="https://image.flaticon.com/sprites/new_packs/133293-restaurant-icons.png" alt=""></h1>
@@ -150,7 +150,8 @@
 <%--</div>--%>
 <hr>
 <div class="heading" style="width: content-box">
-    <a href="Mongo.jsp"  align="centre" class="btn btn-link" > <h2 class="heading"  style="color: black" >Thank You!!! I would really appreciate any feedback you can give me :-) </h2></a>
+    <h2 class="heading" style="color: black">Enjoy Your Food</h2>
+    <a href="Mongo.jsp"  align="centre" class="btn btn-link" > <h2 class="heading"  style="color: deepskyblue" >Thank You!!! I would really appreciate any feedback you can give  :-) </h2></a>
     <br>
     <br>
     <br>
