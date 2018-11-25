@@ -34,8 +34,8 @@
     </form>
 </div>
 
-<p align="center" style="color: red">${errorMessage}</p>
-<p align="center" style="color: yellow">${message}</p>
+<p align="center" style="font-size: xx-large">${errorMessage}</p>
+<p align="center" style="font-size: xx-large">${message}</p>
 
 </body>
 </html>

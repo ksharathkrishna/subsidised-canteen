@@ -83,8 +83,8 @@ public class GetSentiment {
     public static void main (String[] args) {
         try {
             Documents documents = new Documents ();
-            documents.add ("1", "de", "\n" +
-                    "Scheiße");
+            documents.add ("1", "en",
+                    "");
 
 
             String response = GetSentiment (documents);

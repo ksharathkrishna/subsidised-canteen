@@ -33,7 +33,7 @@
 </form>
 
 <br><br><br><br>
-<p align="center" style="color: red">${errorMessage}</p>
+<p align="center" style="font-size: xx-large">${errorMessage}</p>
 </body>
 </html>
 

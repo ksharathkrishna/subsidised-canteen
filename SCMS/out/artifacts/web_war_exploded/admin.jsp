@@ -10,10 +10,8 @@
 <%--<h2 class="heading" style="color: black" style="background: #009900">WELCOME ADMIN</h2>--%>
 <header style="background: darkorange">
     <br/>
-    <br>
-    <br>
     <div class="container" style="width: 40%">
-        <%--<h1 class="heading" ><input type="image" style="width: 30%" src="https://image.flaticon.com/sprites/new_packs/133293-restaurant-icons.png" alt=""></h1>--%>
+        <h1 class="heading" ><input type="image" style="width: 30%" src="https://image.flaticon.com/sprites/new_packs/133293-restaurant-icons.png" alt=""></h1>
     </div>
     <h2 class="heading"  style="color: white" >CUSTOMER ADMIN SECTION</h2>
     <br>
@@ -58,7 +56,7 @@
         <div class="container" style="width: 40%">
         <br/><br/><br/>
         <p align="center">
-        <a href="adminLogin.jsp"><input type="submit" class="btn btn-dark btn-lg" value="Back"></a>
+        <a href="index.jsp"><input type="submit" class="btn btn-dark btn-lg" value="Back"></a>
         </p>
         </div>
     </div></div>

@@ -20,17 +20,15 @@
 </head>
 <header style="background:darkorange">
     <br/>
-    <br>
-    <br>
     <div class="container" style="width: 40%">
-        <%--<h1 class="heading" ><input type="image" style="width: 30%" src="https://image.flaticon.com/sprites/new_packs/133293-restaurant-icons.png" alt=""></h1>--%>
+        <h1 class="heading" ><input type="image" style="width: 30%" src="https://image.flaticon.com/sprites/new_packs/133293-restaurant-icons.png" alt=""></h1>
     </div>
     <h2 class="heading"  style="color: white" >INVENTORY ADMIN SECTION</h2>
     <br>
 </header>
 <br><br>
 
-<body><div class="container">
+<body><div class="container" style="width: 55%">
     <div class="row">
         <div class="card col-sm-4" >
             <a href="worker.jsp" class="btn btn-success" >
