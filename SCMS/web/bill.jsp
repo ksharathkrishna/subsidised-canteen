@@ -123,3 +123,9 @@
 
     <a href="index.jsp"  align="centre" class="btn btn-info btn-lg" >Home</a>
 </div>
+
+<br>
+<br>
+<div class="footer text-center">
+    <p>&copy; 2018 Canteen. All Rights Reserved.  </p>
+</div><!-- End Footer -->

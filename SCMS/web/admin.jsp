@@ -61,5 +61,9 @@
         </div>
     </div></div>
 </body>
-
+<br>
+<br>
+<div class="footer text-center">
+    <p>&copy; 2018 Canteen. All Rights Reserved.  </p>
+</div><!-- End Footer -->
 </html>

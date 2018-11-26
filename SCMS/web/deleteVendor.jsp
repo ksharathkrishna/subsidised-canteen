@@ -47,4 +47,10 @@
 <br><br><br>
 <p align="center" style="font-size: xx-large">${errorMessage}</p>
 </body>
+
+<br>
+<br>
+<div class="footer text-center">
+    <p>&copy; 2018 Canteen. All Rights Reserved.  </p>
+</div><!-- End Footer -->
 </html>
