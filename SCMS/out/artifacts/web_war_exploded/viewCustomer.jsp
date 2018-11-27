@@ -58,7 +58,7 @@
         try{
             connection = DriverManager.getConnection(connectionUrl+dbName, userId, password);
             statement=connection.createStatement();
-            String sql ="SELECT PHONENO,USERNAME,NAME,AGE,PHONENO,ADDRESS FROM customer,validation WHERE customer.cardno=validation.cardno";
+            String sql ="SELECT PHONENO,USERNAME,NAME,AGE,PHONENO,ADDRESS FROM customer,validation WHERE customer.cardno=validation.cardno ORDER BY name";
             System.out.println("sql"+sql);
 
             resultSet = statement.executeQuery(sql);

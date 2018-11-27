@@ -42,7 +42,7 @@
 
 
         <div class="container" style="width: 40%">
-            <br/><br/><br/>
+            <br/><br/>
             <p align="center">
                 <a href="orderFood.jsp"><input type="submit" class="btn btn-dark btn-lg" value="Back"></a>
             </p>
@@ -52,7 +52,6 @@
 
 </body>
 
-<br>
 <br>
 <div class="footer text-center">
     <p>&copy; 2018 Canteen. All Rights Reserved.  </p>
