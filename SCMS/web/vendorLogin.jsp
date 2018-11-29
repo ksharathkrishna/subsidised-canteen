@@ -11,6 +11,12 @@
 
     </style>
 </head>
+<%
+    if(session.getAttribute("password")==null){
+        session.invalidate();
+        response.sendRedirect("index.jsp");
+    }
+%>
 <body>
 
 <div class="container" style="width:40%;">

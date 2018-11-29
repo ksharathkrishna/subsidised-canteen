@@ -6,6 +6,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 @WebServlet(name = "invLogin")
@@ -20,12 +21,15 @@ public class invLogin extends HttpServlet {
 
         workerDetails a1 = new workerDetails();
         if (a1.isPasswordCorrect(adminName,request.getParameter("password"))) {
+            HttpSession session=request.getSession();
+            String p=request.getParameter("password");
+            session.setAttribute("password",p);
 
-            request.getRequestDispatcher("/invSection.jsp").forward(request, response);
+            request.getRequestDispatcher("/inventorySection.jsp").forward(request, response);
 
         } else {
             request.setAttribute("errorMessage", "Invalid  password");
-            request.getRequestDispatcher("/inventory.jsp").forward(request, response);
+            request.getRequestDispatcher("/inventoryLogin.jsp").forward(request, response);
         }
     }
 

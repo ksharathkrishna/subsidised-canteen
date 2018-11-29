@@ -31,7 +31,7 @@
             <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
         </div>
             <br>
-        <button type="submit" value="Login" class="btn btn-warning btn-lg">Submit</button>
+        <button type="submit" value="Login" class="btn btn-warning btn-lg">Token</button>
 
         <a href="index.jsp" class="btn btn-outline-dark btn-lg" >Back</a>
     </form>

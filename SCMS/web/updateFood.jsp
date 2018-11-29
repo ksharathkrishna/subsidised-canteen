@@ -11,6 +11,12 @@
 
     </style>
 </head>
+<%
+    if(session.getAttribute("password")==null){
+        session.invalidate();
+        response.sendRedirect("index.jsp");
+    }
+%>
 <body>
 
 <div class="container" style="width:40%;">
@@ -30,7 +36,7 @@
         <br>
         <button type="submit" value="Login" class="btn btn-warning btn-lg">Update</button>
 
-        <a href="admin.jsp" class="btn btn-outline-dark btn-lg" >Back</a>
+        <a href="adminSection.jsp" class="btn btn-outline-dark btn-lg" >Back</a>
     </form>
 </div>
 

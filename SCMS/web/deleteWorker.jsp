@@ -1,10 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: GURUPRASAD C
-  Date: 4/11/2018
-  Time: 5:24 PM
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -25,6 +19,13 @@
 
     </style>
 </head>
+<%
+    String p=session.getAttribute("password").toString();
+    if(p==null||p.length()!=8){
+
+        response.sendRedirect("adminLogout.jsp");
+    }
+%>
 <body >
 <div class="container" style="width: 40%">
     <br/><br/>
@@ -43,7 +44,7 @@
     </form>
 
 </div>
-<%--<p align="center"><a href="admin.jsp"><input  type="submit" value="Back"></a></p>--%>
+<%--<p align="center"><a href="adminSection.jsp"><input  type="submit" value="Back"></a></p>--%>
 <br><br><br>
 <p align="center" style="font-size: xx-large">${errorMessage}</p>
 </body>

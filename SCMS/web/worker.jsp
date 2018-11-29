@@ -7,6 +7,12 @@
 
 
 </head>
+<%
+    if(session.getAttribute("password")==null){
+        session.invalidate();
+        response.sendRedirect("index.jsp");
+    }
+%>
 <%--<h2 class="heading" style="color: black" style="background: #009900">WELCOME ADMIN</h2>--%>
 <header style="background: darkorange">
     <br/>
@@ -36,7 +42,7 @@
                     <p class="card-text">Delete Worker </p>
 
                 </div></a>
-        </div><div class="card col-sm-4" ><a href="wView.jsp" class="btn btn-warning" >
+        </div><div class="card col-sm-4" ><a href="viewWorker.jsp" class="btn btn-warning" >
         <div class="card-body">
             <img src="https://image.flaticon.com/icons/svg/33/33308.svg" class="card-img-top">
             <p class="card-text">Worker Details </p>
@@ -47,7 +53,7 @@
         <div class="container" style="width: 40%">
             <br/><br/><br/>
             <p align="center">
-                <a href="invSection.jsp"><input type="submit" class="btn btn-dark btn-lg" value="Back"></a>
+                <a href="inventorySection.jsp"><input type="submit" class="btn btn-dark btn-lg" value="Back"></a>
             </p>
         </div>
     </div></div>

@@ -14,6 +14,12 @@
 
 
 </head>
+<%
+    if(session.getAttribute("password")==null){
+        session.invalidate();
+        response.sendRedirect("index.jsp");
+    }
+%>
 <body>
 <!--<h1> Enter the below details</h1>-->
 

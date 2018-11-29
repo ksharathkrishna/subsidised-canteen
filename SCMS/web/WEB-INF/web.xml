@@ -10,8 +10,8 @@
         <servlet-class>webLayer.adminLogin</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>addStudent</servlet-name>
-        <servlet-class>webLayer.addStudent</servlet-class>
+        <servlet-name>addCustomer</servlet-name>
+        <servlet-class>webLayer.addCustomer</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>userLogin</servlet-name>
@@ -74,8 +74,8 @@
         <url-pattern>/adminLogin</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>addStudent</servlet-name>
-        <url-pattern>/addStudent</url-pattern>
+        <servlet-name>addCustomer</servlet-name>
+        <url-pattern>/addCustomer</url-pattern>
 
     </servlet-mapping>
     <servlet-mapping>

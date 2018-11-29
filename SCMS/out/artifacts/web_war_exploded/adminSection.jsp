@@ -1,3 +1,5 @@
+<%@ page import="webLayer.adminLogin" %>
+<%@ page import="java.sql.SQLOutput" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -7,6 +9,21 @@
 
 
 </head>
+
+<%--   adminLogin a=new adminLogin();--%>
+    <%--String password=a.--%>
+<%		HttpSession s= request.getSession();
+
+    if(session.getAttribute("password")==null){
+        System.out.println("in ctya"+session.getAttribute("password"));
+
+        response.sendRedirect("index.jsp");
+    }
+    System.out.println("in ctya"+session.getAttribute("password"));
+
+       // response.sendRedirect("adminSection.jsp");
+
+%>
 <%--<h2 class="heading" style="color: black" style="background: #009900">WELCOME ADMIN</h2>--%>
 <header style="background: darkorange">
     <br/>
@@ -44,7 +61,7 @@
         </div></a>
     </div>
         <div class="card col-sm-3" >
-            <a href="addFood.jsp" class="btn btn-info" >
+            <a href="updateFood.jsp" class="btn btn-info" >
 
                 <div class="card-body">
                     <img src="https://image.flaticon.com/icons/svg/98/98017.svg" class="card-img-top">
@@ -56,7 +73,7 @@
         <div class="container" style="width: 40%">
         <br/><br/><br/>
         <p align="center">
-        <a href="index.jsp"><input type="submit" class="btn btn-dark btn-lg" value="Back"></a>
+        <a href="adminLogout.jsp"><input type="submit" class="btn btn-primary btn-lg" value="Logout"></a>
         </p>
         </div>
     </div></div>

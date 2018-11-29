@@ -21,7 +21,7 @@
     <div class="row">
 
         <div class="card col-sm-6" >
-            <a href="Mongo.jsp" class="btn btn-warning" >
+            <a href="writeFeedBack.jsp" class="btn btn-warning" >
 
                 <div class="card-body">
                     <img src="https://image.flaticon.com/icons/svg/485/485414.svg" class="card-img-top">

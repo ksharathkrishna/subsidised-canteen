@@ -36,7 +36,7 @@
     <p               >
 
     <div class="card col-sm-3" >
-      <a href="inventory.jsp" class="btn btn-success" >
+      <a href="inventoryLogin.jsp" class="btn btn-success" >
         <div class="card-body">
 
           <img src="https://image.flaticon.com/icons/svg/75/75721.svg" class="card-img-top">

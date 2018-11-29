@@ -20,8 +20,8 @@ public class addVendor extends HttpServlet {
         String cardno = request.getParameter("phone");
         String age = request.getParameter("itemid");
 
-        System.out.println("addStudent username"+username);
-        System.out.println("addStudent pwd"+password);
+        System.out.println("addCustomer username"+username);
+        System.out.println("addCustomer pwd"+password);
         if(a2.addUser(name,username,password,cardno,age)){
             request.getRequestDispatcher("/vendor.jsp").forward(request, response);
         }

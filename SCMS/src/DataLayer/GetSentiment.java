@@ -84,7 +84,7 @@ public class GetSentiment {
         try {
             Documents documents = new Documents ();
             documents.add ("1", "en",
-                    "");
+                    " very good" );
 
 
             String response = GetSentiment (documents);

@@ -69,7 +69,7 @@ public  String un;
                 request.getRequestDispatcher("/userLogin.jsp").forward(request, response);
             }
             else{
-                request.setAttribute("message","Sorry"+un1+"canteen closed");
+                request.setAttribute("message","Sorry  "+un1+"  canteen closed");
                 request.getRequestDispatcher("/userLogin.jsp").forward(request, response);
 
             }

@@ -19,7 +19,7 @@ public class deleteStudent extends HttpServlet {
             req.getRequestDispatcher("/deleteCustomer.jsp").forward(req, resp);
         }
         else {
-            req.getRequestDispatcher("/admin.jsp").forward(req, resp);
+            req.getRequestDispatcher("/adminSection.jsp").forward(req, resp);
         }
     }
 }

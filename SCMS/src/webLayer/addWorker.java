@@ -23,8 +23,8 @@ public class addWorker extends HttpServlet {
             String cardno = request.getParameter("phone");
             String age = request.getParameter("age");
 
-            System.out.println("addStudent username" + username);
-            System.out.println("addStudent pwd" + password);
+            System.out.println("addCustomer username" + username);
+            System.out.println("addCustomer pwd" + password);
             if (w7.addWorker(name, username, password, cardno, age)) {
                 request.getRequestDispatcher("/worker.jsp").forward(request, response);
             } else {

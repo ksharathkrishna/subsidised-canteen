@@ -28,14 +28,20 @@
     body {background-image:url("im.jpg");}
 
 </style>
+<%
+    if(session.getAttribute("password")==null){
+        session.invalidate();
+        response.sendRedirect("index.jsp");
+    }
+%>
 <br>
 <br>
 <br>
 <h2 align="center"><font><strong>CUSTOMER DETAILS</strong></font></h2>
 <div class="container" align="centre" style="width: 20%">
     <br/>
-    <a href="admin.jsp"  align="centre" class="btn btn-success" >Return to Admin Page</a>
-    <a href="index.jsp"  align="centre" class="btn btn-warning" >Return Home</a>
+    <a href="adminSection.jsp" align="centre" class="btn btn-success" >Return to Admin Page</a>
+    <a href="adminLogout.jsp"  align="centre" class="btn btn-warning" >Return Home</a>
     <br/>
     <br/>
     <hr>

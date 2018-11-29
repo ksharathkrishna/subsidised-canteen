@@ -115,7 +115,7 @@
 <hr>
 <div class="heading" style="width: content-box">
     <h2 class="heading" style="color: black">Enjoy Your Food</h2>
-    <a href="Mongo.jsp"  align="centre" class="btn btn-link" > <h2 class="heading"  style="color: deepskyblue" >Thank You!!! I would really appreciate any feedback you can give  :-) </h2></a>
+    <a href="writeFeedBack.jsp" align="centre" class="btn btn-link" > <h2 class="heading" style="color: deepskyblue" >Thank You!!! I would really appreciate any feedback you can give  :-) </h2></a>
     <br>
     <br>
     <br>

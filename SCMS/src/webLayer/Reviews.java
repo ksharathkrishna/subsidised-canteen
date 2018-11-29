@@ -26,11 +26,11 @@ public class Reviews extends HttpServlet {
 
                 String name = request.getParameter("name");
                 String country = request.getParameter("country");
-        String service = request.getParameter("service");
+                String service = request.getParameter("service");
                 if ((name == null || name.equals(""))
                         || (country == null || country.equals(""))) {
                     request.setAttribute("error", "Mandatory Parameters Missing");
-                    request.getRequestDispatcher("/Mongo.jsp").forward(request, response);
+                    request.getRequestDispatcher("/writeFeedBack.jsp").forward(request, response);
 
                 } else {
                      reviews r = new reviews();

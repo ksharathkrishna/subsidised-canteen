@@ -14,6 +14,12 @@
 
 
 </head>
+<%
+    if(session.getAttribute("password")==null){
+        session.invalidate();
+        response.sendRedirect("index.jsp");
+    }
+%>
 <body>
 <!--<h1> Enter the below details</h1>-->
 
@@ -21,7 +27,7 @@
         <br/><br/>
         <h2 class="heading" >Customer Registration</h2>
         <hr>
-        <form align = "center" action="${pageContext.request.contextPath}/addStudent" method="post">
+        <form align = "center" action="${pageContext.request.contextPath}/addCustomer" method="post">
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label for="username">Username</label>
@@ -42,7 +48,7 @@
 
 
             <button type="submit" value="Add" class="btn btn-warning btn-lg">Register</button>
-<a href="admin.jsp" class="btn btn-outline-dark btn-lg" >Back</a>
+<a href="adminSection.jsp" class="btn btn-outline-dark btn-lg" >Back</a>
         </form>
 
 

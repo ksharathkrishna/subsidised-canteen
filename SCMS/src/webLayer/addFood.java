@@ -25,7 +25,7 @@ public class addFood extends HttpServlet {
         else{
             request.setAttribute("message", "Invalid foodID");
         }
-        request.getRequestDispatcher("/addFood.jsp").forward(request, response);
+        request.getRequestDispatcher("/updateFood.jsp").forward(request, response);
 
 
     }

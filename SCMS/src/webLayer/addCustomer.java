@@ -8,8 +8,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import DataLayer.*;
 
-@WebServlet(name = "addStudent")
-public class addStudent extends HttpServlet {
+@WebServlet(name = "addCustomer")
+public class addCustomer extends HttpServlet {
 
 @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -22,10 +22,10 @@ public class addStudent extends HttpServlet {
         String cardno = request.getParameter("cardno");
         //String age = request.getParameter("age");
 
-    System.out.println("addStudent username"+username);
-    System.out.println("addStudent pwd"+password);
+    System.out.println("addCustomer username"+username);
+    System.out.println("addCustomer pwd"+password);
     if(a2.addUser(username,password,cardno)){
-            request.getRequestDispatcher("/admin.jsp").forward(request, response);
+            request.getRequestDispatcher("/adminSection.jsp").forward(request, response);
         }
         else {
             if(a2.f==1) {

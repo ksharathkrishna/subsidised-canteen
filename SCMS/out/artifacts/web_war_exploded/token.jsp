@@ -33,9 +33,8 @@
 
     <hr>
     <div class="heading" style="width: content-box">
-        <a href="Mongo.jsp"  align="centre" class="btn btn-link" > <h2 class="heading"  style="color: deepskyblue" >I would really appreciate any feedback you can give  :-) </h2></a>
+        <a href="writeFeedBack.jsp" align="centre" class="btn btn-link" > <h2 class="heading" style="color: deepskyblue" >I would really appreciate any feedback you can give  :-) </h2></a>
         <hr>
-        <br>
 
         <br>
     <a href="index.jsp"  align="centre" class="btn btn-info btn-lg" >Home</a>
@@ -43,7 +42,6 @@
 </div>
 </body>
 
-<br>
 <br>
 <div class="footer text-center">
     <p>&copy; 2018 Canteen. All Rights Reserved.  </p>

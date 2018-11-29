@@ -25,6 +25,13 @@
 
     </style>
 </head>
+<%
+    String p=session.getAttribute("password").toString();
+    if(p==null||p.length()!=9){
+
+        response.sendRedirect("adminLogout.jsp");
+    }
+%>
 <body >
 <div class="container" style="width: 40%">
     <br/><br/>
@@ -37,13 +44,13 @@
     <input type="email" class="form-control" name="username" id="username" placeholder="username">
         <br/><br/>
         <button type="submit" value="Delete" class="btn btn-Danger btn-lg">Remove</button>
-        <a href="admin.jsp" class="btn btn-outline-dark btn-lg" >Back</a>
+        <a href="adminSection.jsp" class="btn btn-outline-dark btn-lg" >Back</a>
 
 
 </form>
 
 </div>
-<%--<p align="center"><a href="admin.jsp"><input  type="submit" value="Back"></a></p>--%>
+<%--<p align="center"><a href="adminSection.jsp"><input  type="submit" value="Back"></a></p>--%>
 <br><br><br>
 <p align="center" style="font-size: xx-large">${errorMessage}</p>
 </body>

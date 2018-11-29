@@ -18,6 +18,19 @@
 
     </style>
 </head>
+<%		HttpSession s= request.getSession();
+
+    if(session.getAttribute("password")==null){
+        System.out.println("in if"+session.getAttribute("password"));
+        session.invalidate();
+        response.sendRedirect("index.jsp");
+    }
+//    System.out.println("outside"+session.getAttribute("password"));
+
+    // response.sendRedirect("adminSection.jsp");
+
+%>
+
 <header style="background:darkorange">
     <br/>
     <div class="container" style="width: 40%">
@@ -49,7 +62,7 @@
 
                      -->
                 </div></a>
-        </div><div class="card col-sm-4" ><a href="inventoryView.jsp" class="btn btn-warning" >
+        </div><div class="card col-sm-4" ><a href="viewInventory.jsp" class="btn btn-warning" >
         <div class="card-body">
             <img src="https://image.flaticon.com/icons/svg/831/831556.svg" class="card-img-top">
             <p class="card-text">Inventory </p>
@@ -89,7 +102,7 @@
         <div class="container" style="width: 40%">
             <br/><br/><br/>
             <p align="center">
-                <a href="index.jsp"><input type="submit" class="btn btn-dark btn-lg" value="Back"></a>
+                <a href="adminLogout.jsp"><input type="submit" class="btn btn-primary btn-lg" value="Logout"></a>
             </p>
         </div>
     </div></div>
