@@ -31,17 +31,17 @@
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label for="username">Username</label>
-                <input type="email" minlength="5" pattern="[a-z0-9._%+-]+@scms" class="form-control" name="username" id="username" area-describedby="emailHelp" placeholder="username">
+                <input type="email" minlength="5" pattern="[a-z0-9._%+-]+@scms" class="form-control form-control-lg" name="username" id="username" area-describedby="emailHelp" placeholder="username">
                 <large id="emailHelp" class="form-text text-muted">Username Should be of the form @scms</large>
             </div>
             <div class="form-group col-md-6">
                 <label for="password">Password</label>
-                <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                <input type="password" class="form-control form-control-lg" name="password" id="password" placeholder="Password">
             </div>
         </div>
         <div class="form-group">
             <label for="cardno">Card Number</label>
-            <input type="text" pattern=\d* minlength="12" maxlength="12" class="form-control" name="cardno" id="cardno" placeholder="Enter 12 digit card number">
+            <input type="text" pattern=\d* minlength="12" maxlength="12" class="form-control form-control-lg" name="cardno" id="cardno" placeholder="Enter 12 digit card number">
         </div>
 
 

@@ -10,11 +10,18 @@ import java.io.IOException;
 @WebServlet(name = "order")
 public class order extends HttpServlet {
     public static String FI;
+//    public static String FI1;
+
     public static int Q;
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         DataLayer.accountDetails a7 = new DataLayer.accountDetails();
         FI = request.getParameter("foodid");
+//        FI = FI1.substring(0,2);
+        String[] arrOfStr = FI.split("-");
+        FI=arrOfStr[0];
+
+
         Q = Integer.parseInt(request.getParameter("quantity"));
 
 

@@ -1,7 +1,5 @@
-<%@page import="java.sql.DriverManager"%>
-<%@page import="java.sql.ResultSet"%>
-<%@page import="java.sql.Statement"%>
-<%@page import="java.sql.Connection"%>
+<%@ page import="java.sql.*" %>
+<%@ page import="java.io.InputStream" %>
 
 <%
     String id = request.getParameter("userId");
@@ -53,11 +51,12 @@
         try{
             connection = DriverManager.getConnection(connectionUrl+dbName, userId, password);
             statement=connection.createStatement();
-            String sql ="SELECT FoodName,Cost,FoodID,quantity FROM food WHERE type='south'";
+            String sql ="SELECT * FROM food WHERE type='south'";
             System.out.println("sql"+sql);
 
             resultSet = statement.executeQuery(sql);
             while(resultSet.next()){
+
     %>
     <tr bgcolor="white">
 
@@ -65,9 +64,6 @@
         <td><%=resultSet.getString("FoodID") %></td>
         <td><%=resultSet.getString("Cost") %></td>
         <td><%=resultSet.getString("quantity") %> </td>
-        <%--
-                <td><%=resultSet.getString("age") %></td>
-        --%>
 
     </tr>
 

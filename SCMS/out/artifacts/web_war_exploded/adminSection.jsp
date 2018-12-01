@@ -6,25 +6,19 @@
     <title>admin</title>
     <link rel="stylesheet" type="text/css" href="home.css">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-
-
 </head>
-
-<%--   adminLogin a=new adminLogin();--%>
-    <%--String password=a.--%>
-<%		HttpSession s= request.getSession();
-
+<%		    response.setHeader("Cache-Control","no-cache,no-store,must-validate");
+    response.setHeader("Progma","no-cache");
+    response.setHeader("Expires","0");
+    response.setDateHeader("Expires",-1);
+%>
+<%
     if(session.getAttribute("password")==null){
-        System.out.println("in ctya"+session.getAttribute("password"));
-
         response.sendRedirect("index.jsp");
     }
-    System.out.println("in ctya"+session.getAttribute("password"));
 
-       // response.sendRedirect("adminSection.jsp");
 
 %>
-<%--<h2 class="heading" style="color: black" style="background: #009900">WELCOME ADMIN</h2>--%>
 <header style="background: darkorange">
     <br/>
     <div class="container" style="width: 40%">

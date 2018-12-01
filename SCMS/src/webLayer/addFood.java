@@ -17,6 +17,8 @@ public class addFood extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         accountDetails a6 = new accountDetails();
         FI = request.getParameter("foodid");
+        String[] arrOfStr = FI.split("-");
+        FI=arrOfStr[0];
         Q = request.getParameter("quantity");
         a6.updQuantity(FI, Q);
         if(a6.ac==1) {

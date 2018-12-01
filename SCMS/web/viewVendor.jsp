@@ -54,7 +54,6 @@
         <td width="30%"><b> Name  </b></td>
         <td width="30%" ><b>Username</b></td>
         <td width="30%"><b> Phone     </b></td>
-        <%--<td width="10%"><b> Age</b></td>--%>
     </tr>
     <%
         try{
@@ -72,8 +71,6 @@
         <td><%=resultSet.getString("name") %></td>
         <td><%=resultSet.getString("username") %></td>
         <td><%=resultSet.getString("phoneno") %></td>
-        <%--<td><%=resultSet.getString("age") %></td>--%>
-
     </tr>
 
 
@@ -91,7 +88,3 @@
 <div class="footer text-center">
     <p>&copy; 2018 Canteen. All Rights Reserved.  </p>
 </div><!-- End Footer -->
-<%--<div class="container" style="width: 40%">--%>
-<%--<br/><br/>--%>
-<%--<a href="index.jsp" class="btn btn-outline-dark" >Back</a>--%>
-<%--</div>--%>

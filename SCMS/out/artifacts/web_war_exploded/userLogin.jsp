@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<div class="container" style="width:40%;">
+<div class="container" style="width:30%;">
     <br><br>
     <h2 class="heading" >Customer Login</h2>
     <hr>
@@ -23,15 +23,21 @@
     <form align="center" action="/userLogin" method="post">
         <div class="form-group">
             <label for="exampleInputEmail1">Username</label>
-            <input type="email" name="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter username">
+            <input type="email" name="username" class="form-control form-control-lg form-control form-control-lg-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter username">
             <large id="emailHelp" class="form-text text-muted">Username Should be of the form @scms</large>
         </div>
+        <br>
         <div class="form-group">
             <label for="exampleInputPassword1">Password</label>
-            <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <input type="password" name="password" class="form-control form-control-lg form-control form-control-lg-lg" id="exampleInputPassword1" placeholder="Password">
         </div>
             <br>
-        <button type="submit" value="Login" class="btn btn-warning btn-lg">Token</button>
+        <br>
+        <br>
+        <hr>
+        <button type="submit" value="Login" class="btn btn-warning btn-lg btn-block">Generate Token</button>
+        <br>
+
 
         <a href="index.jsp" class="btn btn-outline-dark btn-lg" >Back</a>
     </form>

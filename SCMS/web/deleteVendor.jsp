@@ -41,7 +41,7 @@
         <%--Username: <input type="text" name="username" width="30"><br><br><br><br>--%>
         <%--<input type="submit" value="delete"><br><br><br><br>--%>
         <label for="username">Username</label>
-        <input type="email" class="form-control" name="username" id="username" placeholder="username ">
+        <input type="email" class="form-control form-control-lg" name="username" id="username" placeholder="username ">
         <br/><br/>
         <button type="submit" value="Delete" class="btn btn-Danger btn-lg">Remove</button>
         <a href="vendor.jsp" class="btn btn-outline-dark btn-lg" >Back</a>

@@ -11,6 +11,10 @@
 
     <style>
         body {background-image:url("im.jpg");}
+        select:active, select:hover {
+            outline: red;
+        }
+
 
     </style>
 </head>
@@ -21,30 +25,32 @@
     <h2 class="heading" >FeedBack Page</h2>
     <hr>
     <form align="center" action="/Reviews" method="post">
-        <div class="form-group">
-            <label for="exampleInputEmail1">Rate your Experience</label>
-            <select name="name" class="form-control" id="exampleInputEmail1" >
-            <%--<large id="emailHelp" class="form-text text-muted">enter # between 1 to 5</large>--%>
-            <option>5</option>
-            <option>4</option>
-            <option>3</option>
-            <option>2</option>
-            <option>1</option>
-            </select>
-                <%--<input id="input-1" name="input-1" class="rating rating-loading" data-min="0" data-max="5" data-step="0.1" value="2">--%>
 
-
-        </div>
         <div class="form-group" style="width: content-box "  >
             <label for="exampleFormControlTextarea3"> Food experience</label>
-            <input type="text" minlength="3" name="country" class="form-control" id="exampleFormControlTextarea3" rows="3" placeholder="What do think about of quality of food">
+            <input placeholder="What do think about of quality of food" rows="3"  name="country" class="form-control form-control-lg" id="exampleFormControlTextarea3" rows="3" >
             </input> </div>
         <div class="form-group" style="width: content-box "  >
             <label for="exampleFormControlTextarea1">Service experience</label>
-            <input type="text" minlength="3" name="service" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="How was the experience">
+            <input type="text" minlength="3" name="service" class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3" placeholder="How was the experience">
             </input>
         </div>
         <br>
+        <div class="container" style="width:43%">
+            <div class="form-group ">
+        <label for="exampleInputEmail1">Rate your Experience</label>
+<div class="select">
+        <select name="name" size="1" multiple class="form-control form-control-lg " id="exampleInputEmail1" >
+            <option class="btn btn-outline-success btn-lg " >5</option>
+            <option class="btn btn-outline-info btn-lg " >4</option>
+            <option class="btn btn-outline-secondary btn-lg " >3</option>
+            <option class="btn btn-outline-warning btn-lg " >2</option>
+            <option class="btn btn-outline-danger btn-lg " >1</option>
+        </select></div></div>
+        </div>
+        <br>
+        <br>
+
         <button type="submit" value="Login" class="btn btn-warning btn-lg">Submit</button>
 
         <a href="feedBack.jsp" class="btn btn-outline-dark btn-lg" >Back</a>
@@ -52,7 +58,6 @@
 </div>
 
 <p align="center" style="color: red">${error}</p>
-<%--<p align="center" style="color: yellow">${ge}</p>--%>
 
 </body>
 

@@ -59,7 +59,7 @@
 
     </tr>
     <tr bgcolor="#d3d3d3">
-        <td width="15%"><b>Food </b></td>
+        <td width="15%"><b>Name of Dish</b></td>
         <td width="5%"><b>CostPerUnit</b></td>
         <td width="5%"><b>Quantity</b></td>
         <td width="10%"><b>Total Amount </b></td>
@@ -117,9 +117,7 @@
     <h2 class="heading" style="color: black">Enjoy Your Food</h2>
     <a href="writeFeedBack.jsp" align="centre" class="btn btn-link" > <h2 class="heading" style="color: deepskyblue" >Thank You!!! I would really appreciate any feedback you can give  :-) </h2></a>
     <br>
-    <br>
-    <br>
-    <br>
+
 
     <a href="index.jsp"  align="centre" class="btn btn-info btn-lg" >Home</a>
 </div>

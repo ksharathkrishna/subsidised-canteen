@@ -18,6 +18,11 @@
 
     </style>
 </head>
+<%  response.setHeader("Cache-Control","no-cache,no-store,must-validate");
+    response.setHeader("Progma","no-cache");
+    response.setHeader("Expires","0");
+    response.setDateHeader("Expires",-1);
+%>
 <%		HttpSession s= request.getSession();
 
     if(session.getAttribute("password")==null){

@@ -31,25 +31,25 @@
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label for="username">Username</label>
-                <input type="email" pattern="[a-zA-Z0-9._%+-]+@inv" class="form-control" name="username" id="username" placeholder="username">
+                <input type="email" pattern="[a-zA-Z0-9._%+-]+@inv" class="form-control form-control-lg" name="username" id="username" placeholder="username">
             </div>
             <div class="form-group col-md-6">
                 <label for="password">Password</label>
-                <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                <input type="password" class="form-control form-control-lg" name="password" id="password" placeholder="Password">
             </div>
         </div>
         <div class="form-group">
             <label for="name">Name</label>
-            <input type="text" class="form-control" name="name" id="name" placeholder="Type your name">
+            <input type="text" class="form-control form-control-lg" name="name" id="name" placeholder="Type your name">
         </div>
         <div class="form-group">
             <label for="cardno">Phone</label>
-            <input type="text" pattern =\d* maxlength="10" minlength="10" class="form-control" name="phone" id="cardno" placeholder="Enter phone number">
+            <input type="text" pattern =\d* maxlength="10" minlength="10" class="form-control form-control-lg" name="phone" id="cardno" placeholder="Enter phone number">
         </div>
         <div class="container" style="width:40%">
             <div class="form-group ">
                 <label for="age">Age</label>
-                <input type="number" min="18" class="form-control" name="itemid" id="age" placeholder="Enter Age">
+                <input type="number" min="18" class="form-control form-control-lg" name="itemid" id="age" placeholder="Enter Age">
             </div>
         </div>
 

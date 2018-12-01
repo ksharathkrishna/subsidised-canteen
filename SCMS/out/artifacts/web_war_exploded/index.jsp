@@ -1,4 +1,4 @@
-<%-- Created by IntelliJ IDEA. --%>
+<%@ page import="javax.naming.ldap.Control" %><%-- Created by IntelliJ IDEA. --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <html>
@@ -8,10 +8,50 @@
   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
 </head>
+
 <style>
   /*body {background: #999999}*/
   /*body {background-image:url("https://pixabay.com/get/ea33b7072ff11c22d2524518a33219c8b66ae3d01ab8144297f1c87b/cook-366875_1280.jpg");}*/
 </style>
+<script>
+    (function (global) {
+
+        if(typeof (global) === "undefined") {
+            throw new Error("window is undefined");
+        }
+
+        var _hash = "!";
+        var noBackPlease = function () {
+            global.location.href += "#";
+
+            // making sure we have the fruit available for juice (^__^)
+            global.setTimeout(function () {
+                global.location.href += "!";
+            }, 50);
+        };
+
+        global.onhashchange = function () {
+            if (global.location.hash !== _hash) {
+                global.location.hash = _hash;
+            }
+        };
+
+        global.onload = function () {
+            noBackPlease();
+
+            // disables backspace on page except on input fields and textarea..
+            document.body.onkeydown = function (e) {
+                var elm = e.target.nodeName.toLowerCase();
+                if (e.which === 8 && (elm !== 'input' && elm  !== 'textarea')) {
+                    e.preventDefault();
+                }
+                // stopping event bubbling up the DOM tree..
+                e.stopPropagation();
+            };
+        }
+
+    })(window);
+</script>
 
 
 <header style="background: darkorange">

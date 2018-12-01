@@ -29,7 +29,7 @@
                 </div></a>
         </div>
         <div class="card col-sm-6" >
-            <a href="data.jsp" class="btn btn-info" >
+            <a href="viewFeedbacks.jsp" class="btn btn-info" >
                 <div class="card-body">
 
                     <img src="https://image.flaticon.com/icons/svg/860/860615.svg" class="card-img-top">
