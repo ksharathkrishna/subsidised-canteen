@@ -44,7 +44,7 @@
         </div>
         <div class="form-group">
             <label for="cardno">Phone</label>
-            <input type="text" pattern="\d*" maxlength="10" minlength="10" class="form-control form-control-lg" name="phone" id="cardno" placeholder="Enter phone numbe">
+            <input type="text" pattern="\d*" maxlength="10" minlength="10" class="form-control form-control-lg" name="phone" id="cardno" placeholder="Enter phone number">
         </div>
         <div class="container" style="width:40%">
             <div class="form-group ">

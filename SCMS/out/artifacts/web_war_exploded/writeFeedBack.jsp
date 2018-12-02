@@ -17,37 +17,46 @@
 
 
     </style>
+    <style>
+        .bloc { display:inline-block; vertical-align:top; overflow:hidden; border:solid grey 1px; }
+        .bloc select { padding:10px; margin:-5px -20px -5px -5px; }
+    </style>
 </head>
 <body>
 
-<div class="container" style="width:40%;">
+<div class="container" style="width:30%;">
     <br><br>
     <h2 class="heading" >FeedBack Page</h2>
     <hr>
     <form align="center" action="/Reviews" method="post">
+        <div class="form-group ">
+            <div class="container" style="width:65%">
+
+            <label for="exampleInputEmail1">Rate your Experience</label>
+            <div class="select">
+                <select name="name" size="1" multiple class="form-control form-control-lg " id="exampleInputEmail1" >
+                    <option class="btn btn-outline-danger btn-lg " style="margin-right: 10px" >1</option>
+                    <option class="btn btn-outline-warning btn-lg " style="margin-right: 10px" >2</option>
+                    <option class="btn btn-outline-dark btn-lg "style="margin-right: 10px" >3</option>
+                    <option class="btn btn-outline-info btn-lg " style="margin-right: 10px" >4</option>
+                    <option class="btn btn-outline-success btn-lg "  >5</option>
+                </select></div></div></div>
 
         <div class="form-group" style="width: content-box "  >
             <label for="exampleFormControlTextarea3"> Food experience</label>
-            <input placeholder="What do think about of quality of food" rows="3"  name="country" class="form-control form-control-lg" id="exampleFormControlTextarea3" rows="3" >
-            </input> </div>
+            <textarea placeholder="What do think about of quality of food" rows="3"  name="country" class="form-control form-control-lg" id="exampleFormControlTextarea3" rows="3" >
+            </textarea>
+
+             </div>
         <div class="form-group" style="width: content-box "  >
             <label for="exampleFormControlTextarea1">Service experience</label>
-            <input type="text" minlength="3" name="service" class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3" placeholder="How was the experience">
-            </input>
+            <textarea type="text" rows="3" name="service" class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3" placeholder="How was the experience">
+            </textarea>
+
         </div>
         <br>
-        <div class="container" style="width:43%">
-            <div class="form-group ">
-        <label for="exampleInputEmail1">Rate your Experience</label>
-<div class="select">
-        <select name="name" size="1" multiple class="form-control form-control-lg " id="exampleInputEmail1" >
-            <option class="btn btn-outline-success btn-lg " >5</option>
-            <option class="btn btn-outline-info btn-lg " >4</option>
-            <option class="btn btn-outline-secondary btn-lg " >3</option>
-            <option class="btn btn-outline-warning btn-lg " >2</option>
-            <option class="btn btn-outline-danger btn-lg " >1</option>
-        </select></div></div>
-        </div>
+
+        <%--</div>--%>
         <br>
         <br>
 
