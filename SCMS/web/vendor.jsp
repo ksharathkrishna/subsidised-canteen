@@ -53,7 +53,7 @@
         <div class="card col-sm-3" ><a href="vendorLogin.jsp" class="btn btn-primary" >
             <div class="card-body">
                 <img src="https://image.flaticon.com/icons/svg/116/116375.svg" class="card-img-top">
-                <p class="card-text">Add Item </p>
+                <p class="card-text">Supply Item </p>
 
             </div></a>
         </div>

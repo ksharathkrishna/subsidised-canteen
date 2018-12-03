@@ -49,7 +49,7 @@
         <div class="container" style="width:40%">
             <div class="form-group ">
                 <label for="age">Age</label>
-                <input type="text" pattern="\d*"  minlength="2" maxlength="2" class="form-control form-control-lg" name="age" id="age" placeholder="Enter Age">
+                <input type="number"   minlength="2" maxlength="2" min="18"  max="55" class="form-control form-control-lg" name="age" id="age" placeholder="Enter Age">
             </div>
         </div>
 

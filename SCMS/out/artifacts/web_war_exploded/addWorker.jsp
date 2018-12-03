@@ -44,12 +44,12 @@
         </div>
         <div class="form-group">
             <label for="cardno">Phone</label>
-            <input type="text" pattern="\d*" maxlength="10" minlength="10" class="form-control form-control-lg" name="phone" id="cardno" placeholder="Enter phone numbe">
+            <input type="text" pattern="\d*" maxlength="10" minlength="10" class="form-control form-control-lg" name="phone" id="cardno" placeholder="Enter phone number">
         </div>
         <div class="container" style="width:40%">
             <div class="form-group ">
                 <label for="age">Age</label>
-                <input type="text" pattern="\d*"  minlength="2" maxlength="2" class="form-control form-control-lg" name="age" id="age" placeholder="Enter Age">
+                <input type="number"   minlength="2" maxlength="2" min="18"  max="55" class="form-control form-control-lg" name="age" id="age" placeholder="Enter Age">
             </div>
         </div>
 

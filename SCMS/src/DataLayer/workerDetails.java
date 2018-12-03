@@ -165,14 +165,7 @@ public class workerDetails {
                 flag = false;
 
             }
-//            sql="SELECT * FROM inventory WHERE username = \"" +
-//                    username+ "\"";
-//            rs = stmt.executeQuery(sql);
-//            System.out.println("after rs2");
-//            while (rs.next()){
-//                System.out.println("inside while2");
-//                flag = true;
-//
+
 
 
             if(flag) {

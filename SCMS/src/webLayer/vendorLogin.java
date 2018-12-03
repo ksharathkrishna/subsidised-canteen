@@ -9,8 +9,8 @@ import java.io.IOException;
 
 @WebServlet(name = "vendorLogin")
 public class vendorLogin extends HttpServlet {
-    public String un;
-    public String q;
+    public static String un;
+    public static String q;
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         DataLayer.workerDetails w2=new DataLayer.workerDetails();
         un = request.getParameter("username");
@@ -19,7 +19,7 @@ public class vendorLogin extends HttpServlet {
             request.setAttribute( "message","Successfully added to inventory");
             w2.updQuantity(un,q);
 
-            request.getRequestDispatcher("/vendorLogin.jsp").forward(request, response);
+            request.getRequestDispatcher("/vendorReciept.jsp").forward(request, response);
 
             // request.getRequestDispatcher("/generateToken.jsp").forward(request, response);
 
