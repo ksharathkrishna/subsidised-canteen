@@ -22,9 +22,9 @@
             <div class="container" style="background: gainsboro">
                 <hr>
 
-                 <button type="button" class="btn  btn-info" disabled>South Indian</button>
-                 <button type="button" class="btn  btn-secondary" disabled>North Indian</button>
-                 <button type="button" class="btn  btn-light" disabled>Chinese</button>
+                <span class="badge badge-info ">South Indian</span>
+                <span class="badge badge-secondary">North Indian</span>
+                <span class="badge badge-light">Chinese</span>
                 <hr>
 
             </div>

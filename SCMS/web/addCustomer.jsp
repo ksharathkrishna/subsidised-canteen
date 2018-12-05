@@ -61,6 +61,6 @@
 
 
 <br><br><br>
-<p align="center"  style="font-size: xx-large;">${errorMessage}</p>
+<p align="center"  style="font-size: xx-large; color:red ">${errorMessage}</p>
 </body>
 </html>

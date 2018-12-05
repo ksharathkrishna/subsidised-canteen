@@ -28,30 +28,33 @@
 </style>
 <br>
 <br>
-<h2 align="center"><font><strong>South Indian</strong></font></h2>
 <div class="container" align="centre" style="width: 20%">
     <br/>
+    <h2 align="center"><font><strong>Menu</strong></font></h2>
+<br>
     <a href="orderFood.jsp"  align="centre" class="btn btn-success btn-lg" >Return to Food Menu</a>
     <a href="buy.jsp"  align="centre" class="btn btn-warning btn-lg" >Order</a>
     <br/>
     <br/>
     <hr>
 </div>
+
 <table align="center" cellpadding="20" cellspacing="10" border="1" width="50%">
     <tr>
 
     </tr>
     <tr bgcolor="yellow">
-        <td width="30%"><b>Food Name</b></td>
-        <td width="30%"><b>Food ID        </b></td>
-        <td width="20%"><b>Cost</b></td>
+        <td width="30%"><b>Dish Name</b></td>
+        <td width="30%"><b>Cuisine       </b></td>
+        <td width="20%"><b>Cost Per Unit</b></td>
         <td width="20%"><b>Quantity</b></td>
     </tr>
+    <br>
     <%
         try{
             connection = DriverManager.getConnection(connectionUrl+dbName, userId, password);
             statement=connection.createStatement();
-            String sql ="SELECT * FROM food WHERE type='south'";
+            String sql ="SELECT * FROM food ORDER BY type desc ";
             System.out.println("sql"+sql);
 
             resultSet = statement.executeQuery(sql);
@@ -61,7 +64,7 @@
     <tr bgcolor="white">
 
         <td><%=resultSet.getString("FoodName") %></td>
-        <td><%=resultSet.getString("FoodID") %></td>
+        <td><%=resultSet.getString("type") %></td>
         <td><%=resultSet.getString("Cost") %></td>
         <td><%=resultSet.getString("quantity") %> </td>
 
@@ -76,6 +79,9 @@
         }
     %>
 </table>
+
+<br>
+
 
 <br>
 <br>

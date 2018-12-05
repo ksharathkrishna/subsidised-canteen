@@ -55,7 +55,7 @@ public  String un;
                 }
 
 
-                if(((hr>=19 && hr<22 ) && (a4.isDi(un) == 0))) {
+                if(((hr>=19 && hr<=22 ) && (a4.isDi(un) == 0))) {
                     request.setAttribute("message",un1+"     collect your token... enjoy your Dinner");
                     request.getRequestDispatcher("/token.jsp").forward(request, response);
                     a4.setDi(un);

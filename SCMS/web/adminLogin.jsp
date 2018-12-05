@@ -26,12 +26,13 @@
 
     <a href="index.jsp" class="btn btn-outline-dark btn-lg" >Back</a>
 
-
     </div>
 </form>
 
 <br><br><br><br>
+
 <p align="center" style="font-size: xx-large">${errorMessage}</p>
+
 </body>
 <br>
 <br>

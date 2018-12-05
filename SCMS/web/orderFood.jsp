@@ -18,32 +18,32 @@
 </header>
 <br><br>
 
-<body><div class="container">
+<body><div class="container" style="width: 40%">
     <div class="row">
-        <div class="card col-sm-3" >
+        <div class="card col-sm-6" >
             <a href="south.jsp" class="btn btn-danger" >
 
                 <div class="card-body">
-                    <img src="https://image.flaticon.com/icons/svg/782/782824.svg" class="card-img-top">
-                    <p class="card-text">South Indian </p>
+                    <img src="https://image.flaticon.com/icons/svg/161/161413.svg" class="card-img-top">
+                    <p class="card-text">Menu </p>
                 </div></a>
         </div>
-        <div class="card col-sm-3" >
-            <a href="north.jsp" class="btn btn-info" >
-                <div class="card-body">
+        <%--<div class="card col-sm-3" >--%>
+            <%--<a href="north.jsp" class="btn btn-info" >--%>
+                <%--<div class="card-body">--%>
 
-                    <img src="https://image.flaticon.com/icons/svg/94/94334.svg" class="card-img-top">
-                    <p class="card-text">North Indian </p>
+                    <%--<img src="https://image.flaticon.com/icons/svg/94/94334.svg" class="card-img-top">--%>
+                    <%--<p class="card-text">North Indian </p>--%>
 
-                </div></a>
-        </div><div class="card col-sm-3" ><a href="chinese.jsp" class="btn btn-warning" >
-        <div class="card-body">
-            <img src="https://image.flaticon.com/icons/svg/135/135427.svg" class="card-img-top">
-            <p class="card-text">Chinese </p>
+                <%--</div></a>--%>
+        <%--</div><div class="card col-sm-3" ><a href="chinese.jsp" class="btn btn-warning" >--%>
+        <%--<div class="card-body">--%>
+            <%--<img src="https://image.flaticon.com/icons/svg/135/135427.svg" class="card-img-top">--%>
+            <%--<p class="card-text">Chinese </p>--%>
 
-        </div></a>
-    </div>
-        <div class="card col-sm-3" ><a href="feedBack.jsp" class="btn btn-primary" >
+        <%--</div></a>--%>
+    <%--</div>--%>
+        <div class="card col-sm-6" ><a href="feedBack.jsp" class="btn btn-primary" >
             <div class="card-body">
                 <img src="https://image.flaticon.com/icons/svg/1027/1027692.svg" class="card-img-top">
                 <p class="card-text">Feedback </p>
