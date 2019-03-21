@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>DataLayer</OriginalElement>
+  <nodes>
+    <node x="0.0" y="0.0">DataLayer.accountDetails</node>
+    <node x="405.0" y="471.0">DataLayer.reviews</node>
+    <node x="0.0" y="471.0">DataLayer.workerDetails</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="232.0" y="272.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

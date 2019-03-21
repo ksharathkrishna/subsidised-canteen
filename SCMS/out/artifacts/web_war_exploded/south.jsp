@@ -28,6 +28,132 @@
 </style>
 <br>
 <br>
+<%--<%--%>
+    <%--try{--%>
+        <%--connection = DriverManager.getConnection(connectionUrl+dbName, userId, password);--%>
+        <%--statement=connection.createStatement();--%>
+        <%--String sql ="SELECT * FROM food  ";--%>
+        <%--System.out.println("sql"+sql);--%>
+
+        <%--resultSet = statement.executeQuery(sql);--%>
+
+<%--%>--%>
+<style>html, body, #container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}</style>
+
+<script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
+
+<%--<script type="text/javascript">anychart.onDocumentReady(function () {--%>
+    <%--// create bar chart--%>
+    <%--var a;--%>
+    <%--var ff;--%>
+    <%--var chart = anychart.bar();--%>
+
+    <%--chart.animation(true);--%>
+
+    <%--chart.padding([10, 40, 5, 20]);--%>
+
+    <%--chart.title('Top 10 Cosmetic Products by Revenue');--%>
+
+    <%--// create bar series with passed data--%>
+    <%--var series = chart.bar([--%>
+        <%--<%--%>
+         <%--while(resultSet.next()){--%>
+          <%--String a=  resultSet.getString("sold");--%>
+          <%--String ff=resultSet.getString("foodname");--%>
+        <%--%>--%>
+        <%--a=Number("<%=a%>"),--%>
+        <%--ff=("<%=ff%>"),--%>
+        <%--[ff , a],--%>
+        <%--<%--%>
+           <%--}--%>
+
+       <%--} catch (Exception e) {--%>
+           <%--e.printStackTrace();--%>
+       <%--}--%>
+   <%--%>--%>
+
+
+    <%--]).mapAs({'x': 0, 'value': 1});--%>
+
+    <%--// set tooltip settings--%>
+    <%--series.tooltip()--%>
+        <%--.position('right')--%>
+        <%--.anchor('left-center')--%>
+        <%--.offsetX(5)--%>
+        <%--.offsetY(0)--%>
+        <%--.titleFormat('{%X}')--%>
+        <%--.format('${Value}');--%>
+
+    <%--// set yAxis labels formatter--%>
+    <%--chart.yAxis().labels().format('{%Value}{groupsSeparator: }');--%>
+
+    <%--// set titles for axises--%>
+    <%--chart.xAxis().title('Products by Revenue');--%>
+    <%--chart.yAxis().title('Revenue in Dollars');--%>
+    <%--chart.interactivity().hoverMode('by-x');--%>
+    <%--chart.tooltip().positionMode('point');--%>
+    <%--// set scale minimum--%>
+    <%--chart.yScale().minimum(0);--%>
+
+    <%--// set container id for the chart--%>
+    <%--chart.container('container');--%>
+    <%--// initiate chart drawing--%>
+    <%--chart.draw();--%>
+<%--});</script>--%>
+<%--<script type="text/javascript">--%>
+    <%--anychart.onDocumentLoad(function () {--%>
+        <%--// create an instance of a pie chart--%>
+        <%--var chart = anychart.pie();--%>
+        <%--chart.animation(true);--%>
+
+
+        <%--// set the data--%>
+        <%--chart.data([--%>
+            <%--<%--%>
+       <%--while(resultSet.next()){--%>
+        <%--String a=  resultSet.getString("sold");--%>
+        <%--String ff=resultSet.getString("foodname");--%>
+
+      <%--%>--%>
+            <%--a=Number("<%=a%>"),--%>
+            <%--ff=("<%=ff%>"),--%>
+            <%--if (isNaN(ff))--%>
+            <%--[ff , a],--%>
+
+            <%--<%               }%>--%>
+            <%--['0',0]--%>
+    <%--]);--%>
+        <%--<%--%>
+    <%--} catch (Exception e) {--%>
+        <%--e.printStackTrace();--%>
+    <%--}--%>
+    <%--%>--%>
+        <%--// set chart title--%>
+        <%--chart.title("RATINGS");--%>
+        <%--//     .radius('43%')--%>
+        <%--//--%>
+        <%--//         .innerRadius('70%');--%>
+        <%--// // set the container element--%>
+        <%--//     var labels = chart.labels();--%>
+        <%--//     labels.position("outside");--%>
+        <%--//     labels.fontColor("#000000");--%>
+        <%--//     chart.overlapMode(true);--%>
+        <%--//     chart.insideLabelsOffset("-75%");--%>
+
+        <%--chart.container("container");--%>
+        <%--// initiate chart display--%>
+        <%--chart.draw();--%>
+    <%--});</script>--%>
+<%--<div class="container" style="width: 30%">--%>
+    <%--<div class="container" style="height: 50%">--%>
+        <%--<div id="container"></div>--%>
+    <%--</div>--%>
+<%--</div>--%>
 <div class="container" align="centre" style="width: 20%">
     <br/>
     <h2 align="center"><font><strong>Menu</strong></font></h2>
