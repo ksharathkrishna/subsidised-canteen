@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="tomcat-catalina-7.0.25.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../tomcat-catalina-7.0.25.jar.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
