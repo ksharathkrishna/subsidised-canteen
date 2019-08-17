@@ -11,6 +11,9 @@
           <element id="library" level="project" name="mysql-connector-java-5.1.471" />
           <element id="library" level="project" name="mongo-java-driver-3.8.2" />
           <element id="library" level="project" name="gson-2.8.1" />
+          <element id="library" level="project" name="tomcat-catalina-7.0.25.jar" />
+          <element id="library" level="project" name="tomcat-catalina-9.0.10" />
+          <element id="library" level="project" name="catalina" />
         </element>
       </element>
     </root>
